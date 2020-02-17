@@ -1,13 +1,20 @@
 
-import {ColumnLayer} from '@deck.gl/layers'
-import {StaticMap} from 'react-map-gl'
-import DeckGL from '@deck.gl/react'
-import React, { Fragment } from 'react'
+import { RemoteMongoClient, Stitch, AnonymousCredential } from 'mongodb-stitch-browser-sdk'
 
-import './style.scss'
+import React, { Fragment } from 'react'
+import { ColumnLayer } from '@deck.gl/layers'
+import { StaticMap } from 'react-map-gl'
+import DeckGL from '@deck.gl/react'
 
 
 const MAPBOX_ACCESS_TOKEN = 'pk.eyJ1IjoiZHpldGEiLCJhIjoiY2s2cWFvbjBzMDIzZzNsbnhxdHI5eXIweCJ9.wQflyJNS9Klwff3dxtHJzg'
+
+
+const collection = 'Yobs'
+const client = Stitch.initializeDefaultAppClient('yobs-wqucd')
+const db = client.getServiceClient(RemoteMongoClient.factory, 'mongodb-atlas').db(collection)
+
+const get_yobs = () => db.collection(collection).find({}, { limit: 100}).asArray().catch(console.log)
 
 
 const initialViewState = {
@@ -46,45 +53,9 @@ const INFOWINDOW_STYLE = {
 const HIDDEN_INFOWINDOW = {
 	...INFOWINDOW_STYLE,
 	background:'rgba(255, 255, 255, 0)',
-	color: 'rgba(255, 255, 255, 0)'
+	color: 'rgba(255, 255, 255, 0)',
+	boxShadow: '0 0 4px rgba(0, 0, 0, 0)'
 }
-
-
-const data = [
-	{ 
-		id: 0,
-		value:4.07,
-		centroid:[-122.403241,37.79088771],
-		vertices:[
-			[-122.3993347,37.79178708],
-			[-122.4021036,37.79398118],
-			[-122.4060099,37.79308171],
-			[-122.4071472,37.78998822],
-			[-122.4043784,37.78779417],
-			[-122.4004722,37.78869356]
-		],
-		title: 'NodeJS Expert',
-		salary: '$78,000',
-		location:'Über',
-		description: 'Needs expertise as Full Stack'
-	}, {
-		id: 1,
-		value:2.893316195,
-		centroid:[-122.4016096,37.78559998],
-		vertices:[
-			[-122.3977034,37.78649927],
-			[-122.4004722,37.78869356],
-			[-122.4043784,37.78779417],
-			[-122.4055157,37.78470058],
-			[-122.402747,37.78250634],
-			[-122.398841,37.78340565]
-		],
-		title: 'Python Data Engineer',
-		salary: '$96,000',
-		location: 'NASA',
-		description: 'Willingness to learn Data Graphs & Hadoop.'
-	},
-]
 
 
 
@@ -92,14 +63,19 @@ class App extends React.Component {
 	constructor(props) {
 		super(props)
 		this.state = {
+			data: [],
 			object: {},
 			name: null,
 			cta: false
 		}
 	}
 
-	componentDidMount() {
-//		document.getElementById('deckgl-wrapper').addEventListener('contextmenu', evt => evt.preventDefault())
+
+	async componentDidMount(){
+		await client.auth.loginWithCredential(new AnonymousCredential())
+		const yobs = await get_yobs()
+		this.setState({ data: yobs })
+		document.getElementById('deckgl-wrapper').addEventListener('contextmenu', evt => evt.preventDefault())
 	}
 
 	_getTooltip = ({ object }) => object 
@@ -111,7 +87,7 @@ class App extends React.Component {
 		: null
 
 	render() {
-		const { object, cta } = this.state
+		const { object, cta, data } = this.state
 
 		const layers = [
 			new ColumnLayer({
@@ -176,6 +152,7 @@ class App extends React.Component {
 				controller={true}
 				layers={layers}
 			>
+				{ InfoWindow }
 				{ InfoWindow }
 				<StaticMap 
 					onContextMenu={event => event.preventDefault()}

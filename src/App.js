@@ -118,18 +118,31 @@ class App extends React.Component {
 				?
 					<Fragment>
 						<p> <strong>Description:</strong> { object.description } </p>
-						<a 
-							onClick={() => this.setState(
-								{name: 'CTA', cta: true}, 
-								() => setTimeout(() => 
-									this.setState(
-										{name: null}, 
-										console.log(`https://www.indeed.com.mx/trabajo?q=python&id=${this.state.object.id}`)
-									), 500
-								)
-							)}
-							style={{ color: Object.keys(object).length ? 'blue' : 'rgba(255, 255, 255, 0)' }}
-						> Link </a>
+						<div style={{margin:16}} align="center">
+							<a 
+								style={{
+									margin: 24,
+									color: '#052fBA',
+									textTransform: 'uppercase',
+									background: '#ffffff',
+									padding: '20px',
+									border: '4px solid #052fBA',
+									borderRadius: '6px',
+									display: 'inline-block',
+									transition: 'all 0.3s ease 0s',
+								}} 
+
+								onClick={() => this.setState(
+									{name: 'CTA', cta: true}, 
+									() => setTimeout(() => 
+										this.setState(
+											{name: null}, 
+											console.log(`https://www.indeed.com.mx/trabajo?q=python&id=${this.state.object.id}`)
+										), 500
+									)
+								)}
+							>Go to Job Post</a>
+						</div>
 					</Fragment>
 
 				:	<a 
@@ -163,6 +176,7 @@ class App extends React.Component {
 		)
 	}
 }
+
 
 
 export default App

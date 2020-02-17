@@ -2,7 +2,7 @@
 import {ColumnLayer} from '@deck.gl/layers'
 import {StaticMap} from 'react-map-gl'
 import DeckGL from '@deck.gl/react'
-import React from 'react'
+import React, { Fragment } from 'react'
 
 import './style.scss'
 
@@ -17,7 +17,6 @@ const initialViewState = {
 	pitch: 0,
 	bearing: 0
 }
-
 
 const TOOLTIP_STYLE = {
 	padding: '20px',
@@ -51,9 +50,9 @@ const HIDDEN_INFOWINDOW = {
 }
 
 
-
 const data = [
 	{ 
+		id: 0,
 		value:4.07,
 		centroid:[-122.403241,37.79088771],
 		vertices:[
@@ -64,8 +63,12 @@ const data = [
 			[-122.4043784,37.78779417],
 			[-122.4004722,37.78869356]
 		],
-		title: 'NodeJS Expert'
+		title: 'NodeJS Expert',
+		salary: '$78,000',
+		location:'Über',
+		description: 'Needs expertise as Full Stack'
 	}, {
+		id: 1,
 		value:2.893316195,
 		centroid:[-122.4016096,37.78559998],
 		vertices:[
@@ -76,7 +79,10 @@ const data = [
 			[-122.402747,37.78250634],
 			[-122.398841,37.78340565]
 		],
-		title: 'Python Data Engineer'
+		title: 'Python Data Engineer',
+		salary: '$96,000',
+		location: 'NASA',
+		description: 'Willingness to learn Data Graphs & Hadoop.'
 	},
 ]
 
@@ -86,8 +92,9 @@ class App extends React.Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			clicked: false,
-			object: {}
+			object: {},
+			name: null,
+			cta: false
 		}
 	}
 
@@ -98,9 +105,13 @@ class App extends React.Component {
 	_getTooltip = ({ object }) => object 
 		? 	{ text:`${object.title}`, style: TOOLTIP_STYLE }
 		:	null
+	
+	_getInfoWindow = ({ object }) => !this.state.name
+		? this.setState({ object: object ? object : {}, cta: false })
+		: null
 
 	render() {
-		const { clicked } = this.state
+		const { object, cta } = this.state
 
 		const layers = [
 			new ColumnLayer({
@@ -115,17 +126,44 @@ class App extends React.Component {
 				getFillColor: d => [48, 128, d.value * 255, 255],
 				getLineColor: [0, 0, 0],
 				getElevation: d => d.value,
-				onClick: e => this.setState({ clicked: !this.state.clicked })
 			})
 		]
 
 		const InfoWindow = <div 
-			style={ clicked ? INFOWINDOW_STYLE : HIDDEN_INFOWINDOW } 
+			style={ Object.keys(object).length ? INFOWINDOW_STYLE : HIDDEN_INFOWINDOW } 
 			tabIndex="0"
 		>
-			<h3> NAME </h3>
-			<div className="control-panel" />
-			CHILDREN
+			<h3> Title: { object.title } </h3> 
+			<p> <strong>Location:</strong>  { object.location } </p>
+			<p> <strong>Salary:</strong> { object.salary } </p>
+			
+			{	
+				cta
+				?
+					<Fragment>
+						<p> <strong>Description:</strong> { object.description } </p>
+						<a 
+							onClick={() => this.setState(
+								{name: 'CTA', cta: true}, 
+								() => setTimeout(() => 
+									this.setState(
+										{name: null}, 
+										console.log(`https://www.indeed.com.mx/trabajo?q=python&id=${this.state.object.id}`)
+									), 500
+								)
+							)}
+							style={{ color: Object.keys(object).length ? 'blue' : 'rgba(255, 255, 255, 0)' }}
+						> Link </a>
+					</Fragment>
+
+				:	<a 
+						name={'CTA'}
+						style={{ color: Object.keys(object).length ? 'blue' :'rgba(255, 255, 255, 0)' }}
+						onClick={() => 
+							this.setState({name: 'CTA', cta: true}, () => setTimeout(() => this.setState({name: null}), 500))
+						}
+					>See more...</a>
+			}
 		</div>
 
 
@@ -134,10 +172,10 @@ class App extends React.Component {
 				onContextMenu={event => event.preventDefault()}
 				initialViewState={initialViewState}
 				getTooltip={this._getTooltip}
+				onClick={this._getInfoWindow}
 				controller={true}
 				layers={layers}
 			>
-
 				{ InfoWindow }
 				<StaticMap 
 					onContextMenu={event => event.preventDefault()}
@@ -150,6 +188,4 @@ class App extends React.Component {
 }
 
 
-
 export default App
-

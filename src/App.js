@@ -5,7 +5,7 @@ import React, { Fragment } from 'react'
 import { ColumnLayer } from '@deck.gl/layers'
 import { StaticMap } from 'react-map-gl'
 import DeckGL from '@deck.gl/react'
-
+import amplitude from 'amplitude-js'
 import {AmbientLight, PointLight, LightingEffect} from '@deck.gl/core'
 
 const MAPBOX_ACCESS_TOKEN = 'pk.eyJ1IjoiZHpldGEiLCJhIjoiY2s2cWFvbjBzMDIzZzNsbnhxdHI5eXIweCJ9.wQflyJNS9Klwff3dxtHJzg'
@@ -64,7 +64,7 @@ const INFOWINDOW_STYLE = {
     boxShadow: '0 0 3px rgba(0, 0, 0, 0.15)',
     margin: 24,
     padding: '6px 9px',
-    maxHeight: '66%',
+    maxHeight: '96%',
     overflowX: 'hidden',
     overflowY: 'overlay',
     outline: 'none',
@@ -98,9 +98,13 @@ class App extends React.Component {
 	}
 
 	async componentDidMount(){
-		await client.auth.loginWithCredential(new AnonymousCredential())
+
+		const {id } = await client.auth.loginWithCredential(new AnonymousCredential())
+		amplitude.getInstance().init('a35ebf8c138533d4dc9f9e2a341eca61', id)
+		amplitude.getInstance().logEvent('New Visit')
+		console.log(id)
+
 		const yobs = await get_yobs()
-		console.log(yobs)
 		this.setState({ data: yobs })
 		document.getElementById('deckgl-wrapper').addEventListener('contextmenu', evt => evt.preventDefault())
 	}
@@ -110,7 +114,7 @@ class App extends React.Component {
 		:	null
 	
 	_getInfoWindow = ({ object }) => !this.state.name
-		? this.setState({ object: object ? object : {}, cta: false })
+		? this.setState({ object: object ? object : {}, cta: !!object })
 		: null
 
 	render() {
@@ -136,50 +140,57 @@ class App extends React.Component {
 			style={ Object.keys(object).length ? INFOWINDOW_STYLE : HIDDEN_INFOWINDOW } 
 			tabIndex="0"
 		>
-			<h3> Title: { object.title } </h3> 
-			<p> <strong>Location:</strong>  { object.location } </p>
-			<p> <strong>Salary:</strong> { object.salary } </p>
-			
-			{	
+			<h2 style={{marginBottom: 8}}> 
+				{ object.title } <br/>
+				<small> { object.salary !== 'N/A' ? object.salary : `Salary: NA` } </small>
+			</h2>
+			<p style={{marginTop:0}}><i>{ object.address }</i></p>
+
+			<p> 
+				<a 
+					href={`"${object.website}"`}
+					style={{
+						fontSize: '1.25em',
+						marginBlockStart: '1em',
+						marginBlockEnd: '1em',
+						marginInline: 0,
+						fontWeight: 'bold',
+						paddingRight: 5
+					}}
+				>{ object.company },</a> 
+				{object.pitch}
+			</p>
+
+			<p> <strong>Job Description:</strong> { object.description } </p>
+
+			{
 				cta
-				?
-					<Fragment>
-						<p> <strong>Description:</strong> { object.description } </p>
+					?	
 						<div style={{margin:16}} align="center">
 							<a 
 								style={{
-									margin: 24,
+									margin: 16,
 									color: '#052fBA',
 									textTransform: 'uppercase',
 									background: '#ffffff',
-									padding: '20px',
+									padding: 12,
 									border: '4px solid #052fBA',
 									borderRadius: '6px',
 									display: 'inline-block',
 									transition: 'all 0.3s ease 0s',
 								}} 
 
-								onClick={() => this.setState(
-									{name: 'CTA', cta: true}, 
-									() => setTimeout(() => 
-										this.setState(
-											{name: null}, 
-											console.log(`https://www.indeed.com.mx/trabajo?q=python&id=${this.state.object.id}`)
-										), 500
-									)
+								onClick={e => this.setState(
+									{name: 'CTA', cta: true},
+									() => setTimeout(()=>this.setState({name: null}, ()=>window.open(object.link)), 100)
 								)}
-							>Go to Job Post</a>
+							> Go to Job Post </a>
 						</div>
-					</Fragment>
-
-				:	<a 
-						name={'CTA'}
-						style={{ color: Object.keys(object).length ? 'blue' :'rgba(255, 255, 255, 0)' }}
-						onClick={() => 
-							this.setState({name: 'CTA', cta: true}, () => setTimeout(() => this.setState({name: null}), 500))
-						}
-					>See more...</a>
+					:	null
 			}
+
+			<p><strong>Requirements:</strong></p>
+			<ul>{ (object.requirements || []).map((i, idx) => <li key={idx}>{i}</li>)}</ul>
 		</div>
 
 

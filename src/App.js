@@ -67,10 +67,12 @@ const INFOWINDOW_STYLE = {
     boxShadow: '0 0 3px rgba(0, 0, 0, 0.15)',
     margin: 24,
     padding: '6px 9px',
-    height: '90%',
+    height: '80%',
     overflowX: 'hidden',
     overflowY: 'overlay',
-    outline: 'none',
+	outline: 'none',
+	paddingRight: 20,
+	paddingLeft: 10
 }
 
 const HIDDEN_INFOWINDOW = {
@@ -109,7 +111,7 @@ class App extends React.Component {
 
 		const yobs = await get_yobs()
 		this.setState({ data: yobs })
-		document.getElementById('deckgl-wrapper').addEventListener('contextmenu', evt => evt.preventDefault())
+//		document.getElementById('deckgl-wrapper').addEventListener('contextmenu', evt => evt.preventDefault())
 	}
 
 	_getTooltip = ({ object }) => {
@@ -157,7 +159,11 @@ class App extends React.Component {
 				{ object.title } <br/>
 				<small> { object.salary !== 'N/A' ? object.salary : `Salary: NA` } </small>
 			</h2>
-			<p style={{marginTop:0}}><i>{ object.address }</i></p>
+
+			<p style={{marginTop:0}}>
+				<img src="location.png" style={{height:24, display: Object.keys(object).length ? 'initial' : 'none'}}/>
+				<i style={{padding:6}}>{ object.address }</i>
+			</p>
 
 			<p> 
 				<a 
@@ -209,32 +215,40 @@ class App extends React.Component {
 			}
 
 			<p><strong>Requirements:</strong></p>
-			<ul>{ (object.requirements || []).map((i, idx) => <li key={idx}>{i}</li>)}</ul>
+			<ul style={{paddingRight:10, paddingLeft: 20}}>
+				{(object.requirements || []).map((i, idx) => <li key={idx}>{i}</li>)}
+			</ul>
 		</div>
 
+		const intro = <div 
+			style={{
+				height: '100vh',
+				width: '100vw',
+				backgroundColor: '#333'
+			}}
+		/>
 
-		return (
-			<DeckGL
+		const main = <DeckGL
+			onContextMenu={event => event.preventDefault()}
+			initialViewState={initialViewState}
+			getTooltip={this._getTooltip}
+			onClick={this._getInfoWindow}
+			controller={true}
+			layers={layers}
+			effects={[lightingEffect]}
+
+		>
+			{ InfoWindow }
+			<StaticMap 
 				onContextMenu={event => event.preventDefault()}
-				initialViewState={initialViewState}
-				getTooltip={this._getTooltip}
-				onClick={this._getInfoWindow}
-				controller={true}
-				layers={layers}
-				effects={[lightingEffect]}
+				mapboxApiAccessToken={MAPBOX_ACCESS_TOKEN} 
+				mapStyle='mapbox://styles/mapbox/dark-v10'
+			/>
+		</DeckGL>
 
-			>
-				{ InfoWindow }
-				<StaticMap 
-					onContextMenu={event => event.preventDefault()}
-					mapboxApiAccessToken={MAPBOX_ACCESS_TOKEN} 
-					mapStyle='mapbox://styles/mapbox/dark-v10'
-				/>
-			</DeckGL>
-		)
+		return main
 	}
 }
-
 
 
 export default App

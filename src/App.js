@@ -9,6 +9,9 @@ import amplitude from 'amplitude-js'
 import {AmbientLight, PointLight, LightingEffect} from '@deck.gl/core'
 
 const MAPBOX_ACCESS_TOKEN = 'pk.eyJ1IjoiZHpldGEiLCJhIjoiY2s2cWFvbjBzMDIzZzNsbnhxdHI5eXIweCJ9.wQflyJNS9Klwff3dxtHJzg'
+const AMPLITUDE_DEV = 'a35ebf8c138533d4dc9f9e2a341eca61'
+const AMPLITUDE_PROD = 'f0d03d5f2e5bd29318dcd0c8251638ff'
+const AMPLITUDE_KEY = window.location.hostname !== 'localhost' ? AMPLITUDE_PROD : AMPLITUDE_DEV
 
 
 const collection = 'Yobs'
@@ -64,7 +67,7 @@ const INFOWINDOW_STYLE = {
     boxShadow: '0 0 3px rgba(0, 0, 0, 0.15)',
     margin: 24,
     padding: '6px 9px',
-    maxHeight: '96%',
+    height: '90%',
     overflowX: 'hidden',
     overflowY: 'overlay',
     outline: 'none',
@@ -93,28 +96,38 @@ class App extends React.Component {
 			data: [],
 			object: {},
 			name: null,
-			cta: false
+			cta: false,
+			tooltip_id: null
 		}
 	}
 
 	async componentDidMount(){
 
 		const {id } = await client.auth.loginWithCredential(new AnonymousCredential())
-		amplitude.getInstance().init('a35ebf8c138533d4dc9f9e2a341eca61', id)
+		amplitude.getInstance().init(AMPLITUDE_KEY, id)
 		amplitude.getInstance().logEvent('New Visit')
-		console.log(id)
 
 		const yobs = await get_yobs()
 		this.setState({ data: yobs })
 		document.getElementById('deckgl-wrapper').addEventListener('contextmenu', evt => evt.preventDefault())
 	}
 
-	_getTooltip = ({ object }) => object 
-		? 	{ text:`${object.title} (${object.city})`, style: TOOLTIP_STYLE }
+	_getTooltip = ({ object }) => {
+		object && this.state.tooltip_id !== object.title 
+			? this.setState({tooltip_id: object.title}, () => amplitude.getInstance().logEvent('Set Tooltip', object)) 
+			: null
+
+		return object 
+		? 	{ text:`${object.title}\n ${object.city}\n ${object.salary !== 'N/A' ? object.salary : ''}`, style: TOOLTIP_STYLE }
 		:	null
+	}
 	
 	_getInfoWindow = ({ object }) => !this.state.name
-		? this.setState({ object: object ? object : {}, cta: !!object })
+		? 
+			this.setState(
+				{ object: object ? object : {}, cta: !!object }, 
+				() => amplitude.getInstance().logEvent('Select Job', object)
+			)
 		: null
 
 	render() {
@@ -155,7 +168,8 @@ class App extends React.Component {
 						marginBlockEnd: '1em',
 						marginInline: 0,
 						fontWeight: 'bold',
-						paddingRight: 5
+						paddingRight: 5,
+						display: Object.keys(object).length ? 'initial' : 'none'
 					}}
 				>{ object.company },</a> 
 				{object.pitch}
@@ -180,9 +194,14 @@ class App extends React.Component {
 									transition: 'all 0.3s ease 0s',
 								}} 
 
-								onClick={e => this.setState(
+								onClick={() => this.setState(
 									{name: 'CTA', cta: true},
-									() => setTimeout(()=>this.setState({name: null}, ()=>window.open(object.link)), 100)
+									() => setTimeout(() => this.setState(
+										{name: null}, 
+										()=> { 
+											window.open(object.link)
+											amplitude.getInstance().logEvent('Visit Job', object)
+										}), 350)
 								)}
 							> Go to Job Post </a>
 						</div>

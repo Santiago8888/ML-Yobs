@@ -5,10 +5,13 @@ import React, { Fragment } from 'react'
 import { ColumnLayer } from '@deck.gl/layers'
 import { StaticMap } from 'react-map-gl'
 import DeckGL from '@deck.gl/react'
-
+import amplitude from 'amplitude-js'
 import {AmbientLight, PointLight, LightingEffect} from '@deck.gl/core'
 
 const MAPBOX_ACCESS_TOKEN = 'pk.eyJ1IjoiZHpldGEiLCJhIjoiY2s2cWFvbjBzMDIzZzNsbnhxdHI5eXIweCJ9.wQflyJNS9Klwff3dxtHJzg'
+const AMPLITUDE_DEV = 'a35ebf8c138533d4dc9f9e2a341eca61'
+const AMPLITUDE_PROD = 'f0d03d5f2e5bd29318dcd0c8251638ff'
+const AMPLITUDE_KEY = window.location.hostname !== 'localhost' ? AMPLITUDE_PROD : AMPLITUDE_DEV
 
 
 const collection = 'Yobs'
@@ -64,7 +67,7 @@ const INFOWINDOW_STYLE = {
     boxShadow: '0 0 3px rgba(0, 0, 0, 0.15)',
     margin: 24,
     padding: '6px 9px',
-    maxHeight: '66%',
+    height: '90%',
     overflowX: 'hidden',
     overflowY: 'overlay',
     outline: 'none',
@@ -93,24 +96,38 @@ class App extends React.Component {
 			data: [],
 			object: {},
 			name: null,
-			cta: false
+			cta: false,
+			tooltip_id: null
 		}
 	}
 
 	async componentDidMount(){
-		await client.auth.loginWithCredential(new AnonymousCredential())
+
+		const {id } = await client.auth.loginWithCredential(new AnonymousCredential())
+		amplitude.getInstance().init(AMPLITUDE_KEY, id)
+		amplitude.getInstance().logEvent('New Visit')
+
 		const yobs = await get_yobs()
-		console.log(yobs)
 		this.setState({ data: yobs })
 		document.getElementById('deckgl-wrapper').addEventListener('contextmenu', evt => evt.preventDefault())
 	}
 
-	_getTooltip = ({ object }) => object 
-		? 	{ text:`${object.title} (${object.city})`, style: TOOLTIP_STYLE }
+	_getTooltip = ({ object }) => {
+		object && this.state.tooltip_id !== object.title 
+			? this.setState({tooltip_id: object.title}, () => amplitude.getInstance().logEvent('Set Tooltip', object)) 
+			: null
+
+		return object 
+		? 	{ text:`${object.title}\n ${object.city}\n ${object.salary !== 'N/A' ? object.salary : ''}`, style: TOOLTIP_STYLE }
 		:	null
+	}
 	
 	_getInfoWindow = ({ object }) => !this.state.name
-		? this.setState({ object: object ? object : {}, cta: false })
+		? 
+			this.setState(
+				{ object: object ? object : {}, cta: !!object }, 
+				() => amplitude.getInstance().logEvent('Select Job', object)
+			)
 		: null
 
 	render() {
@@ -136,23 +153,41 @@ class App extends React.Component {
 			style={ Object.keys(object).length ? INFOWINDOW_STYLE : HIDDEN_INFOWINDOW } 
 			tabIndex="0"
 		>
-			<h3> Title: { object.title } </h3> 
-			<p> <strong>Location:</strong>  { object.location } </p>
-			<p> <strong>Salary:</strong> { object.salary } </p>
-			
-			{	
+			<h2 style={{marginBottom: 8}}> 
+				{ object.title } <br/>
+				<small> { object.salary !== 'N/A' ? object.salary : `Salary: NA` } </small>
+			</h2>
+			<p style={{marginTop:0}}><i>{ object.address }</i></p>
+
+			<p> 
+				<a 
+					href={`"${object.website}"`}
+					style={{
+						fontSize: '1.25em',
+						marginBlockStart: '1em',
+						marginBlockEnd: '1em',
+						marginInline: 0,
+						fontWeight: 'bold',
+						paddingRight: 5,
+						display: Object.keys(object).length ? 'initial' : 'none'
+					}}
+				>{ object.company },</a> 
+				{object.pitch}
+			</p>
+
+			<p> <strong>Job Description:</strong> { object.description } </p>
+
+			{
 				cta
-				?
-					<Fragment>
-						<p> <strong>Description:</strong> { object.description } </p>
+					?	
 						<div style={{margin:16}} align="center">
 							<a 
 								style={{
-									margin: 24,
+									margin: 16,
 									color: '#052fBA',
 									textTransform: 'uppercase',
 									background: '#ffffff',
-									padding: '20px',
+									padding: 12,
 									border: '4px solid #052fBA',
 									borderRadius: '6px',
 									display: 'inline-block',
@@ -160,26 +195,21 @@ class App extends React.Component {
 								}} 
 
 								onClick={() => this.setState(
-									{name: 'CTA', cta: true}, 
-									() => setTimeout(() => 
-										this.setState(
-											{name: null}, 
-											console.log(`https://www.indeed.com.mx/trabajo?q=python&id=${this.state.object.id}`)
-										), 500
-									)
+									{name: 'CTA', cta: true},
+									() => setTimeout(() => this.setState(
+										{name: null}, 
+										()=> { 
+											window.open(object.link)
+											amplitude.getInstance().logEvent('Visit Job', object)
+										}), 350)
 								)}
-							>Go to Job Post</a>
+							> Go to Job Post </a>
 						</div>
-					</Fragment>
-
-				:	<a 
-						name={'CTA'}
-						style={{ color: Object.keys(object).length ? 'blue' :'rgba(255, 255, 255, 0)' }}
-						onClick={() => 
-							this.setState({name: 'CTA', cta: true}, () => setTimeout(() => this.setState({name: null}), 500))
-						}
-					>See more...</a>
+					:	null
 			}
+
+			<p><strong>Requirements:</strong></p>
+			<ul>{ (object.requirements || []).map((i, idx) => <li key={idx}>{i}</li>)}</ul>
 		</div>
 
 

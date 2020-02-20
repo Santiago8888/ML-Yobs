@@ -8,6 +8,9 @@ import DeckGL from '@deck.gl/react'
 import amplitude from 'amplitude-js'
 import {AmbientLight, PointLight, LightingEffect} from '@deck.gl/core'
 
+import 'bulma/css/bulma.css'
+import 'bulma-pageloader/dist/css/bulma-pageloader.min.css'
+
 const MAPBOX_ACCESS_TOKEN = 'pk.eyJ1IjoiZHpldGEiLCJhIjoiY2s2cWFvbjBzMDIzZzNsbnhxdHI5eXIweCJ9.wQflyJNS9Klwff3dxtHJzg'
 const AMPLITUDE_DEV = 'a35ebf8c138533d4dc9f9e2a341eca61'
 const AMPLITUDE_PROD = 'f0d03d5f2e5bd29318dcd0c8251638ff'
@@ -39,10 +42,10 @@ const pointLight2 = new PointLight({
 
 
 const lightingEffect = new LightingEffect({ambientLight, pointLight1, pointLight2})
-
+ 
 const initialViewState = {
-	latitude: 51.01669,
-	longitude: 4.7853,
+	latitude: 50.6352755,
+	longitude: 4.8634802,
 	zoom: 8,
 	pitch: 40.5,
 	bearing: -27.396674584323023
@@ -99,7 +102,10 @@ class App extends React.Component {
 			object: {},
 			name: null,
 			cta: false,
-			tooltip_id: null
+			tooltip_id: null,
+			loaded: false,
+			tooltipped: false,
+			fake_tooltip: null
 		}
 	}
 
@@ -110,14 +116,18 @@ class App extends React.Component {
 		amplitude.getInstance().logEvent('New Visit')
 
 		const yobs = await get_yobs()
+		const yob = yobs[0]
+		this.setState({fake_tooltip: `${yob.title}\n ${yob.city}\n ${yob.salary !== 'N/A' ? yob.salary : ''}` }) 
 		this.setState({ data: yobs })
 //		document.getElementById('deckgl-wrapper').addEventListener('contextmenu', evt => evt.preventDefault())
 	}
 
 	_getTooltip = ({ object }) => {
 		object && this.state.tooltip_id !== object.title 
-			? this.setState({tooltip_id: object.title}, () => amplitude.getInstance().logEvent('Set Tooltip', object)) 
+			? this.setState({tooltip_id: object.title, tooltipped: true}, () => amplitude.getInstance().logEvent('Set Tooltip', object)) 
 			: null
+
+//		!this.state.tooltipped ? this.setState({ }) : null
 
 		return object 
 		? 	{ text:`${object.title}\n ${object.city}\n ${object.salary !== 'N/A' ? object.salary : ''}`, style: TOOLTIP_STYLE }
@@ -133,7 +143,7 @@ class App extends React.Component {
 		: null
 
 	render() {
-		const { object, cta, data } = this.state
+		const { object, cta, data, loaded, tooltipped, fake_tooltip } = this.state
 
 		const layers = [
 			new ColumnLayer({
@@ -221,12 +231,26 @@ class App extends React.Component {
 		</div>
 
 		const intro = <div 
+			className={`pageloader ${!loaded ? 'is-active' : null}`}
+			style={{backgroundColor: '#333',}}
+		><span className="title">Finding the best jobs for you...</span></div>
+
+		const onboarding_tooltip = <div 
+			className="deck-tooltip" 
 			style={{
-				height: '100vh',
-				width: '100vw',
-				backgroundColor: '#333'
+				zIndex: 9, 
+				position: 'absolute', 
+				pointerEvents: 'none', 
+				color: 'rgb(0, 0, 0)', 
+				background: 'rgba(255, 255, 255, 0.95)', 
+				padding: 20, 
+				display: 'block', 
+				fontWeight: 600, 
+				transform: 'translate(-1px, -1px)', 
+				top: '50%', 
+				left: '50%'
 			}}
-		/>
+			>{ fake_tooltip }</div>
 
 		const main = <DeckGL
 			onContextMenu={event => event.preventDefault()}
@@ -243,10 +267,16 @@ class App extends React.Component {
 				onContextMenu={event => event.preventDefault()}
 				mapboxApiAccessToken={MAPBOX_ACCESS_TOKEN} 
 				mapStyle='mapbox://styles/mapbox/dark-v10'
+				attributionControl={false}
+				onLoad={()=> setTimeout(() => this.setState({loaded: true}), 1000)}
 			/>
 		</DeckGL>
 
-		return main
+		return <Fragment>
+			{ intro }
+			{ !tooltipped ? onboarding_tooltip : null }
+			{ main }
+		</Fragment>
 	}
 }
 

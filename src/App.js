@@ -1,21 +1,22 @@
-
 import { RemoteMongoClient, Stitch, AnonymousCredential } from 'mongodb-stitch-browser-sdk'
 
-import React, { Fragment } from 'react'
-import { ColumnLayer } from '@deck.gl/layers'
-import { StaticMap } from 'react-map-gl'
-import DeckGL from '@deck.gl/react'
-import amplitude from 'amplitude-js'
 import {AmbientLight, PointLight, LightingEffect} from '@deck.gl/core'
+import { ColumnLayer } from '@deck.gl/layers'
 
-import 'bulma/css/bulma.css'
+import { StaticMap } from 'react-map-gl'
+import React, { Fragment } from 'react'
+import DeckGL from '@deck.gl/react'
+
+import amplitude from 'amplitude-js'
+
 import 'bulma-pageloader/dist/css/bulma-pageloader.min.css'
+import 'bulma/css/bulma.css'
+
 
 const MAPBOX_ACCESS_TOKEN = 'pk.eyJ1IjoiZHpldGEiLCJhIjoiY2s2cWFvbjBzMDIzZzNsbnhxdHI5eXIweCJ9.wQflyJNS9Klwff3dxtHJzg'
 const AMPLITUDE_DEV = 'a35ebf8c138533d4dc9f9e2a341eca61'
 const AMPLITUDE_PROD = 'f0d03d5f2e5bd29318dcd0c8251638ff'
 const AMPLITUDE_KEY = window.location.hostname !== 'localhost' ? AMPLITUDE_PROD : AMPLITUDE_DEV
-
 
 const collection = 'Yobs'
 const client = Stitch.initializeDefaultAppClient('yobs-wqucd')
@@ -70,7 +71,7 @@ const INFOWINDOW_STYLE = {
     boxShadow: '0 0 3px rgba(0, 0, 0, 0.15)',
     margin: 24,
     padding: '6px 9px',
-    height: '80%',
+    height: '90%',
     overflowX: 'hidden',
     overflowY: 'overlay',
 	outline: 'none',
@@ -85,14 +86,15 @@ const HIDDEN_INFOWINDOW = {
 	boxShadow: '0 0 4px rgba(0, 0, 0, 0)'
 }
 
-const colorRange = [
-	[1, 152, 189],
-	[73, 227, 206],
-	[216, 254, 181],
-	[254, 237, 177],
-	[254, 173, 84],
-	[209, 55, 78]
-]
+const colorRange = {
+	FrontEnd: [1, 152, 189],
+	FullStack: [73, 227, 206],
+	BackEnd: [216, 254, 181],
+	DevOps: [254, 237, 177],
+	Data: [254, 173, 84],
+	Other: [209, 55, 78]
+}
+
 
 class App extends React.Component {
 	constructor(props) {
@@ -110,7 +112,6 @@ class App extends React.Component {
 	}
 
 	async componentDidMount(){
-
 		const {id } = await client.auth.loginWithCredential(new AnonymousCredential())
 		amplitude.getInstance().init(AMPLITUDE_KEY, id)
 		amplitude.getInstance().logEvent('New Visit')
@@ -119,17 +120,15 @@ class App extends React.Component {
 		const yob = yobs[0]
 		this.setState({fake_tooltip: `${yob.title}\n ${yob.city}\n ${yob.salary !== 'N/A' ? yob.salary : ''}` }) 
 		this.setState({ data: yobs })
-//		document.getElementById('deckgl-wrapper').addEventListener('contextmenu', evt => evt.preventDefault())
+		//document.getElementById('deckgl-wrapper').addEventListener('contextmenu', evt => evt.preventDefault())
 	}
 
 	_getTooltip = ({ object }) => {
 		object && this.state.tooltip_id !== object.title 
 			? this.setState({tooltip_id: object.title, tooltipped: true}, () => amplitude.getInstance().logEvent('Set Tooltip', object)) 
-			: null
+			: this.setState({ tooltipped: true })
 
-//		!this.state.tooltipped ? this.setState({ }) : null
-
-		return object 
+		return object
 		? 	{ text:`${object.title}\n ${object.city}\n ${object.salary !== 'N/A' ? object.salary : ''}`, style: TOOLTIP_STYLE }
 		:	null
 	}
@@ -137,7 +136,7 @@ class App extends React.Component {
 	_getInfoWindow = ({ object }) => !this.state.name
 		? 
 			this.setState(
-				{ object: object ? object : {}, cta: !!object }, 
+				{ object: object ? object : {}, cta: !!object, tooltipped: true }, 
 				() => amplitude.getInstance().logEvent('Select Job', object)
 			)
 		: null
@@ -165,17 +164,17 @@ class App extends React.Component {
 			style={ Object.keys(object).length ? INFOWINDOW_STYLE : HIDDEN_INFOWINDOW } 
 			tabIndex="0"
 		>
-			<h2 style={{marginBottom: 8}}> 
-				{ object.title } <br/>
-				<small> { object.salary !== 'N/A' ? object.salary : `Salary: NA` } </small>
+			<h2 className="title is-4">  { object.title } </h2>
+			<h2 className="subtitle is-5" style={{marginBottom:0}}> 
+				{ object.salary !== 'N/A' ? object.salary : `Salary: NA` } 
 			</h2>
 
-			<p style={{marginTop:0}}>
+			<p style={{marginTop: '1.25rem'}}>
 				<img src="location.png" style={{height:24, display: Object.keys(object).length ? 'initial' : 'none'}}/>
 				<i style={{padding:6}}>{ object.address }</i>
 			</p>
 
-			<p> 
+			<p style={{marginTop: '1.25rem'}}>
 				<a 
 					href={`"${object.website}"`}
 					style={{
@@ -191,7 +190,9 @@ class App extends React.Component {
 				{object.pitch}
 			</p>
 
-			<p> <strong>Job Description:</strong> { object.description } </p>
+			<p style={{marginTop: '1.25rem', color: Object.keys(object).length ? '#363636' : 'rgba(255, 255, 255, 0)'}}>
+				<strong>Job Description:</strong> { object.description } 
+			</p>
 
 			{
 				cta
@@ -224,10 +225,12 @@ class App extends React.Component {
 					:	null
 			}
 
-			<p><strong>Requirements:</strong></p>
-			<ul style={{paddingRight:10, paddingLeft: 20}}>
-				{(object.requirements || []).map((i, idx) => <li key={idx}>{i}</li>)}
-			</ul>
+			<p style={{color: Object.keys(object).length ? '#363636' : 'rgba(255, 255, 255, 0)'}}><strong>Requirements:</strong></p>
+			<div class="content">
+				<ol type="i" style={{paddingRight:10}}>
+					{(object.requirements || []).map((i, idx) => <li key={idx}>{i}</li>)}
+				</ol>
+			</div>
 		</div>
 
 		const intro = <div 

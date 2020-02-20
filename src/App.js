@@ -1,18 +1,22 @@
-
 import { RemoteMongoClient, Stitch, AnonymousCredential } from 'mongodb-stitch-browser-sdk'
 
-import React, { Fragment } from 'react'
-import { ColumnLayer } from '@deck.gl/layers'
-import { StaticMap } from 'react-map-gl'
-import DeckGL from '@deck.gl/react'
-import amplitude from 'amplitude-js'
 import {AmbientLight, PointLight, LightingEffect} from '@deck.gl/core'
+import { ColumnLayer } from '@deck.gl/layers'
+
+import { StaticMap } from 'react-map-gl'
+import React, { Fragment } from 'react'
+import DeckGL from '@deck.gl/react'
+
+import amplitude from 'amplitude-js'
+
+import 'bulma-pageloader/dist/css/bulma-pageloader.min.css'
+import 'bulma/css/bulma.css'
+
 
 const MAPBOX_ACCESS_TOKEN = 'pk.eyJ1IjoiZHpldGEiLCJhIjoiY2s2cWFvbjBzMDIzZzNsbnhxdHI5eXIweCJ9.wQflyJNS9Klwff3dxtHJzg'
 const AMPLITUDE_DEV = 'a35ebf8c138533d4dc9f9e2a341eca61'
 const AMPLITUDE_PROD = 'f0d03d5f2e5bd29318dcd0c8251638ff'
 const AMPLITUDE_KEY = window.location.hostname !== 'localhost' ? AMPLITUDE_PROD : AMPLITUDE_DEV
-
 
 const collection = 'Yobs'
 const client = Stitch.initializeDefaultAppClient('yobs-wqucd')
@@ -39,10 +43,10 @@ const pointLight2 = new PointLight({
 
 
 const lightingEffect = new LightingEffect({ambientLight, pointLight1, pointLight2})
-
+ 
 const initialViewState = {
-	latitude: 51.01669,
-	longitude: 4.7853,
+	latitude: 50.6352755,
+	longitude: 4.8634802,
 	zoom: 8,
 	pitch: 40.5,
 	bearing: -27.396674584323023
@@ -67,7 +71,7 @@ const INFOWINDOW_STYLE = {
     boxShadow: '0 0 3px rgba(0, 0, 0, 0.15)',
     margin: 24,
     padding: '6px 9px',
-    height: '80%',
+    height: '90%',
     overflowX: 'hidden',
     overflowY: 'overlay',
 	outline: 'none',
@@ -82,14 +86,15 @@ const HIDDEN_INFOWINDOW = {
 	boxShadow: '0 0 4px rgba(0, 0, 0, 0)'
 }
 
-const colorRange = [
-	[1, 152, 189],
-	[73, 227, 206],
-	[216, 254, 181],
-	[254, 237, 177],
-	[254, 173, 84],
-	[209, 55, 78]
-]
+const colorRange = {
+	FrontEnd: [1, 152, 189],
+	FullStack: [73, 227, 206],
+	BackEnd: [216, 254, 181],
+	DevOps: [254, 237, 177],
+	Data: [254, 173, 84],
+	Other: [209, 55, 78]
+}
+
 
 class App extends React.Component {
 	constructor(props) {
@@ -99,27 +104,31 @@ class App extends React.Component {
 			object: {},
 			name: null,
 			cta: false,
-			tooltip_id: null
+			tooltip_id: null,
+			loaded: false,
+			tooltipped: false,
+			fake_tooltip: null
 		}
 	}
 
 	async componentDidMount(){
-
 		const {id } = await client.auth.loginWithCredential(new AnonymousCredential())
 		amplitude.getInstance().init(AMPLITUDE_KEY, id)
 		amplitude.getInstance().logEvent('New Visit')
 
 		const yobs = await get_yobs()
+		const yob = yobs[0]
+		this.setState({fake_tooltip: `${yob.title}\n ${yob.city}\n ${yob.salary !== 'N/A' ? yob.salary : ''}` }) 
 		this.setState({ data: yobs })
-//		document.getElementById('deckgl-wrapper').addEventListener('contextmenu', evt => evt.preventDefault())
+		//document.getElementById('deckgl-wrapper').addEventListener('contextmenu', evt => evt.preventDefault())
 	}
 
 	_getTooltip = ({ object }) => {
 		object && this.state.tooltip_id !== object.title 
-			? this.setState({tooltip_id: object.title}, () => amplitude.getInstance().logEvent('Set Tooltip', object)) 
-			: null
+			? this.setState({tooltip_id: object.title, tooltipped: true}, () => amplitude.getInstance().logEvent('Set Tooltip', object)) 
+			: this.setState({ tooltipped: true })
 
-		return object 
+		return object
 		? 	{ text:`${object.title}\n ${object.city}\n ${object.salary !== 'N/A' ? object.salary : ''}`, style: TOOLTIP_STYLE }
 		:	null
 	}
@@ -127,13 +136,13 @@ class App extends React.Component {
 	_getInfoWindow = ({ object }) => !this.state.name
 		? 
 			this.setState(
-				{ object: object ? object : {}, cta: !!object }, 
+				{ object: object ? object : {}, cta: !!object, tooltipped: true }, 
 				() => amplitude.getInstance().logEvent('Select Job', object)
 			)
 		: null
 
 	render() {
-		const { object, cta, data } = this.state
+		const { object, cta, data, loaded, tooltipped, fake_tooltip } = this.state
 
 		const layers = [
 			new ColumnLayer({
@@ -155,17 +164,17 @@ class App extends React.Component {
 			style={ Object.keys(object).length ? INFOWINDOW_STYLE : HIDDEN_INFOWINDOW } 
 			tabIndex="0"
 		>
-			<h2 style={{marginBottom: 8}}> 
-				{ object.title } <br/>
-				<small> { object.salary !== 'N/A' ? object.salary : `Salary: NA` } </small>
+			<h2 className="title is-4">  { object.title } </h2>
+			<h2 className="subtitle is-5" style={{marginBottom:0}}> 
+				{ object.salary !== 'N/A' ? object.salary : `Salary: NA` } 
 			</h2>
 
-			<p style={{marginTop:0}}>
+			<p style={{marginTop: '1.25rem'}}>
 				<img src="location.png" style={{height:24, display: Object.keys(object).length ? 'initial' : 'none'}}/>
 				<i style={{padding:6}}>{ object.address }</i>
 			</p>
 
-			<p> 
+			<p style={{marginTop: '1.25rem'}}>
 				<a 
 					href={`"${object.website}"`}
 					style={{
@@ -181,7 +190,9 @@ class App extends React.Component {
 				{object.pitch}
 			</p>
 
-			<p> <strong>Job Description:</strong> { object.description } </p>
+			<p style={{marginTop: '1.25rem', color: Object.keys(object).length ? '#363636' : 'rgba(255, 255, 255, 0)'}}>
+				<strong>Job Description:</strong> { object.description } 
+			</p>
 
 			{
 				cta
@@ -214,19 +225,35 @@ class App extends React.Component {
 					:	null
 			}
 
-			<p><strong>Requirements:</strong></p>
-			<ul style={{paddingRight:10, paddingLeft: 20}}>
-				{(object.requirements || []).map((i, idx) => <li key={idx}>{i}</li>)}
-			</ul>
+			<p style={{color: Object.keys(object).length ? '#363636' : 'rgba(255, 255, 255, 0)'}}><strong>Requirements:</strong></p>
+			<div class="content">
+				<ol type="i" style={{paddingRight:10}}>
+					{(object.requirements || []).map((i, idx) => <li key={idx}>{i}</li>)}
+				</ol>
+			</div>
 		</div>
 
 		const intro = <div 
+			className={`pageloader ${!loaded ? 'is-active' : null}`}
+			style={{backgroundColor: '#333',}}
+		><span className="title">Finding the best jobs for you...</span></div>
+
+		const onboarding_tooltip = <div 
+			className="deck-tooltip" 
 			style={{
-				height: '100vh',
-				width: '100vw',
-				backgroundColor: '#333'
+				zIndex: 9, 
+				position: 'absolute', 
+				pointerEvents: 'none', 
+				color: 'rgb(0, 0, 0)', 
+				background: 'rgba(255, 255, 255, 0.95)', 
+				padding: 20, 
+				display: 'block', 
+				fontWeight: 600, 
+				transform: 'translate(-1px, -1px)', 
+				top: '50%', 
+				left: '50%'
 			}}
-		/>
+			>{ fake_tooltip }</div>
 
 		const main = <DeckGL
 			onContextMenu={event => event.preventDefault()}
@@ -243,10 +270,16 @@ class App extends React.Component {
 				onContextMenu={event => event.preventDefault()}
 				mapboxApiAccessToken={MAPBOX_ACCESS_TOKEN} 
 				mapStyle='mapbox://styles/mapbox/dark-v10'
+				attributionControl={false}
+				onLoad={()=> setTimeout(() => this.setState({loaded: true}), 1000)}
 			/>
 		</DeckGL>
 
-		return main
+		return <Fragment>
+			{ intro }
+			{ !tooltipped ? onboarding_tooltip : null }
+			{ main }
+		</Fragment>
 	}
 }
 

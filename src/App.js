@@ -11,6 +11,7 @@ import amplitude from 'amplitude-js'
 
 import 'bulma-pageloader/dist/css/bulma-pageloader.min.css'
 import 'bulma/css/bulma.css'
+import './App.css'
 
 
 const MAPBOX_ACCESS_TOKEN = 'pk.eyJ1IjoiZHpldGEiLCJhIjoiY2s2cWFvbjBzMDIzZzNsbnhxdHI5eXIweCJ9.wQflyJNS9Klwff3dxtHJzg'
@@ -62,6 +63,13 @@ const TOOLTIP_STYLE = {
 	zIndex: 9
 }
 
+const MAP_STYLES = [
+	'light-v10',
+	'dark-v10',
+	'outdoors-v11',
+	'satellite-v9'
+]
+
 const INFOWINDOW_STYLE = {
 	position: 'absolute',
     right: 0,
@@ -76,7 +84,8 @@ const INFOWINDOW_STYLE = {
     overflowY: 'overlay',
 	outline: 'none',
 	paddingRight: 20,
-	paddingLeft: 10
+	paddingLeft: 10,
+	paddingTop: 10
 }
 
 const HIDDEN_INFOWINDOW = {
@@ -87,11 +96,11 @@ const HIDDEN_INFOWINDOW = {
 }
 
 const colorRange = {
-	FrontEnd: [1, 152, 189],
-	FullStack: [73, 227, 206],
-	BackEnd: [216, 254, 181],
-	DevOps: [254, 237, 177],
-	Data: [254, 173, 84],
+	FrontEnd: [88,81,145], // [1, 152, 189],
+	FullStack: [255,126,107], // [73, 227, 206],
+	BackEnd: [112,196,70], // [216, 254, 181],
+	DevOps: [166,0,103], // [254, 237, 177],
+	Data: [247,178,183], // [254, 173, 84],
 	Other: [209, 55, 78]
 }
 
@@ -120,7 +129,7 @@ class App extends React.Component {
 		const yob = yobs[0]
 		this.setState({fake_tooltip: `${yob.title}\n ${yob.city}\n ${yob.salary !== 'N/A' ? yob.salary : ''}` }) 
 		this.setState({ data: yobs })
-		//document.getElementById('deckgl-wrapper').addEventListener('contextmenu', evt => evt.preventDefault())
+		document.getElementById('deckgl-wrapper').addEventListener('contextmenu', evt => evt.preventDefault())
 	}
 
 	_getTooltip = ({ object }) => {
@@ -164,8 +173,17 @@ class App extends React.Component {
 			style={ Object.keys(object).length ? INFOWINDOW_STYLE : HIDDEN_INFOWINDOW } 
 			tabIndex="0"
 		>
+			{
+				Object.keys(object).length 
+					?
+						<img
+							style={{height: 20, float: 'right', margin:4}} 
+							src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRDuVVa-KzkV-_b1M-AIuaxidRmbyRmz_I0SxhbvJ-974Vd_yZG" 
+						/>
+					:	null
+			}
 			<h2 className="title is-4">  { object.title } </h2>
-			<h2 className="subtitle is-5" style={{marginBottom:0}}> 
+			<h2 className="subtitle is-5" style={{marginBottom:0, color: '#822'}}> 
 				{ object.salary !== 'N/A' ? object.salary : `Salary: NA` } 
 			</h2>
 
@@ -190,8 +208,9 @@ class App extends React.Component {
 				{object.pitch}
 			</p>
 
-			<p style={{marginTop: '1.25rem', color: Object.keys(object).length ? '#363636' : 'rgba(255, 255, 255, 0)'}}>
-				<strong>Job Description:</strong> { object.description } 
+			<p style={{marginTop: '1.25rem'}}>
+				<strong style={{color: Object.keys(object).length ? '#363636' : 'rgba(255, 255, 255, 0)'}}>Job Description:</strong> 
+				{ object.description } 
 			</p>
 
 			{
@@ -225,8 +244,11 @@ class App extends React.Component {
 					:	null
 			}
 
-			<p style={{color: Object.keys(object).length ? '#363636' : 'rgba(255, 255, 255, 0)'}}><strong>Requirements:</strong></p>
-			<div class="content">
+			<p>
+				<strong style={{color: Object.keys(object).length ? '#363636' : 'rgba(255, 255, 255, 0)'}}>Requirements:</strong>
+			</p>
+
+			<div className="content">
 				<ol type="i" style={{paddingRight:10}}>
 					{(object.requirements || []).map((i, idx) => <li key={idx}>{i}</li>)}
 				</ol>
@@ -235,8 +257,9 @@ class App extends React.Component {
 
 		const intro = <div 
 			className={`pageloader ${!loaded ? 'is-active' : null}`}
-			style={{backgroundColor: '#333',}}
-		><span className="title">Finding the best jobs for you...</span></div>
+			style={{backgroundColor: '#9ed0e2' }}
+			// style={{backgroundColor: '#333' }} // Darkmode
+		><span className="title" style={{ color:'#1e5163' }}>Finding the best jobs for you...</span></div>
 
 		const onboarding_tooltip = <div 
 			className="deck-tooltip" 
@@ -269,7 +292,7 @@ class App extends React.Component {
 			<StaticMap 
 				onContextMenu={event => event.preventDefault()}
 				mapboxApiAccessToken={MAPBOX_ACCESS_TOKEN} 
-				mapStyle='mapbox://styles/mapbox/dark-v10'
+				mapStyle={`mapbox://styles/mapbox/${MAP_STYLES[2]}`}
 				attributionControl={false}
 				onLoad={()=> setTimeout(() => this.setState({loaded: true}), 1000)}
 			/>

@@ -1,3 +1,101 @@
+[{
+    "title": "Front-end Developer (VueJs or React)",
+    "salary": "N/A",
+    "address": "Amsterdam, Netherlands",
+    "company": "Orderchamp",
+    "website": "https://www.orderchamp.com/",
+    "pitch": "Order from more than 700 inspirational brands with 50,000 unique products!",
+    "description": "Orderchamp is seeking a full-time (Senior) Front-End Developer to join our team in Amsterdam. We are looking for a pro-active, senior software developer with experience building large scale SaaS applications.",
+    "link": "http://www.startus.cc/job/front-end-developer-vuejs-or-react",
+    "requirements": [
+        "You can turn a small idea into a feature and ship it fast",
+        "You love to ship often and iterate",
+        "You can work very independently",
+        "You dream about unit testing."
+    ],
+
+    "category": "FrontEnd",
+    "value": 0,
+    "centroid": [],
+    "city": "Amsterdam",
+    "source": "https://www.startus.cc/",
+    "hasSalary": false
+}, 
+
+{
+    "title": "Senior Python developer - E-commerce",
+    "salary": "N/A",
+    "address": "Amsterdam, Netherlands",
+    "company": "Emesa",
+    "website": "https://www.emesa.co.uk/#about-emesa",
+    "pitch": "As an international e-commerce player, Emesa wants to make the online shopping experience more fun and exciting for young and old.",
+    "description": "As a Senior Python developer at Emesa you will make sure that our applications are performing well, secure, stable and will remain to be so for the benefit of our customers and internal stakeholders.",
+    "link": "http://www.startus.cc/job/senior-python-developer-e-commerce-0",
+    "requirements": [
+        "You love to write and optimize code and solve difficult problems.",
+        "University / bachelor level degree in Computer Science, Electronic Engineering or Mathematics.",
+        "Minimum of two years recent experience in a similar position in an agile environment or just an impressive track record / portfolio.",
+        "Knowledge and experience with Python (2.x, 3.x) and at least one of the popular web frameworks, ORM's."
+    ],
+
+    "category": "BackEnd",
+    "value": 0,
+    "centroid": [],
+    "city": "Amsterdam",
+    "source": "https://www.startus.cc/",
+    "hasSalary": false
+}, 
+
+{
+    "title": "Backend Developer",
+    "salary": "N/A",
+    "address": "Amsterdam, Netherlands",
+    "company": "Lightspeed",
+    "website": "https://www.lightspeedhq.co.uk/?rac=true",
+    "pitch": " is the leading provider of Omnichannel and restaurant software",
+    "description": "If you believe that continuous integration, deploying your code multiple times a day to production is how modern code should be produced, this job is for you",
+    "link": "https://www.startus.cc/job/backend-developer-293",
+    "requirements": [
+        "Develop next-generation scalable, flexible, and high-performance systems",
+        "have total ownership over your project to improve our e-commerce product",
+        "solve issues and prioritize based on customer impact",
+        "act as an intermediary for problems, with both technical and non-technical audiences."
+    ],
+
+    "category": "BackEnd",
+    "value": 0,
+    "centroid": [],
+    "city": "Amsterdam",
+    "source": "https://www.startus.cc/",
+    "hasSalary": false
+}, 
+
+{
+    "title": "QA Engineer",
+    "salary": "N/A",
+    "address": "Ghent | Lisbon | Amsterdam",
+    "company": "Teamleader",
+    "website": "",
+    "pitch": "We offer all-in-one cloud software for CRM, project management and invoicing.",
+    "description": "As a QA engineer, we expect you to proactively support the scrum teams, ensuring high quality from the early stages of the development process. You will be the safekeeper of our zero-bug policy. ",
+    "link": "https://www.startus.cc/job/qa-engineer-ghent-lisbon-amsterdam-engineering-ghent-belgium-ghent-belgium-en-engineering",
+    "requirements": [
+        "Have 2-5 years worth of experience in a similar role",
+        "Are passionate about testing methodologies and root-cause analysis",
+        "Share business analytical skills",
+        "Have great verbal and written communication skills",
+        "Speak English fluently",
+        "Boast a can-do, make-it-happen attitude"
+    ],
+
+    "category": "",
+    "value": 0,
+    "centroid": [],
+    "city": "",
+    "source": "",
+    "hasSalary": false
+}, 
+
 {
     "title": "",
     "salary": "",
@@ -7,12 +105,118 @@
     "pitch": "",
     "description": "",
     "link": "",
-    "requirements": "",
+    "requirements": [],
 
-    "_id": "",
     "category": "",
-    "value": "",
-    "centroid": "",
+    "value": 0,
+    "centroid": [],
     "city": "",
-    "source": ""
-}
+    "source": "",
+    "hasSalary": false
+}, 
+
+{
+    "title": "",
+    "salary": "",
+    "address": "",
+    "company": "",
+    "website": "",
+    "pitch": "",
+    "description": "",
+    "link": "",
+    "requirements": [],
+
+    "category": "",
+    "value": 0,
+    "centroid": [],
+    "city": "",
+    "source": "",
+    "hasSalary": false
+}, {
+    "title": "",
+    "salary": "",
+    "address": "",
+    "company": "",
+    "website": "",
+    "pitch": "",
+    "description": "",
+    "link": "",
+    "requirements": [],
+
+    "category": "",
+    "value": 0,
+    "centroid": [],
+    "city": "",
+    "source": "",
+    "hasSalary": false
+}, {
+    "title": "",
+    "salary": "",
+    "address": "",
+    "company": "",
+    "website": "",
+    "pitch": "",
+    "description": "",
+    "link": "",
+    "requirements": [],
+
+    "category": "",
+    "value": 0,
+    "centroid": [],
+    "city": "",
+    "source": "",
+    "hasSalary": false
+}, {
+    "title": "",
+    "salary": "",
+    "address": "",
+    "company": "",
+    "website": "",
+    "pitch": "",
+    "description": "",
+    "link": "",
+    "requirements": [],
+
+    "category": "",
+    "value": 0,
+    "centroid": [],
+    "city": "",
+    "source": "",
+    "hasSalary": false
+}, {
+    "title": "",
+    "salary": "",
+    "address": "",
+    "company": "",
+    "website": "",
+    "pitch": "",
+    "description": "",
+    "link": "",
+    "requirements": [],
+
+    "category": "",
+    "value": 0,
+    "centroid": [],
+    "city": "",
+    "source": "",
+    "hasSalary": false
+}, {
+    "title": "",
+    "salary": "",
+    "address": "",
+    "company": "",
+    "website": "",
+    "pitch": "",
+    "description": "",
+    "link": "",
+    "requirements": [],
+
+    "category": "",
+    "value": 0,
+    "centroid": [],
+    "city": "",
+    "source": "",
+    "hasSalary": false
+}]
+
+

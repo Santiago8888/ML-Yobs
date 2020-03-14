@@ -37,22 +37,7 @@ const yob_requirements = x => x
         .reduce((d, i) => d = d[0]+i.length < 500 ? [d[0] + i.length, [...d[1], `${i.substring(0,i.length-1)}.`.replace(/\s+/g,' ')]] : d, [0, []])[1]
     :   []
 
-const new_yob = yob => ({
-    website: null,
-    company: `${capitalize(yob[9])} (${capitalize(yob[20])})`,
-    title: yob[12],
-    salary: `$${add_comma_separator(yob[16])} - $${add_comma_separator(yob[17])}`,
-    address: yob[19],
-    description: yob_descriptor(yob[21]),
-    requirements: yob_requirements(yob[23]),
-    link: yob[25],
 
-    value: Math.round((Number(yob[16]) + Number(yob[17]))/2)
-})
-
-
-const get_all_locations = () => [...new Set(data.map((yob, i) => `${new_yob(yob).address}, New York, USA`))]
-const locations = get_all_locations()
 const location_token = '116f5028fcc19b'
 const location_settings = address => ({
     async: true,
@@ -62,30 +47,51 @@ const location_settings = address => ({
 })
 
 
-const get_location_url = ({ address }) => `https://us1.locationiq.com/v1/search.php?key=${location_token}&q=${address}&format=json`
-const get_coordinates = async(url) => {
+const get_location_url = address => `https://us1.locationiq.com/v1/search.php?key=${location_token}&q=${address}&format=json`
+const get_coordinates = async yob => {
+    const location_url = get_location_url(yob)
     const { data = [{}] } = await axios.get(location_url)
-    print(data)
-    print(data[0])
-    print()
-    print()
     return [data[0].lat, data[0].lon]
 }
 
-const yob_with_location = yob => ({
-    ...new_yob(yob),
-    centroid: get_coordinates(yob)
-})
 
+const do_get_coordinates = false
+const new_yob = async yob => {
+    const centroid = do_get_coordinates ? await get_coordinates(`${yob[19]}, New York, USA`) : [0, 0]
+    return {
+        title: yob[12],
+        salary: `$${add_comma_separator(yob[16])} - $${add_comma_separator(yob[17])}`,
+        address: yob[19],
+        company: `${capitalize(yob[9])} (${capitalize(yob[20])})`,
+        website: null,
+        pitch: '',
+        description: yob_descriptor(yob[21]),
+        link: yob[25],
+        requirements: yob_requirements(yob[23]),
 
-get_coordinates(new_yob(data[0]))
+        category: 'TO DO',
+        value: Math.round((Number(yob[16]) + Number(yob[17]))/2),
+        centroid: centroid,
+        city: capitalize(yob[9]),
+        source: 'Open Data',
+        hasSalary: true
+    }
+}
+
+const yob = data[0]
+new_yob(yob).then(print)
+
 
 /*
 
-Make request.
-Retrieve data (lat, lng)
-Create new Collection
-Store on new New Collection.
-Retrive coordinates
+Make request. (Done)
+Retrieve data - lat, lng. (Done)
+Create new Collection (N/A)
+Store on new New Collection. (N/A)
+Retrive coordinates. (N/A)
 
 */
+
+
+const get_all_locations = () => [...new Set(data.map((yob, i) => `${new_yob(yob).address}, New York, USA`))]
+// const locations = get_all_locations()

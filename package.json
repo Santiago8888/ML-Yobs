@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "amplitude-js": "^5.9.0",
+    "axios": "^0.19.2",
     "bulma": "^0.8.0",
     "bulma-pageloader": "^0.3.0",
     "deck.gl": "^8.0.15",
@@ -20,6 +21,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "bash": "node -r esm cv"
+    "bash": "node -r esm scripts/nyc"
   }
 }

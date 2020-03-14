@@ -38,6 +38,18 @@ const yob_requirements = x => x
     :   []
 
 
+
+
+/*
+
+    Make request. (Done)
+    Retrieve data - lat, lng. (Done)
+    Create new Collection (N/A)
+    Store on new New Collection. (N/A)
+    Retrive coordinates. (N/A)
+
+*/
+
 const location_token = '116f5028fcc19b'
 const location_settings = address => ({
     async: true,
@@ -45,7 +57,6 @@ const location_settings = address => ({
     url: encodeURI(`https://us1.locationiq.com/v1/search.php?key=${location_token}&q=${address}&format=json`),
     method: 'GET'
 })
-
 
 const get_location_url = address => `https://us1.locationiq.com/v1/search.php?key=${location_token}&q=${address}&format=json`
 const get_coordinates = async yob => {
@@ -56,42 +67,59 @@ const get_coordinates = async yob => {
 
 
 const do_get_coordinates = false
-const new_yob = async yob => {
-    const centroid = do_get_coordinates ? await get_coordinates(`${yob[19]}, New York, USA`) : [0, 0]
-    return {
-        title: yob[12],
-        salary: `$${add_comma_separator(yob[16])} - $${add_comma_separator(yob[17])}`,
-        address: yob[19],
-        company: `${capitalize(yob[9])} (${capitalize(yob[20])})`,
-        website: null,
-        pitch: '',
-        description: yob_descriptor(yob[21]),
-        link: yob[25],
-        requirements: yob_requirements(yob[23]),
+const new_yob = async yob => ({
+    title: yob[12],
+    salary: `$${add_comma_separator(yob[16])} - $${add_comma_separator(yob[17])}`,
+    address: yob[19],
+    company: `${capitalize(yob[9])} (${capitalize(yob[20])})`,
+    website: null,
+    pitch: '',
+    description: yob_descriptor(yob[21]),
+    link: yob[25],
+    requirements: yob_requirements(yob[23]),
 
-        category: 'TO DO',
-        value: Math.round((Number(yob[16]) + Number(yob[17]))/2),
-        centroid: centroid,
-        city: capitalize(yob[9]),
-        source: 'Open Data',
-        hasSalary: true
-    }
-}
+    category: 'TO DO',
+    value: Math.round((Number(yob[16]) + Number(yob[17]))/2),
+    centroid: do_get_coordinates ? await get_coordinates(`${yob[19]}, New York, USA`) : [0, 0],
+    city: capitalize(yob[9]),
+    source: 'Open Data',
+    hasSalary: true
+})
 
-const yob = data[0]
-new_yob(yob).then(print)
 
 
 /*
 
-Make request. (Done)
-Retrieve data - lat, lng. (Done)
-Create new Collection (N/A)
-Store on new New Collection. (N/A)
-Retrive coordinates. (N/A)
+
+    Get all Job Titles. ()
+    Save to JSON. ()
+    Upload to Drive. ()
+    Retrieve in Drive. ()
+    Run Notebook. ()
+    Create Clusters. ()
+    Read Clusters. ()
+    Update Last Method. ()
+
 
 */
 
+const get_all_titles = () => Promise.all(data.slice(0,330).map(async yob => await new_yob(yob))).then(x => x.map(({ title}) => title))
+get_all_titles().then(x => print(x.length))
+get_all_titles().then(x => print([...new Set(x)].length))
+get_all_titles().then(x => [...new Set(x)].map(t => print(`"${t}",`)))
 
-const get_all_locations = () => [...new Set(data.map((yob, i) => `${new_yob(yob).address}, New York, USA`))]
-// const locations = get_all_locations()
+
+//get_all_titles().then(print)
+
+//titles.map(t => print(t))
+
+
+
+/*
+const yob = data[0]
+new_yob(yob).then(print)
+*/
+
+
+// var promises = [obj1, obj2].map(obj => db.query('obj1.id').then(results => obj1.rows))
+// Promise.all(promises).then(console.log)

@@ -1,0 +1,250 @@
+[
+    {
+        "_id":{
+            "$oid":"5e4b8a572f94fc440badb390"
+        },
+        "title":"Software Developer",
+        "category":{
+            "$numberInt":"2"
+        },
+        "salary":"$50,000",
+        "value":{
+            "$numberInt":"50000"
+        },
+        "centroid":[
+            {
+                "$numberDouble":"4.8634802"
+            },
+            {
+                "$numberDouble":"50.6352755"
+            }
+        ],
+        "address":"Chaussée de Namur 40 • 1367 Grand-Rosière • Belgium",
+        "city":"Grand-Rosière",
+        "description":"If you are passionate about development, then it is time to work on a great Open Source project where your work will count! Join our experienced team of Developers, and develop things people care about. Each employee has a chance to see the impact of his work and make a real contribution to the success of the company.  Python & JavaScript",
+        "company":"Odoo",
+        "link":"https://www.odoo.com/jobs/detail/software-developer-1",
+        "requirements":[
+            "Programming Languages: Python & JavaScript",
+            "Database: PostgreSQL (with object relational mapping)",
+            "Collaboration platform: GitHub",
+            "Development model: Open with external community",
+            "Framework: Odoo (ORM, Workflows, Report Engine, BI, AI)"
+        ],
+        "website":"https://www.odoo.com/",
+        "pitch":"Odoo is the best management software to run a company. Millions of happy users work better with our integrated Apps."
+    },
+    {
+        "_id":{
+            "$oid":"5e4b8b0f2f94fc440badb391"
+        },
+        "title":"DEVOPS ENGINEER",
+        "category":{
+            "$numberInt":"3"
+        },
+        "salary":"N/A",
+        "value":{
+            "$numberInt":"0"
+        },
+        "centroid":[
+            {
+                "$numberDouble":"4.4997081"
+            },
+            {
+                "$numberDouble":"51.2211097"
+            }
+        ],
+        "address":"Antwerp/Ghent, Belgium",
+        "city":"Antwerp",
+        "description":"Cashforce, a fintech scale-up, is currently seeking a passionate DevOps Engineer to join and help build our team. We are currently in the international roll-out phase and look forward to welcome a results-driven colleague to strengthen our fast-growing company.",
+        "requirements":[
+            "Support the implementation of automation tools and frameworks (CI/CD pipelines).",
+            "Help improve the company’s engineering tools, systems and procedures.",
+            "Ensure flawless deployment of the Cashforce modules.",
+            "Liaise with Delivery and Development teams to plan and execute deployment.",
+            "Perform root cause analysis of production errors.",
+            "Create and maintain detailed system and process documentation."
+        ],
+        "company":"Cashforce",
+        "link":"https://cashforce.com/company/careers/",
+        "website":"https://cashforce.com/",
+        "pitch":"Cashforce, a ‘next-generation’ platform focused on automation and integration."
+    },
+    {
+        "_id":{
+            "$oid":"5e4b8b432f94fc440badb392"
+        },
+        "title":"SOFTWARE ENGINEER ",
+        "category":{
+            "$numberInt":"2"
+        },
+        "salary":"N/A",
+        "value":{
+            "$numberInt":"0"
+        },
+        "centroid":[
+            {
+                "$numberDouble":"4.3997081"
+            },
+            {
+                "$numberDouble":"51.2211097"
+            }
+        ],
+        "address":"Antwerp/Ghent, Belgium",
+        "city":"Antwerp",
+        "description":"Cashforce, a fintech scale-up, is currently seeking a passionate Software Engineer to join and help build our team. We are currently in the international roll-out phase and look forward to welcome a results-driven colleague to strengthen our fast-growing company.",
+        "requirements":[
+            "You have minimum 3 years of experience in database programming in QlikView or have extensive experience with similar tools.",
+            "You are goal-oriented, pragmatic and have good analytical capabilities",
+            "Interested in Finance / FinTech",
+            "You are motivated and interested working in a fast-paced, scale-up environment."
+        ],
+        "company":"Cashforce",
+        "link":"https://cashforce.com/company/careers/",
+        "website":"https://cashforce.com/",
+        "pitch":"Cashforce, a ‘next-generation’ platform focused on automation and integration."
+    },
+    {
+        "_id":{
+            "$oid":"5e4b8b952f94fc440badb394"
+        },
+        "company":"Cohabs",
+        "website":"https://www.cohabs.com/",
+        "pitch":"Experience the future of living. We create sustainable & community-driven shared homes around the world.",
+        "title":"Senior Full-Stack Engineer",
+        "category":{
+            "$numberInt":"1"
+        },
+        "salary":"$65k – $84k",
+        "value":{
+            "$numberInt":"75000"
+        },
+        "address":"Brussels, New York City, Remote",
+        "city":"Brussels",
+        "centroid":[
+            {
+                "$numberDouble":"4.36743669338796"
+            },
+            {
+                "$numberDouble":"50.8436709"
+            }
+        ],
+        "description":"We are looking for our first in-house developers to take full ownership of the initially outsourced development. We've improved vacancy management –a key part of our business– already, now it's time to do the rest (financial follow-ups, property management, houses expenditures, etc.)",
+        "requirements":[
+            "Implement new projects and features (front-end, back-end) from concept to completion",
+            "Troubleshoot and debug existing applications",
+            "Write clean, testable code with unit tests",
+            "Manage cutting-edge technologies to improve legacy applications",
+            "Collaborate with front-end developers to integrate user-facing elements with server side logic",
+            "Build and improve code across the entire stack. Quality is not a trade-off.",
+            "Contribute to building our engineering team: participate in technical reviews, architecture, design systems"
+        ],
+        "link":"https://angel.co/company/cohabs-coliving/jobs/725685-senior-full-stack-engineer",
+        "video":"https://vimeo.com/337767477"
+    },
+    {
+        "_id":{
+            "$oid":"5e4b8bae2f94fc440badb395"
+        },
+        "company":"esoptra",
+        "website":"https://esoptra.com/",
+        "pitch":"Radically simplify data access and content sharing. A QR code or simple URL to carry any digital content to your customers and return their feedback.",
+        "title":"DataOps Engineer",
+        "category":{
+            "$numberInt":"4"
+        },
+        "salary":"N/A",
+        "value":{
+            "$numberInt":"0"
+        },
+        "address":"Herentals",
+        "city":"Herentals",
+        "centroid":[
+            {
+                "$numberDouble":"4.83464460984999"
+            },
+            {
+                "$numberDouble":"51.1855514"
+            }
+        ],
+        "description":"Esoptra is looking for talented engineers with a passion for contemporary technologies and processes. Esoptra combines Site Reliability Engineering practices for its platform and services that are cloud oriented with plug-in functions (pluglets) for data operations and user interfaces.",
+        "requirements":[
+            "We use scrum for agile development using tools such a Jira for project management, OpsGenie for operations management.",
+            "We use Github and Jenkins for continuous integration and continuous deployment.",
+            "We use tools such as Rundeck, Prometheus, Grafana or Kibana to help development and operations.",
+            "We integrate core Linux features such as container namespaces or higher level technologies such as WebDAV, Object Storage, Elastic Search, Let’s Encrypt, Consul and SQL databases. Esoptra, our customers and third-parties may write pluglets."
+        ],
+        "link":"https://esoptra.com/data-ops-engineer/"
+    },
+    {
+        "_id":{
+            "$oid":"5e4b8bbe2f94fc440badb396"
+        },
+        "company":"centralapp",
+        "website":"https://www.centralapp.com/en",
+        "pitch":"Take back control of your online presence. Trusted by more than 1.000 local businesses",
+        "title":"Frontend Engineer",
+        "category":{
+            "$numberInt":"0"
+        },
+        "salary":"N/A",
+        "value":{
+            "$numberInt":"0"
+        },
+        "address":"Brussels, Brussels, Belgium",
+        "city":"Brussels",
+        "centroid":[
+            {
+                "$numberDouble":"4.36743669338796"
+            },
+            {
+                "$numberDouble":"50.7436709"
+            }
+        ],
+        "description":"You will be contributing to our products impacting millions of people, using cutting edge technologies and working in tandem with the backend and design teams. Such products include the responsive single page app our clients use to manage their online presence, as well as the platform powering our clients websites. Occasionally, you might also help the marketing team build landing pages and other tools.",
+        "requirements":[
+            "React (with server-side rendering, JSX)",
+            "CSS in JS (styled components)",
+            "Webpack",
+            "ESLint",
+            "Node.js"
+        ],
+        "link":"https://apply.workable.com/centralapp/j/370B64337F/"
+    },
+    {
+        "_id":{
+            "$oid":"5e4b8bcb2f94fc440badb397"
+        },
+        "title":"Full Stack Software Engineer",
+        "category":{
+            "$numberInt":"1"
+        },
+        "company":"SWEEPATIC",
+        "website":"https://www.sweepatic.com/",
+        "pitch":"24x7 Attack Surface Management",
+        "salary":"N/A",
+        "value":{
+            "$numberInt":"0"
+        },
+        "address":"Leuven, Belgium",
+        "city":"Leuven",
+        "centroid":[
+            {
+                "$numberDouble":"4.7011675"
+            },
+            {
+                "$numberDouble":"50.879202"
+            }
+        ],
+        "description":"We are looking for a passionate full stack software engineer. You should be comfortable with Python, JavaScript, Linux and be acquainted with the latest software development good practices and tools.",
+        "requirements":[
+            "You will be responsible for vertical integration of new features and research",
+            "You’ll implement both the frontend and backend",
+            "You build it, you run it. DevOps workflow with support from your colleagues",
+            "Suggest and improve more automation where it makes sense",
+            "Experience in using git, ideally in a team setting",
+            "Provide support to our threat hunters"
+        ],
+        "link":"https://735f10ab-7ef8-491c-9673-05eecd55f2a7.filesusr.com/ugd/f4fd4e_249d484649a147eeb3efea1d0ef01b68.pdf"
+    }
+]

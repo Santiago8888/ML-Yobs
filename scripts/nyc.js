@@ -4,23 +4,25 @@
     2. Init Model. (Done)
     3. Add Salary. (Done)
     4. Parse Description. (Done)
-    5. Handle Coordinates. ()
-    6. Handle Category. ()
-    7. Save First Documents (10?)
+    5. Handle Coordinates. (Done)
+    6. Handle Category. (Done)
+    7. Save First Documents (10)
     8. Test Locally. ()
-    9. Save Next Batch (1 K).
+    9. Save Next Batch ().
     10. Update App. ()
     11. Deploy. ()
     12. Save Remaning. ()
 
 */
 
+import { Stitch, RemoteMongoClient, AnonymousCredential } from 'mongodb-stitch-server-sdk'
+import axios from 'axios'
+
 
 import categories from '../data/categories'
 import titles from '../data/titles.json'
 import { data } from '../data/nyc.json'
 
-import axios from 'axios'
 
 
 const print = x => console.log(x)
@@ -64,7 +66,7 @@ const get_location_url = address => `https://us1.locationiq.com/v1/search.php?ke
 const get_coordinates = async yob => {
     const location_url = get_location_url(yob)
     const { data = [{}] } = await axios.get(location_url)
-    return [data[0].lat, data[0].lon]
+    return [Number(data[0].lon), Number(data[0].lat)]
 }
 
 
@@ -113,11 +115,43 @@ const new_yob = async yob => ({
     centroid: do_get_coordinates ? await get_coordinates(`${yob[19]}, New York, USA`) : [0, 0],
     city: capitalize(yob[9]),
     source: 'Open Data',
-    hasSalary: true
+    hasSalary: true,
+
+    version: 2
 })
 
 
-
+/*
 // Main test.
 const yob = data[0]
 new_yob(yob).then(print)
+*/
+
+
+// Document Saver
+const collection = 'Yobs'
+const client = Stitch.initializeDefaultAppClient('yobs-wqucd')
+
+const get_db = async () => {
+    await client.auth.loginWithCredential(new AnonymousCredential())
+    return client.getServiceClient(RemoteMongoClient.factory, 'mongodb-atlas').db(collection)
+}
+
+const post_one = (new_doc, db) => db.collection(collection).insertOne(new_doc).catch(print)
+
+const save_first_yob = async() => {
+    const db = await get_db()
+    const yob = await new_yob(data[0])
+    post_one(yob , db)
+    client.close()
+} 
+
+
+const save_yobs = async yobs => {
+    const db = await get_db()
+    yobs.map((y, i) => setTimeout(async () => post_one(await new_yob(y), db), 1000*i))
+    setTimeout(() => client.close(), 1000*(yobs.length + 1))
+}
+
+
+// save_yobs(data.slice(11, 12))

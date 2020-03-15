@@ -16,7 +16,10 @@
 */
 
 
+import categories from '../data/categories'
+import titles from '../data/titles.json'
 import { data } from '../data/nyc.json'
+
 import axios from 'axios'
 
 
@@ -36,7 +39,6 @@ const yob_requirements = x => x
         x.replace(/â.¢\t+/gi, '.').replace(/o\t/gi, '').split('.').filter(x=>x.length>1)
         .reduce((d, i) => d = d[0]+i.length < 500 ? [d[0] + i.length, [...d[1], `${i.substring(0,i.length-1)}.`.replace(/\s+/g,' ')]] : d, [0, []])[1]
     :   []
-
 
 
 
@@ -66,6 +68,34 @@ const get_coordinates = async yob => {
 }
 
 
+
+/*
+
+    Get all Job Titles. (Done)
+    Save to JSON. (Done)
+    Upload to Drive. (Done)
+    Retrieve in Drive. (Done)
+    Run Notebook. (Done)
+    Create Clusters. (Done)
+    Read Clusters. (Done)
+    Update Last Method. ()
+
+*/
+
+
+/*
+
+// Helper functions:
+const get_all_titles = () => Promise.all(data.slice(0,330).map(async yob => await new_yob(yob))).then(x => x.map(({ title}) => title))
+get_all_titles().then(x => print(x.length))
+get_all_titles().then(x => print([...new Set(x)].length))
+get_all_titles().then(x => [...new Set(x)].map(t => print(`"${t}",`)))
+
+*/
+
+
+const classify_title = title => categories[String(titles.find(({title: t}) => t === title).category)]
+
 const do_get_coordinates = false
 const new_yob = async yob => ({
     title: yob[12],
@@ -78,7 +108,7 @@ const new_yob = async yob => ({
     link: yob[25],
     requirements: yob_requirements(yob[23]),
 
-    category: 'TO DO',
+    category: classify_title(yob[12]),
     value: Math.round((Number(yob[16]) + Number(yob[17]))/2),
     centroid: do_get_coordinates ? await get_coordinates(`${yob[19]}, New York, USA`) : [0, 0],
     city: capitalize(yob[9]),
@@ -88,38 +118,6 @@ const new_yob = async yob => ({
 
 
 
-/*
-
-
-    Get all Job Titles. ()
-    Save to JSON. ()
-    Upload to Drive. ()
-    Retrieve in Drive. ()
-    Run Notebook. ()
-    Create Clusters. ()
-    Read Clusters. ()
-    Update Last Method. ()
-
-
-*/
-
-const get_all_titles = () => Promise.all(data.slice(0,330).map(async yob => await new_yob(yob))).then(x => x.map(({ title}) => title))
-get_all_titles().then(x => print(x.length))
-get_all_titles().then(x => print([...new Set(x)].length))
-get_all_titles().then(x => [...new Set(x)].map(t => print(`"${t}",`)))
-
-
-//get_all_titles().then(print)
-
-//titles.map(t => print(t))
-
-
-
-/*
+// Main test.
 const yob = data[0]
 new_yob(yob).then(print)
-*/
-
-
-// var promises = [obj1, obj2].map(obj => db.query('obj1.id').then(results => obj1.rows))
-// Promise.all(promises).then(console.log)

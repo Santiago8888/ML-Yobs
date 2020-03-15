@@ -1,1241 +1,4958 @@
 [
-    "Executive Director for Tax",
-    "ASSOCIATE PUBLIC HEALTH SANITARIAN II",
-    "Investigator",
-    "MAINFRAME STORAGE MANAGER",
-    "Civil Engineer 2",
-    "2020-WT-008-Asset Management Intern",
-    "VP- Operations",
-    "IT Project Manager/Business Analyst",
-    "MAINTENANCE WORKER",
-    "Project Advocate",
-    "Labor Compliance Analyst",
-    "Forestry Program Manager",
-    "JAVA DEVELOPER",
-    "DEPUTY DIRECTOR -  Strategic Initiatives &Analysis",
-    "City Seasonal Aide",
-    "EXECUTIVE DIRECTOR, REGULATORY REFORM",
-    "Deputy Director Conversions/HQE",
-    "Administrative Assistant",
-    "Watershed Maintainer",
-    "Supervisor Const. & Performance Monitoring",
-    "Executive Project Audit Engineer",
-    "Community Associate",
-    "Federal Transportation & Environmental Policy Advisor",
-    "Construction Project Manager",
-    "AGENCY COUNSEL",
-    "AGENCY ATTORNEY 02",
-    "Facilities & Security Coordinator",
-    "ACCOUNTABLE MANAGER",
-    "Payment Analyst",
-    "Quality Assurance Engineer",
-    "PROGRAM MANAGER",
-    "Project Manager Intern",
-    "Collections Unit Head - OCA/External Inquiry",
-    "Supervisor/Auditors of Accountability and Audit Unit",
-    "Confidential Investigator",
-    "DOT Scope Development Coordinator",
-    "Supervising Health Nurse, Bureau of School Health/SH Nursing Services & Prof Dev",
-    "Borough Planner",
-    "Deputy Inspector General",
-    "Systems Engineer",
-    "Senior Enforcement Counsel",
-    "Recoupment Specialist",
-    "URBAN DESIGNER - STATEN ISLAND BOROUGH OFFICE",
-    "Executive Assistant",
-    "Cosntruction Project Manager",
-    "Agency Implementation and Support Program Evaluator",
-    "2020-EHS-001-Performance Measurement Intern",
-    "Public Health Nurse, Bureau of School Health",
-    "Summer Graduate Intern",
-    "DIRECTOR, WORKFORCE1 CANDIDATE SERVICES",
-    "Assistant Corporation Counsel",
-    "Product Manager, MO for Economic Opportunity",
-    "Forensic Pathology Technician",
-    "Senior Port Engineer",
-    "Community Coordinator",
-    "Solutions Architect, Enterprise Data Services",
-    "Education Analyst",
-    "BUDGET MANAGER FOR MICSA/ADULT PROTECTIVE SERVICES",
-    "Assistant District Attorney - Special Victims Bureau",
-    "Special Advisor: Public, Private Partnerships",
-    "Web Application Developer",
-    "Project Manager",
-    "JUNIOR OPERATOR",
-    "IT and Security Auditor (3 positions)",
-    "Cyber Security Intern Technology Lab",
-    "Associate Chemist 1",
-    "RESIDENT BUILDING SUPERINTENDENT (HA)",
-    "A-Team Supervisor",
-    "Civil Engineer/Project Manager",
-    "ASSISTANT CORPORATION COUNSEL",
-    "Electrical Engineer 1",
-    "Alternative to Placement (ATP) Assessor",
-    "Application Support Reporting Specialist",
-    "ASSISTANT CIVIL ENGINEER",
-    "Computer Associate",
-    "Design Reviewer (Structural)",
-    "QUALITY ASSURANCE SPECIALIST",
-    "Agency Attorney, Level I",
-    "Deputy Commissioner, Wastewater Treatment",
-    "Receptionist",
-    "Senior Project Manager",
-    "Water Use Inspector",
-    "Agency Attorney III - Strategic Initiatives & Special Policy / Public Information",
-    "Clerical Associate 3",
-    "Machinist's Helper",
-    "Senior Investment Officer - Infrastructure",
-    "BIM/CAD Administrator",
-    "Supervising Analyst / Unit Head  Accounting Services",
-    "Record Management Officer",
-    "Deputy Director",
-    "Analyst, Project Management Office",
-    "SENIOR SPECIAL INVESTIGATOR",
-    "Accountable Manager, Resiliency Coordination and I&I Initiatives",
-    "NYC Census 2020 - Senior Advisor, Communications",
-    "Assistant Landscape Architect",
-    "Deputy Budget Director",
-    "Highway Transportation Specialist",
-    "Data Scientist",
-    "2020-BPAC-002-Water-On-The-Go Intern",
-    "Labor Relations Intern",
-    "AUTO MECHANIC (4 Day Temp)",
-    "Management Auditor",
-    "Analyst, Finance",
-    "MACHINIST'S HELPER",
-    "Senior Program Manager",
-    "CERTIFIED IT ADMINISTRATOR (LAN/WAN)",
-    "ELIGIBILITY WORKER",
-    "WEB APPLICATION DEVELOPERS",
-    "Section Chief, Green Infrastructure Maintenance",
-    "Agency Attorney III",
-    "Program Manager",
-    "Forensic Engineering Intern",
-    "Deputy Inspector General for Audit",
-    "City Park Worker",
-    "PROCUREMENT/NEGOTIATIONS ATTORNEY",
-    "Senior Researcher",
-    "COMPUTER SPECIALIST (SOFTWARE)",
-    "Program Officer - I",
-    "PLASTERER (HOUSING AUTH-40 HRS",
-    "Youth Development Specialist",
-    "HR Generalist/Civil Service Specialist",
-    "Assistant Civil Engineer",
-    "PLASTERER",
-    "2020-BWS-006-WRRO Intern (Grahamsville)",
-    "Data Analyst, PNA",
-    "Director, Business Enterprise Systems",
-    "Program Associate",
-    "Assistant Director  Citywide Savings",
-    "Senior Police Administrative Aide",
-    "Domestic Violence Liaison",
-    "COMPLIANCE AUDITOR",
-    "CHILD ASSESSMENT SPECIALIST (BRONX)",
-    "Data Analyst",
-    "DIRECTOR, WOMEN ENTREPRENEURS NYC (WE NYC)",
-    "Plan Examination Intern",
-    "ARCHITECTURAL INTERN",
-    "CERTIFIED IT ADMINISTRATOR (WAN)",
-    "ADVISOR",
-    "Deputy Press Secretary",
-    "Staff Analyst",
-    "Field Responder, Bureau of Alcohol and Drug Use, Prevention, Care, and Treatment",
-    "Administrative Budget Supervisor",
-    "Senior Counsel",
-    "SUPERVISOR OF MECHANICAL INSTALLATIONS & MAINTENANCE",
-    "AUTO MECHANIC",
-    "Electrical Engineering Intern",
-    "Air Compliance Specialist",
-    "2020-WT-003-Mechanical Contracts",
-    "Investment Officer - Public Equity",
-    "Certified IT Developer (Applications) Level 3",
-    "Director of Financial Equity & Asset Building",
-    "INSTRUMENTATION SPECIALIST I",
-    "BUYER",
-    "Lead Abatement Worker",
-    "Vulnerability Specialist",
-    "CITY ATTENDANT",
-    "CHIEF OF SHAFT MAINTENANCE",
-    "Ombudsperson/Pro Se Clerk",
-    "COMPUTER SYSTEMS MANAGER",
-    "Environmental Planning Specialist",
-    "Analyst  Technology Budget & Management",
-    "ENROLLMENT SPECIALIST",
-    "IT and Security Auditor",
-    "Principal Administrative Associate",
-    "Public Health Communications Coordinator",
-    "Compliance Analyst",
-    "Assistant Commissioner, Capital Planning & Delivery",
-    "Laboratory Microbiologist, Bureau of the Public Health Laboratory",
-    "2020-EEO-001-EEO Intern",
-    "Design Reviewer, New Construction",
-    "Head of Short Term Strategic Portfolio and Trading",
-    "Junior Linux Full Stack Developer",
-    "Contract Manager",
-    "Industrial Control Technician",
-    "WEB APPLICATION DEVELOPER",
-    "Analyst, Load Management",
-    "Bureau Staff Attorney",
-    "Senior Software Developer",
-    "2020-ODHR-001-Workforce Development & Training Intern",
-    "E-Learning Content Developer",
-    "Watershed Maintenance",
-    "Stationary Engineer (Electric)",
-    "Audit Supervisor (Engineering Audits)",
-    "Associate - Community Action Center (CAC)",
-    "2020-BWS-009-EHS Core Services Intern",
-    "ELECTRONIC APPLICATION COUNCELOR (EAC)",
-    "City Custodial Assistant, Bureau of Operations",
-    "Senior Design Reviewer (Structural)",
-    "CMS Developer",
-    "Programs Data Manager",
-    "Elevator Inspector",
-    "2020-BWS-001-DSP Water Quality Intern",
-    "Victim Advocate",
-    "Gardener",
-    "Bureau Energy Manager",
-    "Agency Attorney I",
-    "Clerical Associate Level IV",
-    "Engineering Technician I",
-    "Reviewer at Cross Connection Control Unit",
-    "Agency Attorney 2",
-    "Chief, Contract Support Unit",
-    "Supervising Physician, Bureau of School Health",
-    "Assistant General Counsel",
-    "Project Executive",
-    "Timekeeper",
-    "Assistant Environmental Engineer",
-    "Watershed Maintainer â 3 positions",
-    "Forensic Coordinator",
-    "Senior Policy Analyst, Performance Reporting Team",
-    "Computer Specialist (Software)",
-    "Tenant Advocate Intern",
-    "TEMPORARY POPS PROGRAM SPECIALIST",
-    "Clerical Associate III",
-    "Assistant Commissioner, Data Analytics",
-    "GIS Developer",
-    "EXECUTIVE DIRECTOR, BUSINESS DEVELOPMENT",
-    "AGENCY ATTORNEY",
-    "Investigative Attorney",
-    "Applications Worker",
-    "Civil Litigation General Litigation Agency Attorney Level III",
-    "Engineer-In-Charge, Engineering and Metrics Unit",
-    "PAYROLL EXAMINER",
-    "Clerical Associate 4",
-    "Office Clerk AOT, Bureau of Mental Health",
-    "GIS Analyst",
-    "Junior Telecom Support Technician",
-    "Technical Project Manager",
-    "Facilities Building Custodian",
-    "FMS Acceptance Coordinator",
-    "Network Engineer, Solutions and Logistics",
-    "Bookkeeper, Level III",
-    "Supervisor (Watershed Maintenance)",
-    "Bike Share Program Coordinator",
-    "Sewage Treatment Worker",
-    "EHS Management Systems Specialist",
-    "IT Systems Support Engineer",
-    "Associate Investigator",
-    "Cost Estimating Manager",
-    "Supervisory Control and Data Acquisition (SCADA) Manager",
-    "Associate Project Manager 02",
-    "ELECTRICAL ENGINEERING INTERN",
-    "Unit Chief, Interoperability Unit",
-    "Supervisor Dockbuilder",
-    "Coordinator: Healthy Aging Initiatives",
-    "STRUCTURAL ENGINEER TRAINEE",
-    "Analysis and Reporting Analyst",
-    "Emergency Manager",
-    "Secretary IV",
-    "2020-WT-004-Mechanical Engineer",
-    "Scanning Operator, Bureau of Vital Statistics",
-    "Safety Standards and Guidance Intern",
-    "Environmental Specialist",
-    "Labor Compliance Officer",
-    "Temporary Painter",
-    "Housing Inspector",
-    "Policy Analyst for Accessibility",
-    "Contract Administrator",
-    "Associate Zoning Planner",
-    "2020-BWS-002-Grahamsville Laboratory Intern",
-    "PROCUREMENT SPECIALIST",
-    "Bid Package Reviewer",
-    "Integrity Review Specialist",
-    "Health and Safety Specialist",
-    "Administrative Staff Analyst (Non-Managerial)",
-    "RES Energy Coordinator",
-    "Junior .NET Developer",
-    "2020-PS-002-Emergency Response & Technical Assessment",
-    "Financial Auditor",
-    "2020-WT-006-Project Development",
-    "PROGRAM MANAGER, REGULATORY REFORM",
-    "Senior Capital Budget Analyst",
-    "Child Care Inspector, Bureau of Childcare",
-    "Civilian Investigator",
-    "Licensing Specialist",
-    "Field Inspector",
-    "Senior Windows Administrator",
-    "Senior Sustainability Coordinator",
-    "Executive Director of Credit & Special Underwriting, Office of Policy & Strategy",
-    "Driver Assistance Center Program Manager",
-    "Business Analyst",
-    "Staff Analyst Level II",
-    "2020-SUST-002-Green Infrastructure Intern",
-    "SENIOR PEOPLESOFT HCM ANALYST",
-    "Data Analytics Specialist",
-    "Networking Intern",
-    "Deputy Commissioner, Family & Child Health",
-    "Assistant Counsel",
-    "PREVAILING WAGE INVESTIGATOR",
-    "Hiring Plan Analyst",
-    "Supervising Public Health Nurse, Bureau of School Health/SH Nursing Services & Prof Dev",
-    "Tracking and Monitoring Data Analyst",
-    "Plumbing Inspector",
-    "College Aide L1",
-    "Information Technology Services Summer Intern",
-    "Chief Officer Safety and Tactics Advisor",
-    "Field Technician",
-    "LEAD DESIGNER FOR WATER TUNNEL STRUCTURAL",
-    "Agency Counsel",
-    "Child Protective Manager",
-    "Thermostat Repairer",
-    "HR Intern, HR Unit",
-    "OFFICE LIAISON",
-    "Plumbing Engineer",
-    "ELECTRICIAN",
-    "Dam Safety Coordinator",
-    "2020-BWS-005-Water Quality Lab Intern (Kingston)",
-    "Maintenance Worker - Technical Services-Heating Unit",
-    "Assistant Commissioner, Bureau of Mental Hygiene Community Engagement, Policy and Practice",
-    "BOROUGH PLANNER",
-    "Information Representative",
-    "Legal Assistant",
-    "Project Administrator",
-    "Network & Systems Engineer",
-    "ASSISTANT COMMISSIONER, PUBLIC AFFAIRS",
-    "Deputy Director of Payroll and Timekeeping",
-    "Administrative Contract Specialist M-I",
-    "Principal Administrative Associate - Level I",
-    "2020-BEDC-003-WSCP Project Support Intern",
-    "DIRECTOR, DATA AND OPERATIONS",
-    "CAD and Records Manager",
-    "ELECTRICAL ENGINEER",
-    "Case Analyst",
-    "Employer Engagement Coordinator",
-    "Civil Engineer I",
-    "Administrative Budget Analyst",
-    "MECHANICAL ENGINEERING INTERN",
-    "Administrative Associate",
-    "Senior Program Officer, Asset Building",
-    "E-Learning Content Developer (Per Diem)",
-    "Connections and Title IV-E liaison",
-    "2020-WT-001-Electrical & Instrumentation Contracts",
-    "2020-BPAC-001 Environmental Educational Intern",
-    "Facilities Assistant",
-    "Capacity Building Specialist",
-    "DIRECTOR OF DATA ANALYTICS AND RESEARCH",
-    "Pest Control Aide, Bureau of Veterinary and Pest Control Services",
-    "IMAGING SUPPORT CLERK",
-    "PROGRAM AND POLICY  Unit Head",
-    "Engineer-In-Charge",
-    "Senior Project Controls Manager",
-    "Senior IT Developer",
-    "CONTRACTS ATTORNEY",
-    "MACHINIST",
-    "Assistant District Attorney - Criminal Court",
-    "Mechanical Engineer",
-    "Landscape Architect",
-    "Chief Information Officer",
-    "Project Advocate Intern",
-    "STRATEGIC PROJECTS MANAGER",
-    "Deputy Commissioner, Water and Sewer Operations",
-    "Juvenile Justice Investigator Supervisor",
-    "Hearing Officer",
-    "STRUCTURAL ENGINEER",
-    "Performance Analyst",
-    "PROGRAM MANAGER, CANDIDATE SERVICES",
-    "Machinist",
-    "Information Technology Program Director",
-    "DIRECTOR, PROGRAM MANAGEMENT OFFICE",
-    "PH Adviser Optometry Eyeglass",
-    "Chief of Staff to the Assistant Commissioner of Human Resources",
-    "Director of Administration",
-    "Heating Oversight Team Specialist",
-    "EARD TEAM LEADER",
-    "Pipeline Planner",
-    "Energy Manager",
-    "Division Chief Contracting and Budgeting",
-    "SUMMER GRADUATE INTERN",
-    "Deputy Director of Field Operations",
-    "SENIOR DEVELOPER",
-    "DEPUTY DIRECTOR, PARTNERSHIPS AND COMMUNICATIONS",
-    "MEDICOLEGAL ANALYST",
-    "WATERSHED MAINTAINER",
-    "Quality Assurance Manager, Crime Scene Unit, M-II",
-    "Cyber Security Engineer",
-    "F/T Computer Aide",
-    "Program Associate, Clean Energy",
-    "Client Engagement Advisor, Workforce Development",
-    "Resiliency Engineer",
-    "NYC Census 2020 - Field Director",
-    "Fiscal Analyst",
-    "ACRIS/DTM/OCR Director",
-    "DIRECTOR, BUSINESS PROGRAMS",
-    "Analyst Sanitation",
-    "Project Coordinator, Administration Office",
-    "Executive Agency Counsel",
-    "Director of Senior Practice Consultation",
-    "Labor Relations Associate",
-    "Forester",
-    "Unit Head / Deputy Assistant Director  Capital Program Scope Development (CPSD)",
-    "2020-BWS-014-Reservoir Ops Associate Data Analyst Intern",
-    "2020-ODHR-002-Human Resources Information Services Intern",
-    "Geotechnical Project Manager",
-    "Budget Analyst",
-    "Procurement Analyst II",
-    "Waterfront Facilities Engineer",
-    "CERTIFIED IT ADMINISTRATOR (WAN), Level 4",
-    "Claim Specialist",
-    "Police Administrative Aide",
-    "Elevator Oversight Team (EOT) Administrator",
-    ".Net Programmer / Analyst",
-    "Construction Inspector",
-    "Data Coordinator",
-    "Supervisor of the Payroll NYCAPS Unit",
-    "Senior Estimator (Mechanical)",
-    "APA Foster Care Program Evaluator",
-    "Investigator (Employee Discipline)",
-    "Contracts Officer",
-    "Nutrition Consultant",
-    "Clerical Associate, Bureau of Communicable Diseases",
-    "Senior Investment Officer â Real Estate",
-    "Press Secretary",
-    "Assistant for Economic Development",
-    "Deputy Director of Analytics and Reporting",
-    "City Research Scientist II",
-    "Assistant Project Manager",
-    "Contract Analyst",
-    "Compliance Specialist",
-    "City Park Worker (Full-Time)",
-    "Director, Central Records Division",
-    "Summons/Violation Coordinator",
-    "Director of Quality Assurance and Improvement",
-    "Crime Analyst, Level I",
-    "Transit Benefit Clerk",
-    "Call Center, Correspondence, and Lost Property Agent",
-    "2020-WT-002-Electrical Engineering",
-    "Fire Safety Oversight Team (FSOT) Specialist",
-    "College Aid-Graphic Designer",
-    "DIRECTOR, WORKFORCE1 TRAINING",
-    "311 Call Center Manager",
-    "Section Chief Catch Basin Inspection Unit",
-    "HEARING OFFICER",
-    "DEPUTY DIRECTOR OF CAPITAL BUDGET",
-    "Deputy Chief, Permitting",
-    "DIRECTOR OF CONSTRUCTION / SMALL PROJECTS",
-    "Engineer-In-Charge, Contract Support Unit",
-    "Administrative Engineer",
-    "Clinical Advisor",
-    "Principal Administrative Associate I",
-    "Analyst  MISCELLANEOUS REVENUE",
-    "APPLICATION DEVELOPER",
-    "Payroll Funding Analyst",
-    "Associate Public Health Sanitarian 1",
-    "Bilingual NFP Nurse Home Visitor, Bureau of Maternal Infant and Reproductive Health",
-    "DEPUTY COMMISSIONER",
-    "Infrastructure Summer Intern",
-    "EEO Investigator",
-    "Cyber Audit Analyst",
-    "Senior Advisor",
-    "Green Infrastructure Program Analyst",
-    "MOME Broadcast and IT Support Engineer",
-    "GIS CSCL Coordinator",
-    "Engineer-In-Charge, Survey and Investigations Unit",
-    "Analyst  FIRE",
-    "Prosecuting Attorney",
-    "2020-BWS-013-Regulatory & Engineering Program Intern WOH",
-    "Compliance Review Unit Supervisor",
-    "DCAS Safety and Health Officer",
-    "Environmental Health & Safety Regional Manager",
-    "PEOPLESOFT ADMINISTRATOR",
-    "Executive Director",
-    "Deputy Director Quality Improvement, Mental Health",
-    "Executive  Communications Associate",
-    "Project Controls Summer Intern",
-    "Technical Advisor",
-    "Deputy Director, Neighborhood Planning",
-    "Facility Operations Custodial Assistant",
-    "Junior Compliance Investigator",
-    "Associate Project Manager",
-    "Program Specialist",
-    "Clerical Associate- Appeals",
-    "Cyber Security Intern - Cyber Audit",
-    "Community Assistant, Part Time",
-    "Senior Project Controls Specialist",
-    "Senior Design Reviewer (Civil)",
-    "Senior Policy Advisor, Climate Partnerships",
-    "Computer Specialist",
-    "Construction Project Manager 2",
-    "Discriminatory Harassment Investigator",
-    "Staff Attorney",
-    "Director of Operations, NYC Connected",
-    "PAYMENT ANALYST",
-    "POPS PROGRAM SPECIALIST",
-    "Analyst  HEALTH + HOSPITALS",
-    "PROJECT MANAGER",
-    "COMPUTER SYSTEMS MANAGER, M-2",
-    "Forestry Supervisor",
-    "On-Line Learning Instructional Design Specialist",
-    "Community Coordinator (Vendor Payment)",
-    "AGENCY ATTORNEY  03",
-    "General Counsel / Deputy Comptroller for Legal Affairs",
-    "Civil Engineer",
-    "Vehicle Licensing Specialist",
-    "Principal Administrative Associate - Level III",
-    "Infrastructure Project Manager",
-    "BOOKKEEPER",
-    "Associate Staff Analyst",
-    "2020-BLA-001 Undergraduate Legal Intern",
-    "Mechanical Systems Inspector",
-    ".NET DEVELOPER",
-    "Workplace Violence Investigator",
-    "ASSISTANT DIRECTOR, FINANCIAL CAPABILITY AND BUSINESS DEVELOPMENT",
-    "Taxi and Limousine Inspector - Enforcement",
-    "Deputy Director - Research & Investigations",
-    "Investigative Intern, Internal Affairs and Discipline (IAD)",
-    "Public Health Advisor, Bureau of STD Prevention and Control",
-    "Landscape Architect Intern",
-    "Software Developer",
-    "EXECUTIVE DIRECTOR, CONSTRUCTION SAFETY TRAINING",
-    "Help Desk Level 1 Representative",
-    "Safety Manager",
-    "Conflict Resolution Specialist",
-    "Director of Upstate Operations",
-    "EHS Compliance Systems Specialist",
-    "CLAIM SPECIALIST Level 1",
-    "Student Legal Specialist",
-    "Automated Enforcement Camera Technician (AEU)",
-    "Engineering Technician IV",
-    "Health & Safety Specialist",
-    "Government Affairs Officer/Legislative Analyst",
-    "Budget Analyst, Bureau of Budget and Revenue/Budget Administration",
-    "STATIONARY ENGINEER",
-    "Senior Trainer",
-    "Energy Liaison Coordinator",
-    "CLERICAL ASSOCIATE",
-    "Safety & Site Support Summer Intern",
-    "CATCH School Nurse,  Bureau of School Health/SH Reproductive Health",
-    "City Seasonal Aide/Security Guard",
-    "Analyst  Police",
-    "Deputy Director for Manhattan Planning",
-    "Director of Labor Compliance",
-    "Civil Engineer II",
-    "Construction Project Manager for FHNR",
-    "Custodian",
-    "Supervisor Watershed Maintenance I",
-    "Supervisor, EHS Facility Compliance â Downstate Division",
-    "Assistant Director of Grants",
-    "Associate Water Use Inspector",
-    "Urban Designer â Bronx Borough Office",
-    "Administrative Transportation Coordinator M-I",
-    "ASSISTANT RESIDENT BUILDING SUPT",
-    "Energy Project Manager - Capital",
-    "BUSINESS ANALYST",
-    "ASSISTANT PROJECT MANAGER",
-    "Policy Advisor",
-    "Supervising Attorney-Housing & Public Accommodations",
-    "ETL Developer, MO for Economic Opportunity",
-    "Environmental Health & Safety Incident Investigator",
-    "Design Engineer",
-    "Deputy ACCO",
-    "Director, Project Management Office",
-    "Engineering Intern",
-    "PROJECT MANAGER, PMO",
-    "ECONOMIC ANALYSIS UNIT  ANALYST",
-    "Traffic Device Maintainer",
-    "CERTIFIED IT DEVELOPER (APPLICATIONS)",
-    "Computer Systems Manager",
-    "Senior Detective Investigator",
-    "Managing Director of Green Infrastructure Design and Construction",
-    "CARETAKER J",
-    "Supervisor (Watershed Maintenance) I",
-    "Emergency Management Training & Exercise Coordinator",
-    "REVENUE ANALYST",
-    "Court Representative, Litigation Division (3 Positions)",
-    "CoC Contract Coordinator",
-    "Analyst  DOE Expense",
-    "2020-SUST-001-Air Compliance Intern",
-    "Mental Health Program Associate",
-    "Supervising Analyst / Unit Head  Pension Analysis",
-    "Community Affairs Specialist",
-    "Public Buildings Summer Intern",
-    "Ordered Deductions Clerk",
-    "2020-FMC-001-Architect/Engineering Intern",
-    "Senior Estimator (Electrical)",
-    "Collections Attorney",
-    "Division Chief of Construction Management",
-    "Senior Budget Analyst",
-    "Water Use Inspector II",
-    "Pension Representative",
-    "Urban Planner",
-    "Stationary Engineer",
-    "SENIOR PROJECT LEADER",
-    "Project Manager (GIS)",
-    "CONFIDENTIAL INVESTIGATOR",
-    "Deputy Chief of Distribution Water Quality Field Operations",
-    "Assistant Mechanical Engineer",
-    "Community Service Technical Liaison",
-    "Clerical Supervisor (ICSU)",
-    "Sewer Resilience Planning Supervisor",
-    "Policy Writer",
-    "PORTFOLIO MANAGER",
-    "Director of the City Record",
-    "Administrative Contract Specialist, M-I",
-    "Systems Administrator - Computer Software",
-    "2020-BWSO-001-Connections and Permitting Intern",
-    "PROJECT SPECIALIST LEADER",
-    "Managing Director, Green Infrastructure Planning and Partnerships",
-    "Green Infrastructure Designer",
-    "City Attendant",
-    "VP - Operations",
-    "Inspector",
-    "Special Advisor to the Director, Neighborhood Development Areas (NDA) Initiative",
-    "Product Manager",
-    "Director, Borough Based Jail System",
-    "Climber & Pruner",
-    "DIRECTOR, OFFICE OF EQUITY, DIVERSITY & INCLUSION",
-    "Director, Capital Budget",
-    "NYC Census 2020 Lead Organizer",
-    "2020-PS-001-Security Engineering/Engineering",
-    "Emergency Management Planning Coordinator",
-    "ANALYSTS  ADMINISTRATIVE AGENCIES",
-    "Gardener 2",
-    "Director of Materials Management",
-    "Area Engineer",
-    "Senior Investment Analyst â Alternative Credit (2 positions)",
-    "Application Approver",
-    "2020-EXEC/ENERGY-001-Energy Office Intern",
-    "Custodian I",
-    "SUPERVISING ATTORNEY",
-    "Workforce Development Associate",
-    "Director of Medical and Laboratory Facilities",
-    "Chief, Infrastructure - Southeast Queens",
-    "Telecom Associate - VOICE Technician",
-    "Section Manager, Civil",
-    "ENGINEERING TECHNICIAN 03",
-    "Staten Island Office Deputy Director",
-    "Deputy Agency Chief Contracting Officer (DAACO)",
-    "Resident Engineer",
-    "Field Technician - 7A Program",
-    "Mechanical Inspector",
-    "Supervising Inspector",
-    "Analyst  FEMA Public Assistance Policy & Monitoring & Compliance / Monitoring & Compliance",
-    "Chief Analyst/Project Manager",
-    "Procurement Analyst",
-    "Civil Engineering Intern",
-    "AGENCY ATTORNEY 03",
-    "IT Infrastructure Project Manager",
-    "Deputy Commissioner of Policy",
-    "DIRECTOR OF ENFORCEMENT",
-    "Operations Analyst",
-    "Director of Public Communications Structures",
-    "IT Security Specialist - Security Audits (2 positions)",
-    "Clerical Associate",
-    "2020-BEDC-006-PMO Intern",
-    "College Aide",
-    "Evidence And Property Control Specialist I",
-    "Building Information Modeling (BIM) Manager",
-    "2020-BEDC-002-IHD Civil Intern",
-    "Assistant Corporation Counsel, Brooklyn Tort Division",
-    "Supervisor",
-    "BUILDING INSPECTOR",
-    "Landscape Architect II",
-    "Analyst  DOITT, Finance, Law, Mayoralty & Elected Officials",
-    "DATA ANALYST, BUSINESS OPERATIONS",
-    "Unit Head  Reporting and Applications Development",
-    "Structural Engineer",
-    "2020-BEDC-001-BIM/CADD Intern",
-    "Section Chief, Asset Management Maintenance Systems",
-    "Carpenter",
-    "Child Welfare Analyst",
-    "Site Safety Plan Examination Intern",
-    "Supervising Attorney-Employment",
-    "Bureau Chief Contracting Officer",
-    "2020-BEDC-004 WSCP Project Intern",
-    "Network Administrator",
-    "Special Counsel, Legal/Land Use",
-    "Cyber Security Intern Security Science",
-    "Legal Services Coordinator",
-    "2020-BWS-010-Research Application/Innovation Intern",
-    "Data Support Analyst",
-    "Summer College Intern",
-    "Program Data Analyst",
-    "Environmental Educator",
-    "Deputy Director of the Fire Alarm Inspection Unit",
-    "Senior Advisor, Technology Strategy",
-    "Buyer",
-    "Directory Services Support",
-    "2020-BWSO-003-Engineering & Regulatory Review Intern",
-    "CoQI Facilitator",
-    "2020-BWS-008-WRRO Intern (Tannersville)",
-    "Business Analysis Specialist",
-    "Junior Systems Administrator",
-    "DIRECTOR, PROVIDER-CLIENT SERVICES & SPECIAL PROJECTS",
-    "Analyst  Reporting and Applications Development",
-    "Associate Public Health Sanitarian 2",
-    "Director of Child Protective Audits",
-    "Administrative Claim Examiner, No Fault Claims",
-    "Rescue Tool & Equipment Coordinator",
-    "Construction Project Manager Intern",
-    "Instructor, Division of Environmental Health, Bureau of Environmental Administration (Health Academy)",
-    "DIRECTOR, EXTERNAL AFFAIRS",
-    "Transit Benefit Representative",
-    "IT Support Technician",
-    "IT Technical Support",
-    "Forensic Pathology Coordinator",
-    "Clinical Care Coordinator/Bureau of Mental Health",
-    "2020-EHS-002-Reporting and Investigations Intern",
-    "Deputy Engineer-In-Charge, Infrastructure",
-    "Deputy Chief Of Outside Development",
-    "2020-BWS-015-Hawthorne Field Intern",
-    "2020-WT-007-Construction Management Intern",
-    "Third Party Services Analyst",
-    "Planning Associate",
-    "Windows Administrator",
-    "Analyst  Service Desk & Operations / Operations",
-    "2020-BWSO-004-GIS Data Maintenance Intern",
-    "2020-BWSO-005-Modeling Intern",
-    "Minority Women Business Enterprise Program Analyst",
-    "Structural Engineer (Retaining Walls and other Structural Assets)",
-    "Assistant Engineering Audit Officer",
-    "Analyst  DEPARTMENT OF ENVIRONMENTAL PROTECTION",
-    "Assistant Commissioner of Community Partnerships and Finance",
-    "Bridge Repairer & Riveter",
-    "Salesforce Specialist",
-    "Junior Public Health Nurse, Bureau of School Health",
-    "FOOD INSECURITY ASSISTANCE TEAM SPECIALIST",
-    "Senior Air Pollution Inspector",
-    "2020-EHS-003-Program Development Intern",
-    "Claims Manager - Law Claims (Non-Tort)",
-    "Deputy Director for Engineering",
-    "Community Engagement Planning Specialist",
-    "2020-BWSO-002-Enforcement Intern",
-    "Procurement Officer",
-    "Outreach Coordinator",
-    "Environmental Project Manager",
-    "LEGAL SECRETARIAL ASSISTANT LEVEL 2",
-    "Safety Education Outreach Coordinator",
-    "Facilities Project Intern",
-    "Diversity Specialist",
-    "Civil Engineer 3",
-    "ELECTRICIAN (AUTOMOBILE)",
-    "AGENCY ATTORNEY III",
-    "Office Manager",
-    "In-House EHSO",
-    "CLERICAL ASSOCIATE, L-IV",
-    "Accountant",
-    "Manager, Community Engagement",
-    "Design Subject Matter Expert (SME)",
-    "Senior Construction Contract Analyst",
-    "Director of Finance",
-    "Digital Media Specialist",
-    "Asset Management Specialist",
-    "In Rem (Foreclosure) Acquisitions Analyst",
-    "Best Practices Coach",
-    "Community Assistant",
-    "Design Reviewer (Mechanical)",
-    "Deputy Director of the Environmental Hazard Unit",
-    "Dockless Bike Share Micromobility Planner",
-    "Deputy General Counsel",
-    "Associate Chemist",
-    "ASSOCIATE STAFF ANALYST",
-    "Director of Resiliency Planning",
-    "Standards Specialist (Monitor)",
-    "Printing Press Operator",
-    "DIGITAL COMMUNICATIONS & GRAPHIC DESIGN SPECIALIST",
-    "Environmental Health and Safety Officer",
-    "Data Entry Clerk for Certificate of Fitness Unit",
-    "Director of Facilities Maintenance",
-    "Environmental Health & Safety Auditor",
-    "Senior Design Reviewer (Mechanical)",
-    "LABOR RELATIONS ATTORNEY",
-    "Juniior Compliance Analyst",
-    "Senior Estimator",
-    "executive Vice President for Operations",
-    "SENIOR ELECTRICAL ENGINEER",
-    "Course Provider Program Intern",
-    "Parks Enforcement Patrol",
-    "2020-BWS-012-Water Supply Planning Intern",
-    "Confidential Investigator 2",
-    "Forenisc Mortuary Techncian II",
-    "Director of Recruitment",
-    "15BOROUGH COMMUNITY COORDINATOR",
-    "Analyst - Business Practices Accountability Unit",
-    "Electrical Engineer",
-    "Assistant Commissioner",
-    "Assistant Bureau Contract Officer",
-    "2020-BWS-007-Water Treatment Ops QA Intern",
-    "BUDGET ANALYST",
-    "Public Health Advisor, Bureau of Sexually Transmitted Infections",
-    "DIRECTOR-TECHNICAL SERVICES",
-    "Alternative Assets Middle Office Analyst",
-    "Section 3, MBWE and Procurement Officer",
-    "Reliability Centered Maintenance Engineers",
-    "Water Quality Scientist",
-    "Engineer-In-Charge, Operational Information Systems",
-    "Analyst  Transportation",
-    "Director, Ombuds Office",
-    "NYC Census 2020 - Brooklyn Borough Lead, NYC Census 2020 Field Campaign",
-    "Housing Assistant",
-    "Analyst  FEMA Public Assistance Fiscal & Reporting / Reporting",
-    "HIV Program Associate, Bureau of STD Prevention and Control",
-    "1022A (LEGAL SECRETARIAL ASST- L3)",
-    "STAFF NURSE",
-    "Director of STI Laboratory, Bureau of Sexually Transmitted Infections",
-    "Topographical",
-    "EXECUTIVE DIRECTOR, FINANCIAL AND REPORTING SYSTEMS",
-    "Review Engineer",
-    "Director of Technical Assistance",
-    "Project Development Coordinator for Capital Contracts",
-    "Civil Section Manager",
-    "ESTIMATOR",
-    "CERTIFIED IT ADMINISTRATOR (LAN/WAN), LEVEL 4",
-    "Supervisor of Construction Services, Preservation Programs",
-    "FOIL AND COMPLIANCE ASSOCIATE",
-    "Clerical Associate, Bureau of Vital Statistics",
-    "2020-RAM-001-Records and Archives Management",
-    "Procurement Specialist",
-    "Secretary 4",
-    "2020-BWS-003-Water Ops Intern (Downsville)",
-    "Accountable Manager, CSO LTCP Program",
-    "Chief Communications Officer, Office of the Commissioner",
-    "HRIS Data Analyst",
-    "City Mortuary Technician",
-    "Program Director, Health",
-    "Area Engineer, BEDC Coordination and Project Development Section",
-    "Examiner",
-    "Assistant Corporation Counsel, Manhattan Tort Division",
-    "Computer Associate (Technical Support) Level 3",
-    "CASEWORKER",
-    "Photographer",
-    "Senior Compliance Manager",
-    "Public Health Advisor, Bureau of Sexually Transmitted Diseases Prevention and Control",
-    "RECRUITMENT PIPELINE AND PROFESSIONAL DEVELOPMENT PROGRAM MANAGER",
-    "Deputy Director for Strategic Initiatives",
-    "Deputy Unit Chief - Brooklyn Central Services",
-    "Director of Talent Acquisition",
-    "REGIONAL MANAGER, BROOKLYN REGION",
-    "Associate Water Use Inspector I-Universal Metering",
-    "Staff Auditor",
-    "HQE Specialist",
-    "Senior Project Lead",
-    "Attorney Interne",
-    "Deputy Chief Financial Officer",
-    "Forensic Mortuary Technician I",
-    "Agency Attorney, Level II",
-    "CONTRACT ADMINISTRATOR",
-    "Temporary Bronx Borough Planner",
-    "SUPERVISOR OF STOCK WORKERS I",
-    "Division Chief of Engineering",
-    "Windows Technical Project Manager",
-    "Parking Planner",
-    "WORKFORCE1 OPERATIONS MANAGER",
-    "ASSISTANT COMMISSIONER, RECRUITMENT AND ELIGIBILITY",
-    "Admin Housing Dev Specialist for LHD EVP",
-    "Human Resources Generalist",
-    "NYC Census 2020 - Community Outreach Data Analyst",
-    "Program Monitoring and Compliance Intern",
-    "Engineer",
-    "Compliance and Operations Specialist",
-    "Civil Engineer 1",
-    "Construction Safety and Quality Inspector",
-    "Assistant Director for LHD Budget & Personnel",
-    "Paralegal",
-    "Voice Communication Specialist",
-    "PEP Step Up Sergeant",
-    "2020-BIT-001-Application Developer Intern",
-    "Specialized Contract  Analyst  (2 positions)",
-    "Executive Project Manager",
-    "Media Service Tech",
-    "Associate Water Use Inspector II",
-    "Project Controls Manager",
-    "Alternative Mechanical Systems Engineer",
-    "Capital Projects and Budget Analyst",
-    "Body Worn Camera Analyst",
-    "Agency Attorney Interne, Office of General Counsel",
-    "Vice President of Finance, Accounting and Investment Services",
-    "Dynamic CRM Developer",
-    "Program Executive",
-    "SECTION SUPERVISOR",
-    "Deputy Commissioner, Child and Family Well-Being",
-    "Paralegal Aide",
-    "CONSTRUCTION MANAGER",
-    "Custodian Supervisor",
-    "Timekeeping Specialist",
-    "PARALEGAL",
-    "MARINER",
-    "Division Chief - Fiscal Services",
-    "Procurement & Compliance Analyst",
-    "Senior Systems Administrator",
-    "Outcome Specialist, Contract Development & Validation",
-    "Policy Analyst",
-    "CCC Program Administrator",
-    "Family and Community Engagement Liaison",
-    "Director of Research and Analysis",
-    "Exterminator",
-    "Executive Assistant to the Director of Personnel & Payroll",
-    "Human Capital Summer College Intern",
-    "Criminalist III",
-    "Contracts Coordinator for FHNR",
-    "Associate Human Rights Specialist",
-    "Regional Manager",
-    "Analyst  Revenue Accountability",
-    "EXECUTIVE DIRECTOR, IN-HOUSE DESIGN",
-    "Network Engineer I LAN/WAN",
-    "Policy Associate",
-    "General Services Manager",
-    "HR PAYROLL ANALYST",
-    "COMPUTER ASSOC (SOFTWARE)",
-    "Eligibility Coordinator / Adoption Liaison",
-    "Program Director",
-    "Paralegal Assistant Supervisor",
-    "Associate Water Use Inspector II- Brooklyn",
-    "PEP Step Up Captain",
-    "JUNIOR SOFTWARE ENGINEER",
-    "Junior Information Security Vulnerability Management Analyst",
-    "STORAGE/BACKUP ADMINISTRATOR",
-    "Clinical Director for the Couseling Services Unit",
-    "Supply Clerk",
-    "Software Support Analyst",
-    "Senior Project Administrator",
-    "Supervising Inspector of the Shelter Task Force",
-    "Training Coordinator",
-    "Court Liaison Officer",
-    "CITY ASSESSOR",
-    "Engineer In Charge of Pumping",
-    "Resident Building Superintendent",
-    "CPM Scheduler II",
-    "Watershed Maintainer - 4 Positions",
-    "ASSOCIATE ZONING SPECIALIST",
-    "Assistant Commissioner of Quality Assurance for Juvenile Justice Programs",
-    "First Associate Commissioner",
-    "Inspector, Bureau of Environmental Disease and Injury Prevention",
-    "GIS Technician",
-    "Family Engagement Specialist",
-    "Executive Director, Health Policy, Bureau of Primary Care Access & Planning",
-    "Motor Vehicle Operator",
-    "Special Projects Coordinator, Division of Neighborhood Preservation",
-    "Executive Receptionist, Office of the Commissioner",
-    "Unit Head  Program Analysis",
-    "Assistant Procurement Liaison",
-    "Senior Construction Manager",
-    "Senior Estimator, General Construction",
-    "Clerical Supervisor (JD)",
-    "Technical Advisor for Reservoir Releases and Policy Development",
-    "Risk Management Supervisor",
-    "Trauma-Informed Early Care and Education Case Supervisor",
-    "Zoning Deputy Director",
-    "HIGH PRESSURE PLANT TENDER",
-    "LINUX SYSTEMS ADMINISTRATOR",
-    "Driver Services Agent",
-    "BEHAVIORAL SPECIALIST",
-    "Facilities Central Supervisor",
-    "Application Support Analyst",
-    "BUDGET MANAGER FOR PROGRAM OPERATIONS",
-    "Director, Open Door Program, Division of New Construction Finance",
-    "AUTO MECHANIC (DIESEL)",
-    "311 Escalation Line Team Leader",
-    "Child Welfare Trainer",
-    "EXECUTIVE DIRECTOR, CONSTRUCTION INDUSTRY PARTNERSHIP",
-    "Human Capital Associate",
-    "Civil Engineer III",
-    "Analyst  Criminal Justice",
-    "Juvenile Justice Trainer",
-    "Deputy Engineer-in-Charge, Southeast Queens",
-    "Bluebelt Program Administrative Supervisor",
-    "Investigative Auditor",
-    "Superintendent of Water and Sewer Systems",
-    "Public Health Assistant, Bureau of School Health",
-    "Health Benefits Coordinator",
-    "FDNY Supervisor of Telephone Adjudications",
-    "Senior Court Representative, Litigation Division (2 positions)",
-    "EVP for Real Estate",
-    "Senior Financial Reporting Investment Analyst",
-    "Associate Cloud Reliability Engineer",
-    "Senior Correctional Institution Administrator, PREA",
-    "AGENCY ATTORNEY INTERN",
-    "Public Health Nurse (School Health)",
-    "RFP COORDINATOR",
-    "Constituent Services Liaison",
-    "Placement Specialist",
-    "DEPUTY PORTFOLIO MANAGER",
-    "WORKFORCE QUALITY ASSURANCE MANAGER",
-    "Agency Attorney I - Early Intervention Unit",
-    "ADMINISTRATIVE ASSISTANT, LABOR SERVICES",
-    "STAFF ANALYST II",
-    "Civil/Structural Inspector",
-    "Senior Network Design Engineer",
-    "Assistant Commissioner of Neighborhood Development Stabilization",
-    "Analyst  SANITATION",
-    "Assistant Construction Inspector",
-    "ADMINISTRATIVE PROCUREMENT ANALYST",
-    "Leave & Workers' Compensation Coordinator",
-    "METAL WORK MECHANIC",
-    "Associate Project Manager III",
-    "Supervisor of Traffic Device Maintainers",
-    "Supervising Budget Analyst Early Care &Education",
-    "Environmental Health & Safety Officer",
-    "Executive Director of Crossover Youth Practice",
-    "Labor Economist",
-    "Agency Attorney, Level III",
-    "Caretaker X",
-    "Senior Estimator (General Construction)",
-    "2020-WT-005-Process and Research Development",
-    "OPERATION ASSISTANT",
-    "Agency Attorney 1",
-    "Traffic Control Inspector",
-    "Senior Urban Designer",
-    "Deputy Chief of Facilities - Services",
-    "Quality Assurance / Technical Litigation Support Analyst",
-    "BUDGET SUPPORT ASSISTANT",
-    "ADMINISTRATIVE MANAGEMENT AUDITOR",
-    "Analyst  Housing",
-    "Crime Strategy Analyst",
-    "Accountant - Contract Payment",
-    "Case Manager",
-    "TECH SUPPORT/SCHEDULER",
-    "Architect L2",
-    "FIA Worker-Facing Information Technology Project Specialist",
-    "Deputy Director of Continued Occupancy",
-    "Quality Assurance Specialist L1",
-    "Assistant Commissioner of Compliance and Legal Oversight",
-    "Design Reviewer (Electrical)",
-    "Analyst  Correction",
-    "Investigator Trainee",
-    "Agency Attorney 03",
-    "Clerical Associate (Part-Time)",
-    "Analyst  ECONOMIC DEVELOPMENT",
-    "Associate Program Manager",
-    "Neighborhood Preparedness Training Coordinator",
-    "Housing Manager",
-    "Chief of Staff for Deputy Commissioner",
-    "ASSISTANT ELECTRICAL ENGINEER",
-    "Associate General Counsel / Law Department / General Litigation",
-    "Help Desk Technician",
-    "Business and Data Analyst Manager",
-    "Supervising Housing Inspector for the Division of Code Enforcement",
-    "Senior Application Developer",
-    "Agency Security Director",
-    "Deputy Chief of Quality Assurance",
-    "Junior Environmental Planner",
-    "SENIOR PREVAILING WAGE INVESTIGATOR",
-    "Project Manager, Administration",
-    "Agency Attorney",
-    "Senior SQL /Oracle Database Administrator",
-    "Engineering",
-    "EH&S Program Manager",
-    "Platform Engineer",
-    "PEOPLESOFT DEVELOPER",
-    "PSYCHOLOGIST",
-    "Senior Strategic Planning Analyst",
-    "Associate Commissioner",
-    "Base-Business Licensing Specialist",
-    "Physician Support Assistant, Bureau of School Health",
-    "Emergency Planning Coordinator, Environmental Health Administration",
-    "Auto Mechanic",
-    "Accountable Project Manager,  Stormwater MS4 Evaluation and Alternatives",
-    "Clerical Associate Part Time",
-    "ASSISTANT URBAN DESIGNER",
-    "Fire Protection Engineer",
-    "Personnel Associate",
-    "High Pressure Plant Tender",
-    "Program Associate, ACE Program",
-    "Assistant Commissioner, Internal Communications",
-    "DISASTER RECOVERY ANALYST.",
-    "Desktop Support Engineer",
-    "Communications Specialist",
-    "Retrofit Accelerator Outreach and Marketing Coordinator",
-    "Health Benefits Program Coordinator",
-    "Office Manager (Brooklyn)",
-    "CASE MANAGEMENT NURSE",
-    "Assistant Records Officer",
-    "Watershed Maintainer - 2 positions",
-    "Graphic Designer",
-    "Appeals Assistant District Attorney",
-    "Vice-President for Support Services",
-    "Hardware Engineer (MAINFRAME)",
-    "Code and Zoning Specialist",
-    "Assistant Commissioner, Tax Policy",
-    "Service Desk Manager",
-    "Project Manager, Strategic Planning",
-    "Central Office Supervising Nurse, Bureau of School Health/SH Nursing Services & Prof Dev",
-    "Account Manager",
-    "Strategic Initiative Specialist",
-    "Structural Engineering Intern (Retaining Walls and other Structural Assets)",
-    "Environmental Planner",
-    "Payroll Analyst",
-    "2020-LRD-001 Labor Relations Intern",
-    "Law Student",
-    "FIA AUDIT COORDINATOR",
-    "Electrical Engineer 3",
-    "Associate Director / Deputy Director  Expense & Capital Budget",
-    "Deputy Director of Engineering Services",
-    "NYC Census 2020 Cultural Liaison",
-    "Driver Assistance Center Intake Specialist",
-    "Computer Aide Level 2",
-    "Information Security Engineer",
-    "Team Leader",
-    "Application Support Technician",
-    "Certified IT Administrator (LAN/WAN) Level II",
-    "AOT Supervisor, Mental Health",
-    "Deputy Director of Support and Special Services, M-II",
-    "Plumber",
-    "Quality Improvement Specialist",
-    "Assistant Inspector General",
-    "ANALYST  PARKS",
-    "Trees & Sidewalks Program Coordinator",
-    "Chief, Personnel Unit",
-    "Senior Policy Advisor, Energy Finance and Affordability",
-    "Human Resources Administrative Assistant",
-    "Grants Coordinator",
-    "Director, CCEWIN Operations",
-    "Asthma Program Social Worker, Bureau of School Health/SH Medical",
-    "Chief of Staff",
-    "Mediation Coordinator",
-    "Engineering Auditor",
-    "Designated Felony Assistant Corporation Counsel",
-    "CONTRACT MANAGER, PROGRAM FINANCE & OPERATIONS",
-    "City Planner",
-    "Desktop Support Technician",
-    "Associate Project Manager I",
-    "Junior Business Analyst",
-    "Senior Landscape Program Manager",
-    "Management Auditor, Level II",
-    "Programmer, Bureau of Environmental Disease and Injury Prevention",
-    "PREA Project Director",
-    "Director of DCAS Trades Shop",
-    "Assistant District Attorney",
-    "COLLEGE AIDE - CLERICAL",
-    "Technical Assistant",
-    "Deputy Administrator for Washington Square Park",
-    "Technical Policy Researcher",
-    "ASSISTANT ELECTRICAL INSPECTOR",
-    "Assistant Electrical Engineer",
-    "Medical Examiner Assistant",
-    "Social Worker, Bureau of Sexually Transmitted Infections",
-    "Senior Forester for Tree Procurement",
-    "Office Assistant (Part-Time)",
-    "Administrative Assistant to the Deputy Commissioner for Uniformed Services Bureau",
-    "PARALEGAL AIDE - LEVEL 2",
-    "FMS ARCHITECT/DEVELOPER",
-    "CATCH School Nurse, Bureau of School Health",
-    "Seasonal City Park Worker",
-    "Staten Island Construction & Performance Monitor",
-    "Conference Facilitator",
-    "Dockbuilder",
-    "Senior Developer, MO for Economic Opportunity",
-    "WEB / Application Supervisor",
-    "Bike Share Program Planner",
-    "Taxpayer Case Advocate",
-    "OFFICE ENGINEER",
-    "Deputy Director of Professional Development Program",
-    "Analysis and Reporting Administrator",
-    "2020-BWS-011-WTO Engineering & Contract Services Intern",
-    "Stock Worker",
-    "ADMINISTRATIVE HOUSING SUPERINTENDENT",
-    "ASBESTOS HAZARD INVESTIGATOR",
-    "Agency Attorney Level III",
-    "Technical Response Technician",
-    "2020-BWS-004-Kingston Field Intern",
-    "Network Specialist",
-    "BTS Senior Application Database Administrator",
-    "Deputy Chief, Industrial Pollution Prevention Unit",
-    "Associate Laboratory Microbiologist I",
-    "Queens Business Center Manager",
-    "Communications Director",
-    "TIMEKEEPER",
-    "MANAGEMENT AUDITOR",
-    "Assistant District Manager",
-    "M/WBE Outreach and Compliance",
-    "2020-BEDC-005 WWCP Project Intern",
-    "Secretary to Division Chief",
-    "Junior Public Health Nurse - Bureau of School Health/SH Nursing Services & Prof Dev",
-    "Records Associate",
-    "Civilianization Manager",
-    "Database Administrator",
-    "Deputy Director of Initial Subsidies",
-    "Information Storage Engineer",
-    "CITY RESEARCH SCIENTIST II",
-    "Senior Compliance Advisor",
-    "Supervisor of Construction Services, New Construction Programs",
-    "ASSISTANT COMMISSIONER FOR FACILITIES PLANNING AND ENGINEERING",
-    "Engineer In Charge, Linear Capital Program Management",
-    "Project Manager (Modeling)",
-    "Director - Technical Services",
-    "E-Discovery Specialist",
-    "Cyber Budget/Procurement Liaison",
-    "Stationary Engineer, Bureau of Operations",
-    "Claims Analyst",
-    "Project Manager  Value Engineer",
-    "Staff Development Coordinator",
-    "Associate Water Use inspector",
-    "PARALEGAL - EARLY INTERVENTION UNIT",
-    "Deputy Chief of Forestry & Horticulture",
-    "OUTREACH AND RETENTION SPECIALIST",
-    "Elevator Oversight Team Specialist",
-    "Post Hearings Clerk",
-    "Deputy Chief of Payments and Procurement",
-    "NYC Census 2020 Campaign Manager",
-    "Associate Email Security Engineer",
-    "Website Publisher",
-    "Senior Compliance Investigator",
-    "Chief Data Science Officer",
-    "Associate Borough Planner",
-    "Relationship Manager",
-    "Director of Security",
-    "Revenue Support Specialist",
-    "Learning & Training Development Specialist",
-    "Public Health Assistant, Bureau of Sexually Transmitted Infections",
-    "Assistant Mechanical Engineer (Construction Classification)",
-    "QUALITY CONTROL CASE REVIEW SUPERVISOR",
-    "COMPUTER SPECIALIST (OPERATIONS)",
-    "Program & Policy Specialist for Racial and Restorative Justice",
-    "Payroll Clerk",
-    "Clerical Support",
-    "PEP Sergeant",
-    "Division Chief Asset and Construction Management",
-    "Chief of Review and Permitting",
-    "PRINCIPAL ADMINISTRATIVE ASSOCIATE",
-    "Union Services Associate",
-    "Investigator Level 1",
-    "SharePoint Developer",
-    "AOTPS Budget Manager",
-    "Check Replacement Analyst",
-    "FIRES IT Supervisor",
-    "Cornerstone Program Director",
-    "Supervisor II (SW)",
-    "Deputy Chief of Facilities, Supplies & Technical Support",
-    "Community Engagement Specialist",
-    "Brooklyn Forestry Coordinator",
-    "Facility Manager",
-    "Staff Analyst Level 2",
-    "Applications Supervisor",
-    "Assisstant Supt",
-    "Administrative Manager (Non-Mgrl)",
-    "Stock Worker Level II",
-    "RESIDENT BUILDING SUPERINTENDENT",
-    "Union Deduction Analyst",
-    "Supervisor of Stock Worker",
-    "Plant Chief",
-    "2020-BLA-002 Graduate Legal Intern",
-    "Testifier / Searcher",
-    "Geotab Fleet Liaison",
-    "Equipment Training Coordinator",
-    "Deputy Chief of Information Technology",
-    "Information Technology Manager",
-    "Maintenance Worker",
-    "Staff Analyst, Level II",
-    "Director of Legislative Affairs",
-    "Accounting Analyst",
-    "Management Auditor, Level I"
-]
+    {
+       "title":"Executive Director for Tax",
+       "category":4
+    },
+    {
+       "title":"ASSOCIATE PUBLIC HEALTH SANITARIAN II",
+       "category":3
+    },
+    {
+       "title":"Investigator",
+       "category":1
+    },
+    {
+       "title":"MAINFRAME STORAGE MANAGER",
+       "category":3
+    },
+    {
+       "title":"Civil Engineer 2",
+       "category":4
+    },
+    {
+       "title":"2020-WT-008-Asset Management Intern",
+       "category":2
+    },
+    {
+       "title":"VP- Operations",
+       "category":5
+    },
+    {
+       "title":"IT Project Manager/Business Analyst",
+       "category":2
+    },
+    {
+       "title":"MAINTENANCE WORKER",
+       "category":3
+    },
+    {
+       "title":"Project Advocate",
+       "category":2
+    },
+    {
+       "title":"Labor Compliance Analyst",
+       "category":2
+    },
+    {
+       "title":"Forestry Program Manager",
+       "category":2
+    },
+    {
+       "title":"JAVA DEVELOPER",
+       "category":3
+    },
+    {
+       "title":"DEPUTY DIRECTOR -  Strategic Initiatives &Analysis",
+       "category":4
+    },
+    {
+       "title":"City Seasonal Aide",
+       "category":2
+    },
+    {
+       "title":"EXECUTIVE DIRECTOR, REGULATORY REFORM",
+       "category":3
+    },
+    {
+       "title":"Deputy Director Conversions/HQE",
+       "category":5
+    },
+    {
+       "title":"Administrative Assistant",
+       "category":5
+    },
+    {
+       "title":"Watershed Maintainer",
+       "category":5
+    },
+    {
+       "title":"Supervisor Const. & Performance Monitoring",
+       "category":4
+    },
+    {
+       "title":"Executive Project Audit Engineer",
+       "category":2
+    },
+    {
+       "title":"Community Associate",
+       "category":5
+    },
+    {
+       "title":"Federal Transportation & Environmental Policy Advisor",
+       "category":0
+    },
+    {
+       "title":"Construction Project Manager",
+       "category":2
+    },
+    {
+       "title":"AGENCY COUNSEL",
+       "category":3
+    },
+    {
+       "title":"AGENCY ATTORNEY 02",
+       "category":3
+    },
+    {
+       "title":"Facilities & Security Coordinator",
+       "category":2
+    },
+    {
+       "title":"ACCOUNTABLE MANAGER",
+       "category":3
+    },
+    {
+       "title":"Payment Analyst",
+       "category":5
+    },
+    {
+       "title":"Quality Assurance Engineer",
+       "category":5
+    },
+    {
+       "title":"PROGRAM MANAGER",
+       "category":3
+    },
+    {
+       "title":"Project Manager Intern",
+       "category":2
+    },
+    {
+       "title":"Collections Unit Head - OCA/External Inquiry",
+       "category":4
+    },
+    {
+       "title":"Supervisor/Auditors of Accountability and Audit Unit",
+       "category":4
+    },
+    {
+       "title":"Confidential Investigator",
+       "category":5
+    },
+    {
+       "title":"DOT Scope Development Coordinator",
+       "category":2
+    },
+    {
+       "title":"Supervising Health Nurse, Bureau of School Health/SH Nursing Services & Prof Dev",
+       "category":0
+    },
+    {
+       "title":"Borough Planner",
+       "category":5
+    },
+    {
+       "title":"Deputy Inspector General",
+       "category":5
+    },
+    {
+       "title":"Systems Engineer",
+       "category":5
+    },
+    {
+       "title":"Senior Enforcement Counsel",
+       "category":5
+    },
+    {
+       "title":"Recoupment Specialist",
+       "category":5
+    },
+    {
+       "title":"URBAN DESIGNER - STATEN ISLAND BOROUGH OFFICE",
+       "category":3
+    },
+    {
+       "title":"Executive Assistant",
+       "category":5
+    },
+    {
+       "title":"Cosntruction Project Manager",
+       "category":5
+    },
+    {
+       "title":"Agency Implementation and Support Program Evaluator",
+       "category":2
+    },
+    {
+       "title":"2020-EHS-001-Performance Measurement Intern",
+       "category":2
+    },
+    {
+       "title":"Public Health Nurse, Bureau of School Health",
+       "category":0
+    },
+    {
+       "title":"Summer Graduate Intern",
+       "category":2
+    },
+    {
+       "title":"DIRECTOR, WORKFORCE1 CANDIDATE SERVICES",
+       "category":3
+    },
+    {
+       "title":"Assistant Corporation Counsel",
+       "category":5
+    },
+    {
+       "title":"Product Manager, MO for Economic Opportunity",
+       "category":0
+    },
+    {
+       "title":"Forensic Pathology Technician",
+       "category":2
+    },
+    {
+       "title":"Senior Port Engineer",
+       "category":5
+    },
+    {
+       "title":"Community Coordinator",
+       "category":5
+    },
+    {
+       "title":"Solutions Architect, Enterprise Data Services",
+       "category":4
+    },
+    {
+       "title":"Education Analyst",
+       "category":5
+    },
+    {
+       "title":"BUDGET MANAGER FOR MICSA/ADULT PROTECTIVE SERVICES",
+       "category":3
+    },
+    {
+       "title":"Assistant District Attorney - Special Victims Bureau",
+       "category":0
+    },
+    {
+       "title":"Special Advisor: Public, Private Partnerships",
+       "category":4
+    },
+    {
+       "title":"Web Application Developer",
+       "category":2
+    },
+    {
+       "title":"Project Manager",
+       "category":5
+    },
+    {
+       "title":"JUNIOR OPERATOR",
+       "category":3
+    },
+    {
+       "title":"IT and Security Auditor (3 positions)",
+       "category":0
+    },
+    {
+       "title":"Cyber Security Intern Technology Lab",
+       "category":2
+    },
+    {
+       "title":"Associate Chemist 1",
+       "category":4
+    },
+    {
+       "title":"RESIDENT BUILDING SUPERINTENDENT (HA)",
+       "category":3
+    },
+    {
+       "title":"A-Team Supervisor",
+       "category":5
+    },
+    {
+       "title":"Civil Engineer/Project Manager",
+       "category":5
+    },
+    {
+       "title":"ASSISTANT CORPORATION COUNSEL",
+       "category":3
+    },
+    {
+       "title":"Electrical Engineer 1",
+       "category":4
+    },
+    {
+       "title":"Alternative to Placement (ATP) Assessor",
+       "category":4
+    },
+    {
+       "title":"Application Support Reporting Specialist",
+       "category":2
+    },
+    {
+       "title":"ASSISTANT CIVIL ENGINEER",
+       "category":3
+    },
+    {
+       "title":"Computer Associate",
+       "category":5
+    },
+    {
+       "title":"Design Reviewer (Structural)",
+       "category":4
+    },
+    {
+       "title":"QUALITY ASSURANCE SPECIALIST",
+       "category":3
+    },
+    {
+       "title":"Agency Attorney, Level I",
+       "category":4
+    },
+    {
+       "title":"Deputy Commissioner, Wastewater Treatment",
+       "category":4
+    },
+    {
+       "title":"Receptionist",
+       "category":1
+    },
+    {
+       "title":"Senior Project Manager",
+       "category":2
+    },
+    {
+       "title":"Water Use Inspector",
+       "category":5
+    },
+    {
+       "title":"Agency Attorney III - Strategic Initiatives & Special Policy / Public Information",
+       "category":0
+    },
+    {
+       "title":"Clerical Associate 3",
+       "category":4
+    },
+    {
+       "title":"Machinist's Helper",
+       "category":4
+    },
+    {
+       "title":"Senior Investment Officer - Infrastructure",
+       "category":4
+    },
+    {
+       "title":"BIM/CAD Administrator",
+       "category":1
+    },
+    {
+       "title":"Supervising Analyst / Unit Head  Accounting Services",
+       "category":4
+    },
+    {
+       "title":"Record Management Officer",
+       "category":5
+    },
+    {
+       "title":"Deputy Director",
+       "category":5
+    },
+    {
+       "title":"Analyst, Project Management Office",
+       "category":4
+    },
+    {
+       "title":"SENIOR SPECIAL INVESTIGATOR",
+       "category":3
+    },
+    {
+       "title":"Accountable Manager, Resiliency Coordination and I&I Initiatives",
+       "category":0
+    },
+    {
+       "title":"NYC Census 2020 - Senior Advisor, Communications",
+       "category":0
+    },
+    {
+       "title":"Assistant Landscape Architect",
+       "category":2
+    },
+    {
+       "title":"Deputy Budget Director",
+       "category":5
+    },
+    {
+       "title":"Highway Transportation Specialist",
+       "category":2
+    },
+    {
+       "title":"Data Scientist",
+       "category":5
+    },
+    {
+       "title":"2020-BPAC-002-Water-On-The-Go Intern",
+       "category":1
+    },
+    {
+       "title":"Labor Relations Intern",
+       "category":2
+    },
+    {
+       "title":"AUTO MECHANIC (4 Day Temp)",
+       "category":0
+    },
+    {
+       "title":"Management Auditor",
+       "category":5
+    },
+    {
+       "title":"Analyst, Finance",
+       "category":2
+    },
+    {
+       "title":"MACHINIST'S HELPER",
+       "category":3
+    },
+    {
+       "title":"Senior Program Manager",
+       "category":2
+    },
+    {
+       "title":"CERTIFIED IT ADMINISTRATOR (LAN/WAN)",
+       "category":3
+    },
+    {
+       "title":"ELIGIBILITY WORKER",
+       "category":3
+    },
+    {
+       "title":"WEB APPLICATION DEVELOPERS",
+       "category":3
+    },
+    {
+       "title":"Section Chief, Green Infrastructure Maintenance",
+       "category":4
+    },
+    {
+       "title":"Agency Attorney III",
+       "category":4
+    },
+    {
+       "title":"Program Manager",
+       "category":5
+    },
+    {
+       "title":"Forensic Engineering Intern",
+       "category":2
+    },
+    {
+       "title":"Deputy Inspector General for Audit",
+       "category":4
+    },
+    {
+       "title":"City Park Worker",
+       "category":2
+    },
+    {
+       "title":"PROCUREMENT/NEGOTIATIONS ATTORNEY",
+       "category":1
+    },
+    {
+       "title":"Senior Researcher",
+       "category":5
+    },
+    {
+       "title":"COMPUTER SPECIALIST (SOFTWARE)",
+       "category":3
+    },
+    {
+       "title":"Program Officer - I",
+       "category":4
+    },
+    {
+       "title":"PLASTERER (HOUSING AUTH-40 HRS",
+       "category":3
+    },
+    {
+       "title":"Youth Development Specialist",
+       "category":2
+    },
+    {
+       "title":"HR Generalist/Civil Service Specialist",
+       "category":2
+    },
+    {
+       "title":"Assistant Civil Engineer",
+       "category":5
+    },
+    {
+       "title":"PLASTERER",
+       "category":1
+    },
+    {
+       "title":"2020-BWS-006-WRRO Intern (Grahamsville)",
+       "category":4
+    },
+    {
+       "title":"Data Analyst, PNA",
+       "category":4
+    },
+    {
+       "title":"Director, Business Enterprise Systems",
+       "category":4
+    },
+    {
+       "title":"Program Associate",
+       "category":5
+    },
+    {
+       "title":"Assistant Director  Citywide Savings",
+       "category":4
+    },
+    {
+       "title":"Senior Police Administrative Aide",
+       "category":4
+    },
+    {
+       "title":"Domestic Violence Liaison",
+       "category":2
+    },
+    {
+       "title":"COMPLIANCE AUDITOR",
+       "category":3
+    },
+    {
+       "title":"CHILD ASSESSMENT SPECIALIST (BRONX)",
+       "category":3
+    },
+    {
+       "title":"Data Analyst",
+       "category":5
+    },
+    {
+       "title":"DIRECTOR, WOMEN ENTREPRENEURS NYC (WE NYC)",
+       "category":0
+    },
+    {
+       "title":"Plan Examination Intern",
+       "category":2
+    },
+    {
+       "title":"ARCHITECTURAL INTERN",
+       "category":3
+    },
+    {
+       "title":"CERTIFIED IT ADMINISTRATOR (WAN)",
+       "category":3
+    },
+    {
+       "title":"ADVISOR",
+       "category":1
+    },
+    {
+       "title":"Deputy Press Secretary",
+       "category":5
+    },
+    {
+       "title":"Staff Analyst",
+       "category":5
+    },
+    {
+       "title":"Field Responder, Bureau of Alcohol and Drug Use, Prevention, Care, and Treatment",
+       "category":0
+    },
+    {
+       "title":"Administrative Budget Supervisor",
+       "category":2
+    },
+    {
+       "title":"Senior Counsel",
+       "category":5
+    },
+    {
+       "title":"SUPERVISOR OF MECHANICAL INSTALLATIONS & MAINTENANCE",
+       "category":3
+    },
+    {
+       "title":"AUTO MECHANIC",
+       "category":3
+    },
+    {
+       "title":"Electrical Engineering Intern",
+       "category":2
+    },
+    {
+       "title":"Air Compliance Specialist",
+       "category":2
+    },
+    {
+       "title":"2020-WT-003-Mechanical Contracts",
+       "category":1
+    },
+    {
+       "title":"Investment Officer - Public Equity",
+       "category":4
+    },
+    {
+       "title":"Certified IT Developer (Applications) Level 3",
+       "category":4
+    },
+    {
+       "title":"Director of Financial Equity & Asset Building",
+       "category":4
+    },
+    {
+       "title":"INSTRUMENTATION SPECIALIST I",
+       "category":3
+    },
+    {
+       "title":"BUYER",
+       "category":1
+    },
+    {
+       "title":"Lead Abatement Worker",
+       "category":5
+    },
+    {
+       "title":"Vulnerability Specialist",
+       "category":5
+    },
+    {
+       "title":"CITY ATTENDANT",
+       "category":3
+    },
+    {
+       "title":"CHIEF OF SHAFT MAINTENANCE",
+       "category":3
+    },
+    {
+       "title":"Ombudsperson/Pro Se Clerk",
+       "category":5
+    },
+    {
+       "title":"COMPUTER SYSTEMS MANAGER",
+       "category":3
+    },
+    {
+       "title":"Environmental Planning Specialist",
+       "category":2
+    },
+    {
+       "title":"Analyst  Technology Budget & Management",
+       "category":4
+    },
+    {
+       "title":"ENROLLMENT SPECIALIST",
+       "category":3
+    },
+    {
+       "title":"IT and Security Auditor",
+       "category":4
+    },
+    {
+       "title":"Principal Administrative Associate",
+       "category":5
+    },
+    {
+       "title":"Public Health Communications Coordinator",
+       "category":2
+    },
+    {
+       "title":"Compliance Analyst",
+       "category":5
+    },
+    {
+       "title":"Assistant Commissioner, Capital Planning & Delivery",
+       "category":0
+    },
+    {
+       "title":"Laboratory Microbiologist, Bureau of the Public Health Laboratory",
+       "category":0
+    },
+    {
+       "title":"2020-EEO-001-EEO Intern",
+       "category":1
+    },
+    {
+       "title":"Design Reviewer, New Construction",
+       "category":4
+    },
+    {
+       "title":"Head of Short Term Strategic Portfolio and Trading",
+       "category":4
+    },
+    {
+       "title":"Junior Linux Full Stack Developer",
+       "category":4
+    },
+    {
+       "title":"Contract Manager",
+       "category":5
+    },
+    {
+       "title":"Industrial Control Technician",
+       "category":5
+    },
+    {
+       "title":"WEB APPLICATION DEVELOPER",
+       "category":3
+    },
+    {
+       "title":"Analyst, Load Management",
+       "category":4
+    },
+    {
+       "title":"Bureau Staff Attorney",
+       "category":5
+    },
+    {
+       "title":"Senior Software Developer",
+       "category":2
+    },
+    {
+       "title":"2020-ODHR-001-Workforce Development & Training Intern",
+       "category":2
+    },
+    {
+       "title":"E-Learning Content Developer",
+       "category":2
+    },
+    {
+       "title":"Watershed Maintenance",
+       "category":5
+    },
+    {
+       "title":"Stationary Engineer (Electric)",
+       "category":4
+    },
+    {
+       "title":"Audit Supervisor (Engineering Audits)",
+       "category":4
+    },
+    {
+       "title":"Associate - Community Action Center (CAC)",
+       "category":4
+    },
+    {
+       "title":"2020-BWS-009-EHS Core Services Intern",
+       "category":2
+    },
+    {
+       "title":"ELECTRONIC APPLICATION COUNCELOR (EAC)",
+       "category":3
+    },
+    {
+       "title":"City Custodial Assistant, Bureau of Operations",
+       "category":0
+    },
+    {
+       "title":"Senior Design Reviewer (Structural)",
+       "category":4
+    },
+    {
+       "title":"CMS Developer",
+       "category":5
+    },
+    {
+       "title":"Programs Data Manager",
+       "category":2
+    },
+    {
+       "title":"Elevator Inspector",
+       "category":5
+    },
+    {
+       "title":"2020-BWS-001-DSP Water Quality Intern",
+       "category":2
+    },
+    {
+       "title":"Victim Advocate",
+       "category":5
+    },
+    {
+       "title":"Gardener",
+       "category":1
+    },
+    {
+       "title":"Bureau Energy Manager",
+       "category":2
+    },
+    {
+       "title":"Agency Attorney I",
+       "category":4
+    },
+    {
+       "title":"Clerical Associate Level IV",
+       "category":4
+    },
+    {
+       "title":"Engineering Technician I",
+       "category":4
+    },
+    {
+       "title":"Reviewer at Cross Connection Control Unit",
+       "category":4
+    },
+    {
+       "title":"Agency Attorney 2",
+       "category":4
+    },
+    {
+       "title":"Chief, Contract Support Unit",
+       "category":4
+    },
+    {
+       "title":"Supervising Physician, Bureau of School Health",
+       "category":0
+    },
+    {
+       "title":"Assistant General Counsel",
+       "category":5
+    },
+    {
+       "title":"Project Executive",
+       "category":5
+    },
+    {
+       "title":"Timekeeper",
+       "category":1
+    },
+    {
+       "title":"Assistant Environmental Engineer",
+       "category":5
+    },
+    {
+       "title":"Watershed Maintainer â 3 positions",
+       "category":4
+    },
+    {
+       "title":"Forensic Coordinator",
+       "category":5
+    },
+    {
+       "title":"Senior Policy Analyst, Performance Reporting Team",
+       "category":4
+    },
+    {
+       "title":"Computer Specialist (Software)",
+       "category":4
+    },
+    {
+       "title":"Tenant Advocate Intern",
+       "category":2
+    },
+    {
+       "title":"TEMPORARY POPS PROGRAM SPECIALIST",
+       "category":3
+    },
+    {
+       "title":"Clerical Associate III",
+       "category":4
+    },
+    {
+       "title":"Assistant Commissioner, Data Analytics",
+       "category":4
+    },
+    {
+       "title":"GIS Developer",
+       "category":5
+    },
+    {
+       "title":"EXECUTIVE DIRECTOR, BUSINESS DEVELOPMENT",
+       "category":3
+    },
+    {
+       "title":"AGENCY ATTORNEY",
+       "category":3
+    },
+    {
+       "title":"Investigative Attorney",
+       "category":5
+    },
+    {
+       "title":"Applications Worker",
+       "category":5
+    },
+    {
+       "title":"Civil Litigation General Litigation Agency Attorney Level III",
+       "category":0
+    },
+    {
+       "title":"Engineer-In-Charge, Engineering and Metrics Unit",
+       "category":4
+    },
+    {
+       "title":"PAYROLL EXAMINER",
+       "category":3
+    },
+    {
+       "title":"Clerical Associate 4",
+       "category":4
+    },
+    {
+       "title":"Office Clerk AOT, Bureau of Mental Health",
+       "category":0
+    },
+    {
+       "title":"GIS Analyst",
+       "category":5
+    },
+    {
+       "title":"Junior Telecom Support Technician",
+       "category":2
+    },
+    {
+       "title":"Technical Project Manager",
+       "category":2
+    },
+    {
+       "title":"Facilities Building Custodian",
+       "category":5
+    },
+    {
+       "title":"FMS Acceptance Coordinator",
+       "category":2
+    },
+    {
+       "title":"Network Engineer, Solutions and Logistics",
+       "category":4
+    },
+    {
+       "title":"Bookkeeper, Level III",
+       "category":4
+    },
+    {
+       "title":"Supervisor (Watershed Maintenance)",
+       "category":4
+    },
+    {
+       "title":"Bike Share Program Coordinator",
+       "category":2
+    },
+    {
+       "title":"Sewage Treatment Worker",
+       "category":5
+    },
+    {
+       "title":"EHS Management Systems Specialist",
+       "category":2
+    },
+    {
+       "title":"IT Systems Support Engineer",
+       "category":2
+    },
+    {
+       "title":"Associate Investigator",
+       "category":5
+    },
+    {
+       "title":"Cost Estimating Manager",
+       "category":2
+    },
+    {
+       "title":"Supervisory Control and Data Acquisition (SCADA) Manager",
+       "category":4
+    },
+    {
+       "title":"Associate Project Manager 02",
+       "category":2
+    },
+    {
+       "title":"ELECTRICAL ENGINEERING INTERN",
+       "category":3
+    },
+    {
+       "title":"Unit Chief, Interoperability Unit",
+       "category":4
+    },
+    {
+       "title":"Supervisor Dockbuilder",
+       "category":1
+    },
+    {
+       "title":"Coordinator: Healthy Aging Initiatives",
+       "category":4
+    },
+    {
+       "title":"STRUCTURAL ENGINEER TRAINEE",
+       "category":3
+    },
+    {
+       "title":"Analysis and Reporting Analyst",
+       "category":2
+    },
+    {
+       "title":"Emergency Manager",
+       "category":5
+    },
+    {
+       "title":"Secretary IV",
+       "category":5
+    },
+    {
+       "title":"2020-WT-004-Mechanical Engineer",
+       "category":1
+    },
+    {
+       "title":"Scanning Operator, Bureau of Vital Statistics",
+       "category":0
+    },
+    {
+       "title":"Safety Standards and Guidance Intern",
+       "category":2
+    },
+    {
+       "title":"Environmental Specialist",
+       "category":5
+    },
+    {
+       "title":"Labor Compliance Officer",
+       "category":5
+    },
+    {
+       "title":"Temporary Painter",
+       "category":5
+    },
+    {
+       "title":"Housing Inspector",
+       "category":5
+    },
+    {
+       "title":"Policy Analyst for Accessibility",
+       "category":2
+    },
+    {
+       "title":"Contract Administrator",
+       "category":5
+    },
+    {
+       "title":"Associate Zoning Planner",
+       "category":2
+    },
+    {
+       "title":"2020-BWS-002-Grahamsville Laboratory Intern",
+       "category":2
+    },
+    {
+       "title":"PROCUREMENT SPECIALIST",
+       "category":3
+    },
+    {
+       "title":"Bid Package Reviewer",
+       "category":2
+    },
+    {
+       "title":"Integrity Review Specialist",
+       "category":2
+    },
+    {
+       "title":"Health and Safety Specialist",
+       "category":2
+    },
+    {
+       "title":"Administrative Staff Analyst (Non-Managerial)",
+       "category":4
+    },
+    {
+       "title":"RES Energy Coordinator",
+       "category":2
+    },
+    {
+       "title":"Junior .NET Developer",
+       "category":2
+    },
+    {
+       "title":"2020-PS-002-Emergency Response & Technical Assessment",
+       "category":2
+    },
+    {
+       "title":"Financial Auditor",
+       "category":5
+    },
+    {
+       "title":"2020-WT-006-Project Development",
+       "category":1
+    },
+    {
+       "title":"PROGRAM MANAGER, REGULATORY REFORM",
+       "category":3
+    },
+    {
+       "title":"Senior Capital Budget Analyst",
+       "category":2
+    },
+    {
+       "title":"Child Care Inspector, Bureau of Childcare",
+       "category":0
+    },
+    {
+       "title":"Civilian Investigator",
+       "category":5
+    },
+    {
+       "title":"Licensing Specialist",
+       "category":5
+    },
+    {
+       "title":"Field Inspector",
+       "category":5
+    },
+    {
+       "title":"Senior Windows Administrator",
+       "category":2
+    },
+    {
+       "title":"Senior Sustainability Coordinator",
+       "category":2
+    },
+    {
+       "title":"Executive Director of Credit & Special Underwriting, Office of Policy & Strategy",
+       "category":0
+    },
+    {
+       "title":"Driver Assistance Center Program Manager",
+       "category":2
+    },
+    {
+       "title":"Business Analyst",
+       "category":5
+    },
+    {
+       "title":"Staff Analyst Level II",
+       "category":4
+    },
+    {
+       "title":"2020-SUST-002-Green Infrastructure Intern",
+       "category":2
+    },
+    {
+       "title":"SENIOR PEOPLESOFT HCM ANALYST",
+       "category":3
+    },
+    {
+       "title":"Data Analytics Specialist",
+       "category":2
+    },
+    {
+       "title":"Networking Intern",
+       "category":2
+    },
+    {
+       "title":"Deputy Commissioner, Family & Child Health",
+       "category":0
+    },
+    {
+       "title":"Assistant Counsel",
+       "category":5
+    },
+    {
+       "title":"PREVAILING WAGE INVESTIGATOR",
+       "category":3
+    },
+    {
+       "title":"Hiring Plan Analyst",
+       "category":2
+    },
+    {
+       "title":"Supervising Public Health Nurse, Bureau of School Health/SH Nursing Services & Prof Dev",
+       "category":0
+    },
+    {
+       "title":"Tracking and Monitoring Data Analyst",
+       "category":2
+    },
+    {
+       "title":"Plumbing Inspector",
+       "category":5
+    },
+    {
+       "title":"College Aide L1",
+       "category":4
+    },
+    {
+       "title":"Information Technology Services Summer Intern",
+       "category":2
+    },
+    {
+       "title":"Chief Officer Safety and Tactics Advisor",
+       "category":4
+    },
+    {
+       "title":"Field Technician",
+       "category":5
+    },
+    {
+       "title":"LEAD DESIGNER FOR WATER TUNNEL STRUCTURAL",
+       "category":3
+    },
+    {
+       "title":"Agency Counsel",
+       "category":5
+    },
+    {
+       "title":"Child Protective Manager",
+       "category":5
+    },
+    {
+       "title":"Thermostat Repairer",
+       "category":5
+    },
+    {
+       "title":"HR Intern, HR Unit",
+       "category":2
+    },
+    {
+       "title":"OFFICE LIAISON",
+       "category":3
+    },
+    {
+       "title":"Plumbing Engineer",
+       "category":5
+    },
+    {
+       "title":"ELECTRICIAN",
+       "category":1
+    },
+    {
+       "title":"Dam Safety Coordinator",
+       "category":2
+    },
+    {
+       "title":"2020-BWS-005-Water Quality Lab Intern (Kingston)",
+       "category":0
+    },
+    {
+       "title":"Maintenance Worker - Technical Services-Heating Unit",
+       "category":4
+    },
+    {
+       "title":"Assistant Commissioner, Bureau of Mental Hygiene Community Engagement, Policy and Practice",
+       "category":0
+    },
+    {
+       "title":"BOROUGH PLANNER",
+       "category":3
+    },
+    {
+       "title":"Information Representative",
+       "category":5
+    },
+    {
+       "title":"Legal Assistant",
+       "category":5
+    },
+    {
+       "title":"Project Administrator",
+       "category":5
+    },
+    {
+       "title":"Network & Systems Engineer",
+       "category":2
+    },
+    {
+       "title":"ASSISTANT COMMISSIONER, PUBLIC AFFAIRS",
+       "category":3
+    },
+    {
+       "title":"Deputy Director of Payroll and Timekeeping",
+       "category":4
+    },
+    {
+       "title":"Administrative Contract Specialist M-I",
+       "category":4
+    },
+    {
+       "title":"Principal Administrative Associate - Level I",
+       "category":4
+    },
+    {
+       "title":"2020-BEDC-003-WSCP Project Support Intern",
+       "category":2
+    },
+    {
+       "title":"DIRECTOR, DATA AND OPERATIONS",
+       "category":3
+    },
+    {
+       "title":"CAD and Records Manager",
+       "category":4
+    },
+    {
+       "title":"ELECTRICAL ENGINEER",
+       "category":3
+    },
+    {
+       "title":"Case Analyst",
+       "category":5
+    },
+    {
+       "title":"Employer Engagement Coordinator",
+       "category":2
+    },
+    {
+       "title":"Civil Engineer I",
+       "category":4
+    },
+    {
+       "title":"Administrative Budget Analyst",
+       "category":2
+    },
+    {
+       "title":"MECHANICAL ENGINEERING INTERN",
+       "category":3
+    },
+    {
+       "title":"Administrative Associate",
+       "category":5
+    },
+    {
+       "title":"Senior Program Officer, Asset Building",
+       "category":4
+    },
+    {
+       "title":"E-Learning Content Developer (Per Diem)",
+       "category":4
+    },
+    {
+       "title":"Connections and Title IV-E liaison",
+       "category":4
+    },
+    {
+       "title":"2020-WT-001-Electrical & Instrumentation Contracts",
+       "category":5
+    },
+    {
+       "title":"2020-BPAC-001 Environmental Educational Intern",
+       "category":2
+    },
+    {
+       "title":"Facilities Assistant",
+       "category":5
+    },
+    {
+       "title":"Capacity Building Specialist",
+       "category":2
+    },
+    {
+       "title":"DIRECTOR OF DATA ANALYTICS AND RESEARCH",
+       "category":3
+    },
+    {
+       "title":"Pest Control Aide, Bureau of Veterinary and Pest Control Services",
+       "category":0
+    },
+    {
+       "title":"IMAGING SUPPORT CLERK",
+       "category":3
+    },
+    {
+       "title":"PROGRAM AND POLICY  Unit Head",
+       "category":3
+    },
+    {
+       "title":"Engineer-In-Charge",
+       "category":1
+    },
+    {
+       "title":"Senior Project Controls Manager",
+       "category":2
+    },
+    {
+       "title":"Senior IT Developer",
+       "category":5
+    },
+    {
+       "title":"CONTRACTS ATTORNEY",
+       "category":3
+    },
+    {
+       "title":"MACHINIST",
+       "category":1
+    },
+    {
+       "title":"Assistant District Attorney - Criminal Court",
+       "category":0
+    },
+    {
+       "title":"Mechanical Engineer",
+       "category":5
+    },
+    {
+       "title":"Landscape Architect",
+       "category":5
+    },
+    {
+       "title":"Chief Information Officer",
+       "category":5
+    },
+    {
+       "title":"Project Advocate Intern",
+       "category":2
+    },
+    {
+       "title":"STRATEGIC PROJECTS MANAGER",
+       "category":3
+    },
+    {
+       "title":"Deputy Commissioner, Water and Sewer Operations",
+       "category":0
+    },
+    {
+       "title":"Juvenile Justice Investigator Supervisor",
+       "category":4
+    },
+    {
+       "title":"Hearing Officer",
+       "category":5
+    },
+    {
+       "title":"STRUCTURAL ENGINEER",
+       "category":3
+    },
+    {
+       "title":"Performance Analyst",
+       "category":5
+    },
+    {
+       "title":"PROGRAM MANAGER, CANDIDATE SERVICES",
+       "category":3
+    },
+    {
+       "title":"Machinist",
+       "category":1
+    },
+    {
+       "title":"Information Technology Program Director",
+       "category":2
+    },
+    {
+       "title":"DIRECTOR, PROGRAM MANAGEMENT OFFICE",
+       "category":3
+    },
+    {
+       "title":"PH Adviser Optometry Eyeglass",
+       "category":2
+    },
+    {
+       "title":"Chief of Staff to the Assistant Commissioner of Human Resources",
+       "category":0
+    },
+    {
+       "title":"Director of Administration",
+       "category":5
+    },
+    {
+       "title":"Heating Oversight Team Specialist",
+       "category":2
+    },
+    {
+       "title":"EARD TEAM LEADER",
+       "category":3
+    },
+    {
+       "title":"Pipeline Planner",
+       "category":2
+    },
+    {
+       "title":"Energy Manager",
+       "category":5
+    },
+    {
+       "title":"Division Chief Contracting and Budgeting",
+       "category":4
+    },
+    {
+       "title":"SUMMER GRADUATE INTERN",
+       "category":3
+    },
+    {
+       "title":"Deputy Director of Field Operations",
+       "category":4
+    },
+    {
+       "title":"SENIOR DEVELOPER",
+       "category":3
+    },
+    {
+       "title":"DEPUTY DIRECTOR, PARTNERSHIPS AND COMMUNICATIONS",
+       "category":3
+    },
+    {
+       "title":"MEDICOLEGAL ANALYST",
+       "category":1
+    },
+    {
+       "title":"WATERSHED MAINTAINER",
+       "category":3
+    },
+    {
+       "title":"Quality Assurance Manager, Crime Scene Unit, M-II",
+       "category":0
+    },
+    {
+       "title":"Cyber Security Engineer",
+       "category":5
+    },
+    {
+       "title":"F/T Computer Aide",
+       "category":5
+    },
+    {
+       "title":"Program Associate, Clean Energy",
+       "category":4
+    },
+    {
+       "title":"Client Engagement Advisor, Workforce Development",
+       "category":2
+    },
+    {
+       "title":"Resiliency Engineer",
+       "category":5
+    },
+    {
+       "title":"NYC Census 2020 - Field Director",
+       "category":0
+    },
+    {
+       "title":"Fiscal Analyst",
+       "category":5
+    },
+    {
+       "title":"ACRIS/DTM/OCR Director",
+       "category":1
+    },
+    {
+       "title":"DIRECTOR, BUSINESS PROGRAMS",
+       "category":3
+    },
+    {
+       "title":"Analyst Sanitation",
+       "category":5
+    },
+    {
+       "title":"Project Coordinator, Administration Office",
+       "category":4
+    },
+    {
+       "title":"Executive Agency Counsel",
+       "category":5
+    },
+    {
+       "title":"Director of Senior Practice Consultation",
+       "category":4
+    },
+    {
+       "title":"Labor Relations Associate",
+       "category":2
+    },
+    {
+       "title":"Forester",
+       "category":1
+    },
+    {
+       "title":"Unit Head / Deputy Assistant Director  Capital Program Scope Development (CPSD)",
+       "category":0
+    },
+    {
+       "title":"2020-BWS-014-Reservoir Ops Associate Data Analyst Intern",
+       "category":2
+    },
+    {
+       "title":"2020-ODHR-002-Human Resources Information Services Intern",
+       "category":2
+    },
+    {
+       "title":"Geotechnical Project Manager",
+       "category":2
+    },
+    {
+       "title":"Budget Analyst",
+       "category":2
+    },
+    {
+       "title":"Procurement Analyst II",
+       "category":2
+    },
+    {
+       "title":"Waterfront Facilities Engineer",
+       "category":5
+    },
+    {
+       "title":"CERTIFIED IT ADMINISTRATOR (WAN), Level 4",
+       "category":0
+    },
+    {
+       "title":"Claim Specialist",
+       "category":5
+    },
+    {
+       "title":"Police Administrative Aide",
+       "category":5
+    },
+    {
+       "title":"Elevator Oversight Team (EOT) Administrator",
+       "category":4
+    },
+    {
+       "title":".Net Programmer / Analyst",
+       "category":2
+    },
+    {
+       "title":"Construction Inspector",
+       "category":5
+    },
+    {
+       "title":"Data Coordinator",
+       "category":5
+    },
+    {
+       "title":"Supervisor of the Payroll NYCAPS Unit",
+       "category":4
+    },
+    {
+       "title":"Senior Estimator (Mechanical)",
+       "category":4
+    },
+    {
+       "title":"APA Foster Care Program Evaluator",
+       "category":0
+    },
+    {
+       "title":"Investigator (Employee Discipline)",
+       "category":4
+    },
+    {
+       "title":"Contracts Officer",
+       "category":5
+    },
+    {
+       "title":"Nutrition Consultant",
+       "category":2
+    },
+    {
+       "title":"Clerical Associate, Bureau of Communicable Diseases",
+       "category":0
+    },
+    {
+       "title":"Senior Investment Officer â Real Estate",
+       "category":4
+    },
+    {
+       "title":"Press Secretary",
+       "category":5
+    },
+    {
+       "title":"Assistant for Economic Development",
+       "category":4
+    },
+    {
+       "title":"Deputy Director of Analytics and Reporting",
+       "category":4
+    },
+    {
+       "title":"City Research Scientist II",
+       "category":4
+    },
+    {
+       "title":"Assistant Project Manager",
+       "category":2
+    },
+    {
+       "title":"Contract Analyst",
+       "category":5
+    },
+    {
+       "title":"Compliance Specialist",
+       "category":5
+    },
+    {
+       "title":"City Park Worker (Full-Time)",
+       "category":0
+    },
+    {
+       "title":"Director, Central Records Division",
+       "category":4
+    },
+    {
+       "title":"Summons/Violation Coordinator",
+       "category":1
+    },
+    {
+       "title":"Director of Quality Assurance and Improvement",
+       "category":4
+    },
+    {
+       "title":"Crime Analyst, Level I",
+       "category":4
+    },
+    {
+       "title":"Transit Benefit Clerk",
+       "category":2
+    },
+    {
+       "title":"Call Center, Correspondence, and Lost Property Agent",
+       "category":0
+    },
+    {
+       "title":"2020-WT-002-Electrical Engineering",
+       "category":1
+    },
+    {
+       "title":"Fire Safety Oversight Team (FSOT) Specialist",
+       "category":0
+    },
+    {
+       "title":"College Aid-Graphic Designer",
+       "category":5
+    },
+    {
+       "title":"DIRECTOR, WORKFORCE1 TRAINING",
+       "category":3
+    },
+    {
+       "title":"311 Call Center Manager",
+       "category":4
+    },
+    {
+       "title":"Section Chief Catch Basin Inspection Unit",
+       "category":4
+    },
+    {
+       "title":"HEARING OFFICER",
+       "category":3
+    },
+    {
+       "title":"DEPUTY DIRECTOR OF CAPITAL BUDGET",
+       "category":3
+    },
+    {
+       "title":"Deputy Chief, Permitting",
+       "category":4
+    },
+    {
+       "title":"DIRECTOR OF CONSTRUCTION / SMALL PROJECTS",
+       "category":3
+    },
+    {
+       "title":"Engineer-In-Charge, Contract Support Unit",
+       "category":4
+    },
+    {
+       "title":"Administrative Engineer",
+       "category":5
+    },
+    {
+       "title":"Clinical Advisor",
+       "category":5
+    },
+    {
+       "title":"Principal Administrative Associate I",
+       "category":4
+    },
+    {
+       "title":"Analyst  MISCELLANEOUS REVENUE",
+       "category":3
+    },
+    {
+       "title":"APPLICATION DEVELOPER",
+       "category":3
+    },
+    {
+       "title":"Payroll Funding Analyst",
+       "category":2
+    },
+    {
+       "title":"Associate Public Health Sanitarian 1",
+       "category":0
+    },
+    {
+       "title":"Bilingual NFP Nurse Home Visitor, Bureau of Maternal Infant and Reproductive Health",
+       "category":0
+    },
+    {
+       "title":"DEPUTY COMMISSIONER",
+       "category":3
+    },
+    {
+       "title":"Infrastructure Summer Intern",
+       "category":2
+    },
+    {
+       "title":"EEO Investigator",
+       "category":5
+    },
+    {
+       "title":"Cyber Audit Analyst",
+       "category":2
+    },
+    {
+       "title":"Senior Advisor",
+       "category":5
+    },
+    {
+       "title":"Green Infrastructure Program Analyst",
+       "category":2
+    },
+    {
+       "title":"MOME Broadcast and IT Support Engineer",
+       "category":4
+    },
+    {
+       "title":"GIS CSCL Coordinator",
+       "category":2
+    },
+    {
+       "title":"Engineer-In-Charge, Survey and Investigations Unit",
+       "category":4
+    },
+    {
+       "title":"Analyst  FIRE",
+       "category":5
+    },
+    {
+       "title":"Prosecuting Attorney",
+       "category":5
+    },
+    {
+       "title":"2020-BWS-013-Regulatory & Engineering Program Intern WOH",
+       "category":2
+    },
+    {
+       "title":"Compliance Review Unit Supervisor",
+       "category":2
+    },
+    {
+       "title":"DCAS Safety and Health Officer",
+       "category":4
+    },
+    {
+       "title":"Environmental Health & Safety Regional Manager",
+       "category":0
+    },
+    {
+       "title":"PEOPLESOFT ADMINISTRATOR",
+       "category":1
+    },
+    {
+       "title":"Executive Director",
+       "category":5
+    },
+    {
+       "title":"Deputy Director Quality Improvement, Mental Health",
+       "category":0
+    },
+    {
+       "title":"Executive  Communications Associate",
+       "category":5
+    },
+    {
+       "title":"Project Controls Summer Intern",
+       "category":2
+    },
+    {
+       "title":"Technical Advisor",
+       "category":5
+    },
+    {
+       "title":"Deputy Director, Neighborhood Planning",
+       "category":4
+    },
+    {
+       "title":"Facility Operations Custodial Assistant",
+       "category":5
+    },
+    {
+       "title":"Junior Compliance Investigator",
+       "category":5
+    },
+    {
+       "title":"Associate Project Manager",
+       "category":2
+    },
+    {
+       "title":"Program Specialist",
+       "category":5
+    },
+    {
+       "title":"Clerical Associate- Appeals",
+       "category":5
+    },
+    {
+       "title":"Cyber Security Intern - Cyber Audit",
+       "category":2
+    },
+    {
+       "title":"Community Assistant, Part Time",
+       "category":4
+    },
+    {
+       "title":"Senior Project Controls Specialist",
+       "category":2
+    },
+    {
+       "title":"Senior Design Reviewer (Civil)",
+       "category":4
+    },
+    {
+       "title":"Senior Policy Advisor, Climate Partnerships",
+       "category":0
+    },
+    {
+       "title":"Computer Specialist",
+       "category":5
+    },
+    {
+       "title":"Construction Project Manager 2",
+       "category":4
+    },
+    {
+       "title":"Discriminatory Harassment Investigator",
+       "category":5
+    },
+    {
+       "title":"Staff Attorney",
+       "category":5
+    },
+    {
+       "title":"Director of Operations, NYC Connected",
+       "category":0
+    },
+    {
+       "title":"PAYMENT ANALYST",
+       "category":3
+    },
+    {
+       "title":"POPS PROGRAM SPECIALIST",
+       "category":3
+    },
+    {
+       "title":"Analyst  HEALTH + HOSPITALS",
+       "category":3
+    },
+    {
+       "title":"PROJECT MANAGER",
+       "category":3
+    },
+    {
+       "title":"COMPUTER SYSTEMS MANAGER, M-2",
+       "category":3
+    },
+    {
+       "title":"Forestry Supervisor",
+       "category":5
+    },
+    {
+       "title":"On-Line Learning Instructional Design Specialist",
+       "category":2
+    },
+    {
+       "title":"Community Coordinator (Vendor Payment)",
+       "category":4
+    },
+    {
+       "title":"AGENCY ATTORNEY  03",
+       "category":3
+    },
+    {
+       "title":"General Counsel / Deputy Comptroller for Legal Affairs",
+       "category":0
+    },
+    {
+       "title":"Civil Engineer",
+       "category":5
+    },
+    {
+       "title":"Vehicle Licensing Specialist",
+       "category":5
+    },
+    {
+       "title":"Principal Administrative Associate - Level III",
+       "category":4
+    },
+    {
+       "title":"Infrastructure Project Manager",
+       "category":2
+    },
+    {
+       "title":"BOOKKEEPER",
+       "category":1
+    },
+    {
+       "title":"Associate Staff Analyst",
+       "category":2
+    },
+    {
+       "title":"2020-BLA-001 Undergraduate Legal Intern",
+       "category":2
+    },
+    {
+       "title":"Mechanical Systems Inspector",
+       "category":5
+    },
+    {
+       "title":".NET DEVELOPER",
+       "category":3
+    },
+    {
+       "title":"Workplace Violence Investigator",
+       "category":2
+    },
+    {
+       "title":"ASSISTANT DIRECTOR, FINANCIAL CAPABILITY AND BUSINESS DEVELOPMENT",
+       "category":3
+    },
+    {
+       "title":"Taxi and Limousine Inspector - Enforcement",
+       "category":0
+    },
+    {
+       "title":"Deputy Director - Research & Investigations",
+       "category":4
+    },
+    {
+       "title":"Investigative Intern, Internal Affairs and Discipline (IAD)",
+       "category":0
+    },
+    {
+       "title":"Public Health Advisor, Bureau of STD Prevention and Control",
+       "category":0
+    },
+    {
+       "title":"Landscape Architect Intern",
+       "category":2
+    },
+    {
+       "title":"Software Developer",
+       "category":5
+    },
+    {
+       "title":"EXECUTIVE DIRECTOR, CONSTRUCTION SAFETY TRAINING",
+       "category":3
+    },
+    {
+       "title":"Help Desk Level 1 Representative",
+       "category":4
+    },
+    {
+       "title":"Safety Manager",
+       "category":5
+    },
+    {
+       "title":"Conflict Resolution Specialist",
+       "category":2
+    },
+    {
+       "title":"Director of Upstate Operations",
+       "category":4
+    },
+    {
+       "title":"EHS Compliance Systems Specialist",
+       "category":2
+    },
+    {
+       "title":"CLAIM SPECIALIST Level 1",
+       "category":3
+    },
+    {
+       "title":"Student Legal Specialist",
+       "category":2
+    },
+    {
+       "title":"Automated Enforcement Camera Technician (AEU)",
+       "category":0
+    },
+    {
+       "title":"Engineering Technician IV",
+       "category":2
+    },
+    {
+       "title":"Health & Safety Specialist",
+       "category":2
+    },
+    {
+       "title":"Government Affairs Officer/Legislative Analyst",
+       "category":2
+    },
+    {
+       "title":"Budget Analyst, Bureau of Budget and Revenue/Budget Administration",
+       "category":0
+    },
+    {
+       "title":"STATIONARY ENGINEER",
+       "category":3
+    },
+    {
+       "title":"Senior Trainer",
+       "category":5
+    },
+    {
+       "title":"Energy Liaison Coordinator",
+       "category":2
+    },
+    {
+       "title":"CLERICAL ASSOCIATE",
+       "category":3
+    },
+    {
+       "title":"Safety & Site Support Summer Intern",
+       "category":2
+    },
+    {
+       "title":"CATCH School Nurse,  Bureau of School Health/SH Reproductive Health",
+       "category":0
+    },
+    {
+       "title":"City Seasonal Aide/Security Guard",
+       "category":2
+    },
+    {
+       "title":"Analyst  Police",
+       "category":5
+    },
+    {
+       "title":"Deputy Director for Manhattan Planning",
+       "category":0
+    },
+    {
+       "title":"Director of Labor Compliance",
+       "category":4
+    },
+    {
+       "title":"Civil Engineer II",
+       "category":4
+    },
+    {
+       "title":"Construction Project Manager for FHNR",
+       "category":2
+    },
+    {
+       "title":"Custodian",
+       "category":1
+    },
+    {
+       "title":"Supervisor Watershed Maintenance I",
+       "category":4
+    },
+    {
+       "title":"Supervisor, EHS Facility Compliance â Downstate Division",
+       "category":0
+    },
+    {
+       "title":"Assistant Director of Grants",
+       "category":4
+    },
+    {
+       "title":"Associate Water Use Inspector",
+       "category":4
+    },
+    {
+       "title":"Urban Designer â Bronx Borough Office",
+       "category":0
+    },
+    {
+       "title":"Administrative Transportation Coordinator M-I",
+       "category":4
+    },
+    {
+       "title":"ASSISTANT RESIDENT BUILDING SUPT",
+       "category":3
+    },
+    {
+       "title":"Energy Project Manager - Capital",
+       "category":2
+    },
+    {
+       "title":"BUSINESS ANALYST",
+       "category":3
+    },
+    {
+       "title":"ASSISTANT PROJECT MANAGER",
+       "category":3
+    },
+    {
+       "title":"Policy Advisor",
+       "category":5
+    },
+    {
+       "title":"Supervising Attorney-Housing & Public Accommodations",
+       "category":4
+    },
+    {
+       "title":"ETL Developer, MO for Economic Opportunity",
+       "category":0
+    },
+    {
+       "title":"Environmental Health & Safety Incident Investigator",
+       "category":0
+    },
+    {
+       "title":"Design Engineer",
+       "category":5
+    },
+    {
+       "title":"Deputy ACCO",
+       "category":5
+    },
+    {
+       "title":"Director, Project Management Office",
+       "category":4
+    },
+    {
+       "title":"Engineering Intern",
+       "category":2
+    },
+    {
+       "title":"PROJECT MANAGER, PMO",
+       "category":3
+    },
+    {
+       "title":"ECONOMIC ANALYSIS UNIT  ANALYST",
+       "category":3
+    },
+    {
+       "title":"Traffic Device Maintainer",
+       "category":5
+    },
+    {
+       "title":"CERTIFIED IT DEVELOPER (APPLICATIONS)",
+       "category":3
+    },
+    {
+       "title":"Computer Systems Manager",
+       "category":2
+    },
+    {
+       "title":"Senior Detective Investigator",
+       "category":5
+    },
+    {
+       "title":"Managing Director of Green Infrastructure Design and Construction",
+       "category":0
+    },
+    {
+       "title":"CARETAKER J",
+       "category":5
+    },
+    {
+       "title":"Supervisor (Watershed Maintenance) I",
+       "category":4
+    },
+    {
+       "title":"Emergency Management Training & Exercise Coordinator",
+       "category":4
+    },
+    {
+       "title":"REVENUE ANALYST",
+       "category":3
+    },
+    {
+       "title":"Court Representative, Litigation Division (3 Positions)",
+       "category":0
+    },
+    {
+       "title":"CoC Contract Coordinator",
+       "category":2
+    },
+    {
+       "title":"Analyst  DOE Expense",
+       "category":2
+    },
+    {
+       "title":"2020-SUST-001-Air Compliance Intern",
+       "category":2
+    },
+    {
+       "title":"Mental Health Program Associate",
+       "category":2
+    },
+    {
+       "title":"Supervising Analyst / Unit Head  Pension Analysis",
+       "category":4
+    },
+    {
+       "title":"Community Affairs Specialist",
+       "category":2
+    },
+    {
+       "title":"Public Buildings Summer Intern",
+       "category":2
+    },
+    {
+       "title":"Ordered Deductions Clerk",
+       "category":4
+    },
+    {
+       "title":"2020-FMC-001-Architect/Engineering Intern",
+       "category":1
+    },
+    {
+       "title":"Senior Estimator (Electrical)",
+       "category":4
+    },
+    {
+       "title":"Collections Attorney",
+       "category":5
+    },
+    {
+       "title":"Division Chief of Construction Management",
+       "category":4
+    },
+    {
+       "title":"Senior Budget Analyst",
+       "category":2
+    },
+    {
+       "title":"Water Use Inspector II",
+       "category":4
+    },
+    {
+       "title":"Pension Representative",
+       "category":5
+    },
+    {
+       "title":"Urban Planner",
+       "category":2
+    },
+    {
+       "title":"Stationary Engineer",
+       "category":5
+    },
+    {
+       "title":"SENIOR PROJECT LEADER",
+       "category":3
+    },
+    {
+       "title":"Project Manager (GIS)",
+       "category":4
+    },
+    {
+       "title":"CONFIDENTIAL INVESTIGATOR",
+       "category":3
+    },
+    {
+       "title":"Deputy Chief of Distribution Water Quality Field Operations",
+       "category":0
+    },
+    {
+       "title":"Assistant Mechanical Engineer",
+       "category":5
+    },
+    {
+       "title":"Community Service Technical Liaison",
+       "category":2
+    },
+    {
+       "title":"Clerical Supervisor (ICSU)",
+       "category":4
+    },
+    {
+       "title":"Sewer Resilience Planning Supervisor",
+       "category":2
+    },
+    {
+       "title":"Policy Writer",
+       "category":5
+    },
+    {
+       "title":"PORTFOLIO MANAGER",
+       "category":3
+    },
+    {
+       "title":"Director of the City Record",
+       "category":4
+    },
+    {
+       "title":"Administrative Contract Specialist, M-I",
+       "category":4
+    },
+    {
+       "title":"Systems Administrator - Computer Software",
+       "category":4
+    },
+    {
+       "title":"2020-BWSO-001-Connections and Permitting Intern",
+       "category":2
+    },
+    {
+       "title":"PROJECT SPECIALIST LEADER",
+       "category":3
+    },
+    {
+       "title":"Managing Director, Green Infrastructure Planning and Partnerships",
+       "category":0
+    },
+    {
+       "title":"Green Infrastructure Designer",
+       "category":2
+    },
+    {
+       "title":"City Attendant",
+       "category":5
+    },
+    {
+       "title":"VP - Operations",
+       "category":5
+    },
+    {
+       "title":"Inspector",
+       "category":1
+    },
+    {
+       "title":"Special Advisor to the Director, Neighborhood Development Areas (NDA) Initiative",
+       "category":0
+    },
+    {
+       "title":"Product Manager",
+       "category":5
+    },
+    {
+       "title":"Director, Borough Based Jail System",
+       "category":4
+    },
+    {
+       "title":"Climber & Pruner",
+       "category":2
+    },
+    {
+       "title":"DIRECTOR, OFFICE OF EQUITY, DIVERSITY & INCLUSION",
+       "category":3
+    },
+    {
+       "title":"Director, Capital Budget",
+       "category":4
+    },
+    {
+       "title":"NYC Census 2020 Lead Organizer",
+       "category":0
+    },
+    {
+       "title":"2020-PS-001-Security Engineering/Engineering",
+       "category":1
+    },
+    {
+       "title":"Emergency Management Planning Coordinator",
+       "category":2
+    },
+    {
+       "title":"ANALYSTS  ADMINISTRATIVE AGENCIES",
+       "category":3
+    },
+    {
+       "title":"Gardener 2",
+       "category":5
+    },
+    {
+       "title":"Director of Materials Management",
+       "category":4
+    },
+    {
+       "title":"Area Engineer",
+       "category":5
+    },
+    {
+       "title":"Senior Investment Analyst â Alternative Credit (2 positions)",
+       "category":0
+    },
+    {
+       "title":"Application Approver",
+       "category":5
+    },
+    {
+       "title":"2020-EXEC/ENERGY-001-Energy Office Intern",
+       "category":2
+    },
+    {
+       "title":"Custodian I",
+       "category":5
+    },
+    {
+       "title":"SUPERVISING ATTORNEY",
+       "category":3
+    },
+    {
+       "title":"Workforce Development Associate",
+       "category":2
+    },
+    {
+       "title":"Director of Medical and Laboratory Facilities",
+       "category":4
+    },
+    {
+       "title":"Chief, Infrastructure - Southeast Queens",
+       "category":0
+    },
+    {
+       "title":"Telecom Associate - VOICE Technician",
+       "category":4
+    },
+    {
+       "title":"Section Manager, Civil",
+       "category":4
+    },
+    {
+       "title":"ENGINEERING TECHNICIAN 03",
+       "category":3
+    },
+    {
+       "title":"Staten Island Office Deputy Director",
+       "category":0
+    },
+    {
+       "title":"Deputy Agency Chief Contracting Officer (DAACO)",
+       "category":4
+    },
+    {
+       "title":"Resident Engineer",
+       "category":5
+    },
+    {
+       "title":"Field Technician - 7A Program",
+       "category":4
+    },
+    {
+       "title":"Mechanical Inspector",
+       "category":5
+    },
+    {
+       "title":"Supervising Inspector",
+       "category":5
+    },
+    {
+       "title":"Analyst  FEMA Public Assistance Policy & Monitoring & Compliance / Monitoring & Compliance",
+       "category":0
+    },
+    {
+       "title":"Chief Analyst/Project Manager",
+       "category":5
+    },
+    {
+       "title":"Procurement Analyst",
+       "category":5
+    },
+    {
+       "title":"Civil Engineering Intern",
+       "category":2
+    },
+    {
+       "title":"AGENCY ATTORNEY 03",
+       "category":3
+    },
+    {
+       "title":"IT Infrastructure Project Manager",
+       "category":2
+    },
+    {
+       "title":"Deputy Commissioner of Policy",
+       "category":4
+    },
+    {
+       "title":"DIRECTOR OF ENFORCEMENT",
+       "category":3
+    },
+    {
+       "title":"Operations Analyst",
+       "category":5
+    },
+    {
+       "title":"Director of Public Communications Structures",
+       "category":4
+    },
+    {
+       "title":"IT Security Specialist - Security Audits (2 positions)",
+       "category":0
+    },
+    {
+       "title":"Clerical Associate",
+       "category":5
+    },
+    {
+       "title":"2020-BEDC-006-PMO Intern",
+       "category":1
+    },
+    {
+       "title":"College Aide",
+       "category":5
+    },
+    {
+       "title":"Evidence And Property Control Specialist I",
+       "category":4
+    },
+    {
+       "title":"Building Information Modeling (BIM) Manager",
+       "category":4
+    },
+    {
+       "title":"2020-BEDC-002-IHD Civil Intern",
+       "category":2
+    },
+    {
+       "title":"Assistant Corporation Counsel, Brooklyn Tort Division",
+       "category":0
+    },
+    {
+       "title":"Supervisor",
+       "category":1
+    },
+    {
+       "title":"BUILDING INSPECTOR",
+       "category":3
+    },
+    {
+       "title":"Landscape Architect II",
+       "category":2
+    },
+    {
+       "title":"Analyst  DOITT, Finance, Law, Mayoralty & Elected Officials",
+       "category":0
+    },
+    {
+       "title":"DATA ANALYST, BUSINESS OPERATIONS",
+       "category":3
+    },
+    {
+       "title":"Unit Head  Reporting and Applications Development",
+       "category":4
+    },
+    {
+       "title":"Structural Engineer",
+       "category":5
+    },
+    {
+       "title":"2020-BEDC-001-BIM/CADD Intern",
+       "category":1
+    },
+    {
+       "title":"Section Chief, Asset Management Maintenance Systems",
+       "category":4
+    },
+    {
+       "title":"Carpenter",
+       "category":1
+    },
+    {
+       "title":"Child Welfare Analyst",
+       "category":2
+    },
+    {
+       "title":"Site Safety Plan Examination Intern",
+       "category":2
+    },
+    {
+       "title":"Supervising Attorney-Employment",
+       "category":1
+    },
+    {
+       "title":"Bureau Chief Contracting Officer",
+       "category":4
+    },
+    {
+       "title":"2020-BEDC-004 WSCP Project Intern",
+       "category":2
+    },
+    {
+       "title":"Network Administrator",
+       "category":5
+    },
+    {
+       "title":"Special Counsel, Legal/Land Use",
+       "category":4
+    },
+    {
+       "title":"Cyber Security Intern Security Science",
+       "category":2
+    },
+    {
+       "title":"Legal Services Coordinator",
+       "category":2
+    },
+    {
+       "title":"2020-BWS-010-Research Application/Innovation Intern",
+       "category":1
+    },
+    {
+       "title":"Data Support Analyst",
+       "category":2
+    },
+    {
+       "title":"Summer College Intern",
+       "category":2
+    },
+    {
+       "title":"Program Data Analyst",
+       "category":2
+    },
+    {
+       "title":"Environmental Educator",
+       "category":5
+    },
+    {
+       "title":"Deputy Director of the Fire Alarm Inspection Unit",
+       "category":0
+    },
+    {
+       "title":"Senior Advisor, Technology Strategy",
+       "category":4
+    },
+    {
+       "title":"Buyer",
+       "category":1
+    },
+    {
+       "title":"Directory Services Support",
+       "category":2
+    },
+    {
+       "title":"2020-BWSO-003-Engineering & Regulatory Review Intern",
+       "category":2
+    },
+    {
+       "title":"CoQI Facilitator",
+       "category":1
+    },
+    {
+       "title":"2020-BWS-008-WRRO Intern (Tannersville)",
+       "category":4
+    },
+    {
+       "title":"Business Analysis Specialist",
+       "category":2
+    },
+    {
+       "title":"Junior Systems Administrator",
+       "category":2
+    },
+    {
+       "title":"DIRECTOR, PROVIDER-CLIENT SERVICES & SPECIAL PROJECTS",
+       "category":3
+    },
+    {
+       "title":"Analyst  Reporting and Applications Development",
+       "category":4
+    },
+    {
+       "title":"Associate Public Health Sanitarian 2",
+       "category":0
+    },
+    {
+       "title":"Director of Child Protective Audits",
+       "category":4
+    },
+    {
+       "title":"Administrative Claim Examiner, No Fault Claims",
+       "category":0
+    },
+    {
+       "title":"Rescue Tool & Equipment Coordinator",
+       "category":4
+    },
+    {
+       "title":"Construction Project Manager Intern",
+       "category":2
+    },
+    {
+       "title":"Instructor, Division of Environmental Health, Bureau of Environmental Administration (Health Academy)",
+       "category":0
+    },
+    {
+       "title":"DIRECTOR, EXTERNAL AFFAIRS",
+       "category":3
+    },
+    {
+       "title":"Transit Benefit Representative",
+       "category":2
+    },
+    {
+       "title":"IT Support Technician",
+       "category":2
+    },
+    {
+       "title":"IT Technical Support",
+       "category":5
+    },
+    {
+       "title":"Forensic Pathology Coordinator",
+       "category":2
+    },
+    {
+       "title":"Clinical Care Coordinator/Bureau of Mental Health",
+       "category":4
+    },
+    {
+       "title":"2020-EHS-002-Reporting and Investigations Intern",
+       "category":2
+    },
+    {
+       "title":"Deputy Engineer-In-Charge, Infrastructure",
+       "category":5
+    },
+    {
+       "title":"Deputy Chief Of Outside Development",
+       "category":4
+    },
+    {
+       "title":"2020-BWS-015-Hawthorne Field Intern",
+       "category":2
+    },
+    {
+       "title":"2020-WT-007-Construction Management Intern",
+       "category":2
+    },
+    {
+       "title":"Third Party Services Analyst",
+       "category":2
+    },
+    {
+       "title":"Planning Associate",
+       "category":5
+    },
+    {
+       "title":"Windows Administrator",
+       "category":5
+    },
+    {
+       "title":"Analyst  Service Desk & Operations / Operations",
+       "category":4
+    },
+    {
+       "title":"2020-BWSO-004-GIS Data Maintenance Intern",
+       "category":2
+    },
+    {
+       "title":"2020-BWSO-005-Modeling Intern",
+       "category":1
+    },
+    {
+       "title":"Minority Women Business Enterprise Program Analyst",
+       "category":0
+    },
+    {
+       "title":"Structural Engineer (Retaining Walls and other Structural Assets)",
+       "category":4
+    },
+    {
+       "title":"Assistant Engineering Audit Officer",
+       "category":2
+    },
+    {
+       "title":"Analyst  DEPARTMENT OF ENVIRONMENTAL PROTECTION",
+       "category":3
+    },
+    {
+       "title":"Assistant Commissioner of Community Partnerships and Finance",
+       "category":0
+    },
+    {
+       "title":"Bridge Repairer & Riveter",
+       "category":4
+    },
+    {
+       "title":"Salesforce Specialist",
+       "category":5
+    },
+    {
+       "title":"Junior Public Health Nurse, Bureau of School Health",
+       "category":0
+    },
+    {
+       "title":"FOOD INSECURITY ASSISTANCE TEAM SPECIALIST",
+       "category":3
+    },
+    {
+       "title":"Senior Air Pollution Inspector",
+       "category":4
+    },
+    {
+       "title":"2020-EHS-003-Program Development Intern",
+       "category":2
+    },
+    {
+       "title":"Claims Manager - Law Claims (Non-Tort)",
+       "category":4
+    },
+    {
+       "title":"Deputy Director for Engineering",
+       "category":4
+    },
+    {
+       "title":"Community Engagement Planning Specialist",
+       "category":2
+    },
+    {
+       "title":"2020-BWSO-002-Enforcement Intern",
+       "category":1
+    },
+    {
+       "title":"Procurement Officer",
+       "category":5
+    },
+    {
+       "title":"Outreach Coordinator",
+       "category":5
+    },
+    {
+       "title":"Environmental Project Manager",
+       "category":2
+    },
+    {
+       "title":"LEGAL SECRETARIAL ASSISTANT LEVEL 2",
+       "category":3
+    },
+    {
+       "title":"Safety Education Outreach Coordinator",
+       "category":2
+    },
+    {
+       "title":"Facilities Project Intern",
+       "category":2
+    },
+    {
+       "title":"Diversity Specialist",
+       "category":5
+    },
+    {
+       "title":"Civil Engineer 3",
+       "category":4
+    },
+    {
+       "title":"ELECTRICIAN (AUTOMOBILE)",
+       "category":3
+    },
+    {
+       "title":"AGENCY ATTORNEY III",
+       "category":3
+    },
+    {
+       "title":"Office Manager",
+       "category":5
+    },
+    {
+       "title":"In-House EHSO",
+       "category":1
+    },
+    {
+       "title":"CLERICAL ASSOCIATE, L-IV",
+       "category":3
+    },
+    {
+       "title":"Accountant",
+       "category":1
+    },
+    {
+       "title":"Manager, Community Engagement",
+       "category":2
+    },
+    {
+       "title":"Design Subject Matter Expert (SME)",
+       "category":4
+    },
+    {
+       "title":"Senior Construction Contract Analyst",
+       "category":2
+    },
+    {
+       "title":"Director of Finance",
+       "category":4
+    },
+    {
+       "title":"Digital Media Specialist",
+       "category":2
+    },
+    {
+       "title":"Asset Management Specialist",
+       "category":5
+    },
+    {
+       "title":"In Rem (Foreclosure) Acquisitions Analyst",
+       "category":0
+    },
+    {
+       "title":"Best Practices Coach",
+       "category":2
+    },
+    {
+       "title":"Community Assistant",
+       "category":5
+    },
+    {
+       "title":"Design Reviewer (Mechanical)",
+       "category":4
+    },
+    {
+       "title":"Deputy Director of the Environmental Hazard Unit",
+       "category":0
+    },
+    {
+       "title":"Dockless Bike Share Micromobility Planner",
+       "category":2
+    },
+    {
+       "title":"Deputy General Counsel",
+       "category":5
+    },
+    {
+       "title":"Associate Chemist",
+       "category":5
+    },
+    {
+       "title":"ASSOCIATE STAFF ANALYST",
+       "category":3
+    },
+    {
+       "title":"Director of Resiliency Planning",
+       "category":2
+    },
+    {
+       "title":"Standards Specialist (Monitor)",
+       "category":4
+    },
+    {
+       "title":"Printing Press Operator",
+       "category":5
+    },
+    {
+       "title":"DIGITAL COMMUNICATIONS & GRAPHIC DESIGN SPECIALIST",
+       "category":3
+    },
+    {
+       "title":"Environmental Health and Safety Officer",
+       "category":4
+    },
+    {
+       "title":"Data Entry Clerk for Certificate of Fitness Unit",
+       "category":0
+    },
+    {
+       "title":"Director of Facilities Maintenance",
+       "category":4
+    },
+    {
+       "title":"Environmental Health & Safety Auditor",
+       "category":4
+    },
+    {
+       "title":"Senior Design Reviewer (Mechanical)",
+       "category":4
+    },
+    {
+       "title":"LABOR RELATIONS ATTORNEY",
+       "category":3
+    },
+    {
+       "title":"Juniior Compliance Analyst",
+       "category":5
+    },
+    {
+       "title":"Senior Estimator",
+       "category":5
+    },
+    {
+       "title":"executive Vice President for Operations",
+       "category":4
+    },
+    {
+       "title":"SENIOR ELECTRICAL ENGINEER",
+       "category":3
+    },
+    {
+       "title":"Course Provider Program Intern",
+       "category":2
+    },
+    {
+       "title":"Parks Enforcement Patrol",
+       "category":5
+    },
+    {
+       "title":"2020-BWS-012-Water Supply Planning Intern",
+       "category":2
+    },
+    {
+       "title":"Confidential Investigator 2",
+       "category":4
+    },
+    {
+       "title":"Forenisc Mortuary Techncian II",
+       "category":5
+    },
+    {
+       "title":"Director of Recruitment",
+       "category":5
+    },
+    {
+       "title":"15BOROUGH COMMUNITY COORDINATOR",
+       "category":3
+    },
+    {
+       "title":"Analyst - Business Practices Accountability Unit",
+       "category":4
+    },
+    {
+       "title":"Electrical Engineer",
+       "category":5
+    },
+    {
+       "title":"Assistant Commissioner",
+       "category":5
+    },
+    {
+       "title":"Assistant Bureau Contract Officer",
+       "category":5
+    },
+    {
+       "title":"2020-BWS-007-Water Treatment Ops QA Intern",
+       "category":2
+    },
+    {
+       "title":"BUDGET ANALYST",
+       "category":3
+    },
+    {
+       "title":"Public Health Advisor, Bureau of Sexually Transmitted Infections",
+       "category":0
+    },
+    {
+       "title":"DIRECTOR-TECHNICAL SERVICES",
+       "category":1
+    },
+    {
+       "title":"Alternative Assets Middle Office Analyst",
+       "category":4
+    },
+    {
+       "title":"Section 3, MBWE and Procurement Officer",
+       "category":0
+    },
+    {
+       "title":"Reliability Centered Maintenance Engineers",
+       "category":4
+    },
+    {
+       "title":"Water Quality Scientist",
+       "category":2
+    },
+    {
+       "title":"Engineer-In-Charge, Operational Information Systems",
+       "category":4
+    },
+    {
+       "title":"Analyst  Transportation",
+       "category":5
+    },
+    {
+       "title":"Director, Ombuds Office",
+       "category":4
+    },
+    {
+       "title":"NYC Census 2020 - Brooklyn Borough Lead, NYC Census 2020 Field Campaign",
+       "category":0
+    },
+    {
+       "title":"Housing Assistant",
+       "category":5
+    },
+    {
+       "title":"Analyst  FEMA Public Assistance Fiscal & Reporting / Reporting",
+       "category":0
+    },
+    {
+       "title":"HIV Program Associate, Bureau of STD Prevention and Control",
+       "category":0
+    },
+    {
+       "title":"1022A (LEGAL SECRETARIAL ASST- L3)",
+       "category":3
+    },
+    {
+       "title":"STAFF NURSE",
+       "category":3
+    },
+    {
+       "title":"Director of STI Laboratory, Bureau of Sexually Transmitted Infections",
+       "category":0
+    },
+    {
+       "title":"Topographical",
+       "category":1
+    },
+    {
+       "title":"EXECUTIVE DIRECTOR, FINANCIAL AND REPORTING SYSTEMS",
+       "category":3
+    },
+    {
+       "title":"Review Engineer",
+       "category":5
+    },
+    {
+       "title":"Director of Technical Assistance",
+       "category":5
+    },
+    {
+       "title":"Project Development Coordinator for Capital Contracts",
+       "category":4
+    },
+    {
+       "title":"Civil Section Manager",
+       "category":5
+    },
+    {
+       "title":"ESTIMATOR",
+       "category":1
+    },
+    {
+       "title":"CERTIFIED IT ADMINISTRATOR (LAN/WAN), LEVEL 4",
+       "category":4
+    },
+    {
+       "title":"Supervisor of Construction Services, Preservation Programs",
+       "category":0
+    },
+    {
+       "title":"FOIL AND COMPLIANCE ASSOCIATE",
+       "category":3
+    },
+    {
+       "title":"Clerical Associate, Bureau of Vital Statistics",
+       "category":0
+    },
+    {
+       "title":"2020-RAM-001-Records and Archives Management",
+       "category":2
+    },
+    {
+       "title":"Procurement Specialist",
+       "category":5
+    },
+    {
+       "title":"Secretary 4",
+       "category":4
+    },
+    {
+       "title":"2020-BWS-003-Water Ops Intern (Downsville)",
+       "category":0
+    },
+    {
+       "title":"Accountable Manager, CSO LTCP Program",
+       "category":0
+    },
+    {
+       "title":"Chief Communications Officer, Office of the Commissioner",
+       "category":0
+    },
+    {
+       "title":"HRIS Data Analyst",
+       "category":2
+    },
+    {
+       "title":"City Mortuary Technician",
+       "category":2
+    },
+    {
+       "title":"Program Director, Health",
+       "category":4
+    },
+    {
+       "title":"Area Engineer, BEDC Coordination and Project Development Section",
+       "category":0
+    },
+    {
+       "title":"Examiner",
+       "category":1
+    },
+    {
+       "title":"Assistant Corporation Counsel, Manhattan Tort Division",
+       "category":0
+    },
+    {
+       "title":"Computer Associate (Technical Support) Level 3",
+       "category":4
+    },
+    {
+       "title":"CASEWORKER",
+       "category":1
+    },
+    {
+       "title":"Photographer",
+       "category":1
+    },
+    {
+       "title":"Senior Compliance Manager",
+       "category":5
+    },
+    {
+       "title":"Public Health Advisor, Bureau of Sexually Transmitted Diseases Prevention and Control",
+       "category":0
+    },
+    {
+       "title":"RECRUITMENT PIPELINE AND PROFESSIONAL DEVELOPMENT PROGRAM MANAGER",
+       "category":3
+    },
+    {
+       "title":"Deputy Director for Strategic Initiatives",
+       "category":4
+    },
+    {
+       "title":"Deputy Unit Chief - Brooklyn Central Services",
+       "category":0
+    },
+    {
+       "title":"Director of Talent Acquisition",
+       "category":4
+    },
+    {
+       "title":"REGIONAL MANAGER, BROOKLYN REGION",
+       "category":3
+    },
+    {
+       "title":"Associate Water Use Inspector I-Universal Metering",
+       "category":4
+    },
+    {
+       "title":"Staff Auditor",
+       "category":5
+    },
+    {
+       "title":"HQE Specialist",
+       "category":5
+    },
+    {
+       "title":"Senior Project Lead",
+       "category":2
+    },
+    {
+       "title":"Attorney Interne",
+       "category":5
+    },
+    {
+       "title":"Deputy Chief Financial Officer",
+       "category":5
+    },
+    {
+       "title":"Forensic Mortuary Technician I",
+       "category":0
+    },
+    {
+       "title":"Agency Attorney, Level II",
+       "category":4
+    },
+    {
+       "title":"CONTRACT ADMINISTRATOR",
+       "category":3
+    },
+    {
+       "title":"Temporary Bronx Borough Planner",
+       "category":0
+    },
+    {
+       "title":"SUPERVISOR OF STOCK WORKERS I",
+       "category":3
+    },
+    {
+       "title":"Division Chief of Engineering",
+       "category":4
+    },
+    {
+       "title":"Windows Technical Project Manager",
+       "category":2
+    },
+    {
+       "title":"Parking Planner",
+       "category":2
+    },
+    {
+       "title":"WORKFORCE1 OPERATIONS MANAGER",
+       "category":3
+    },
+    {
+       "title":"ASSISTANT COMMISSIONER, RECRUITMENT AND ELIGIBILITY",
+       "category":3
+    },
+    {
+       "title":"Admin Housing Dev Specialist for LHD EVP",
+       "category":0
+    },
+    {
+       "title":"Human Resources Generalist",
+       "category":2
+    },
+    {
+       "title":"NYC Census 2020 - Community Outreach Data Analyst",
+       "category":0
+    },
+    {
+       "title":"Program Monitoring and Compliance Intern",
+       "category":2
+    },
+    {
+       "title":"Engineer",
+       "category":1
+    },
+    {
+       "title":"Compliance and Operations Specialist",
+       "category":5
+    },
+    {
+       "title":"Civil Engineer 1",
+       "category":4
+    },
+    {
+       "title":"Construction Safety and Quality Inspector",
+       "category":4
+    },
+    {
+       "title":"Assistant Director for LHD Budget & Personnel",
+       "category":0
+    },
+    {
+       "title":"Paralegal",
+       "category":1
+    },
+    {
+       "title":"Voice Communication Specialist",
+       "category":2
+    },
+    {
+       "title":"PEP Step Up Sergeant",
+       "category":4
+    },
+    {
+       "title":"2020-BIT-001-Application Developer Intern",
+       "category":2
+    },
+    {
+       "title":"Specialized Contract  Analyst  (2 positions)",
+       "category":4
+    },
+    {
+       "title":"Executive Project Manager",
+       "category":2
+    },
+    {
+       "title":"Media Service Tech",
+       "category":2
+    },
+    {
+       "title":"Associate Water Use Inspector II",
+       "category":4
+    },
+    {
+       "title":"Project Controls Manager",
+       "category":2
+    },
+    {
+       "title":"Alternative Mechanical Systems Engineer",
+       "category":4
+    },
+    {
+       "title":"Capital Projects and Budget Analyst",
+       "category":2
+    },
+    {
+       "title":"Body Worn Camera Analyst",
+       "category":4
+    },
+    {
+       "title":"Agency Attorney Interne, Office of General Counsel",
+       "category":0
+    },
+    {
+       "title":"Vice President of Finance, Accounting and Investment Services",
+       "category":0
+    },
+    {
+       "title":"Dynamic CRM Developer",
+       "category":2
+    },
+    {
+       "title":"Program Executive",
+       "category":5
+    },
+    {
+       "title":"SECTION SUPERVISOR",
+       "category":3
+    },
+    {
+       "title":"Deputy Commissioner, Child and Family Well-Being",
+       "category":0
+    },
+    {
+       "title":"Paralegal Aide",
+       "category":5
+    },
+    {
+       "title":"CONSTRUCTION MANAGER",
+       "category":3
+    },
+    {
+       "title":"Custodian Supervisor",
+       "category":5
+    },
+    {
+       "title":"Timekeeping Specialist",
+       "category":5
+    },
+    {
+       "title":"PARALEGAL",
+       "category":1
+    },
+    {
+       "title":"MARINER",
+       "category":1
+    },
+    {
+       "title":"Division Chief - Fiscal Services",
+       "category":4
+    },
+    {
+       "title":"Procurement & Compliance Analyst",
+       "category":2
+    },
+    {
+       "title":"Senior Systems Administrator",
+       "category":5
+    },
+    {
+       "title":"Outcome Specialist, Contract Development & Validation",
+       "category":4
+    },
+    {
+       "title":"Policy Analyst",
+       "category":5
+    },
+    {
+       "title":"CCC Program Administrator",
+       "category":2
+    },
+    {
+       "title":"Family and Community Engagement Liaison",
+       "category":2
+    },
+    {
+       "title":"Director of Research and Analysis",
+       "category":4
+    },
+    {
+       "title":"Exterminator",
+       "category":1
+    },
+    {
+       "title":"Executive Assistant to the Director of Personnel & Payroll",
+       "category":0
+    },
+    {
+       "title":"Human Capital Summer College Intern",
+       "category":0
+    },
+    {
+       "title":"Criminalist III",
+       "category":5
+    },
+    {
+       "title":"Contracts Coordinator for FHNR",
+       "category":2
+    },
+    {
+       "title":"Associate Human Rights Specialist",
+       "category":2
+    },
+    {
+       "title":"Regional Manager",
+       "category":5
+    },
+    {
+       "title":"Analyst  Revenue Accountability",
+       "category":2
+    },
+    {
+       "title":"EXECUTIVE DIRECTOR, IN-HOUSE DESIGN",
+       "category":3
+    },
+    {
+       "title":"Network Engineer I LAN/WAN",
+       "category":4
+    },
+    {
+       "title":"Policy Associate",
+       "category":5
+    },
+    {
+       "title":"General Services Manager",
+       "category":5
+    },
+    {
+       "title":"HR PAYROLL ANALYST",
+       "category":3
+    },
+    {
+       "title":"COMPUTER ASSOC (SOFTWARE)",
+       "category":3
+    },
+    {
+       "title":"Eligibility Coordinator / Adoption Liaison",
+       "category":2
+    },
+    {
+       "title":"Program Director",
+       "category":5
+    },
+    {
+       "title":"Paralegal Assistant Supervisor",
+       "category":2
+    },
+    {
+       "title":"Associate Water Use Inspector II- Brooklyn",
+       "category":0
+    },
+    {
+       "title":"PEP Step Up Captain",
+       "category":4
+    },
+    {
+       "title":"JUNIOR SOFTWARE ENGINEER",
+       "category":3
+    },
+    {
+       "title":"Junior Information Security Vulnerability Management Analyst",
+       "category":2
+    },
+    {
+       "title":"STORAGE/BACKUP ADMINISTRATOR",
+       "category":1
+    },
+    {
+       "title":"Clinical Director for the Couseling Services Unit",
+       "category":0
+    },
+    {
+       "title":"Supply Clerk",
+       "category":5
+    },
+    {
+       "title":"Software Support Analyst",
+       "category":2
+    },
+    {
+       "title":"Senior Project Administrator",
+       "category":2
+    },
+    {
+       "title":"Supervising Inspector of the Shelter Task Force",
+       "category":0
+    },
+    {
+       "title":"Training Coordinator",
+       "category":5
+    },
+    {
+       "title":"Court Liaison Officer",
+       "category":5
+    },
+    {
+       "title":"CITY ASSESSOR",
+       "category":3
+    },
+    {
+       "title":"Engineer In Charge of Pumping",
+       "category":4
+    },
+    {
+       "title":"Resident Building Superintendent",
+       "category":5
+    },
+    {
+       "title":"CPM Scheduler II",
+       "category":2
+    },
+    {
+       "title":"Watershed Maintainer - 4 Positions",
+       "category":4
+    },
+    {
+       "title":"ASSOCIATE ZONING SPECIALIST",
+       "category":3
+    },
+    {
+       "title":"Assistant Commissioner of Quality Assurance for Juvenile Justice Programs",
+       "category":0
+    },
+    {
+       "title":"First Associate Commissioner",
+       "category":5
+    },
+    {
+       "title":"Inspector, Bureau of Environmental Disease and Injury Prevention",
+       "category":0
+    },
+    {
+       "title":"GIS Technician",
+       "category":5
+    },
+    {
+       "title":"Family Engagement Specialist",
+       "category":2
+    },
+    {
+       "title":"Executive Director, Health Policy, Bureau of Primary Care Access & Planning",
+       "category":0
+    },
+    {
+       "title":"Motor Vehicle Operator",
+       "category":5
+    },
+    {
+       "title":"Special Projects Coordinator, Division of Neighborhood Preservation",
+       "category":0
+    },
+    {
+       "title":"Executive Receptionist, Office of the Commissioner",
+       "category":0
+    },
+    {
+       "title":"Unit Head  Program Analysis",
+       "category":2
+    },
+    {
+       "title":"Assistant Procurement Liaison",
+       "category":5
+    },
+    {
+       "title":"Senior Construction Manager",
+       "category":2
+    },
+    {
+       "title":"Senior Estimator, General Construction",
+       "category":4
+    },
+    {
+       "title":"Clerical Supervisor (JD)",
+       "category":4
+    },
+    {
+       "title":"Technical Advisor for Reservoir Releases and Policy Development",
+       "category":4
+    },
+    {
+       "title":"Risk Management Supervisor",
+       "category":5
+    },
+    {
+       "title":"Trauma-Informed Early Care and Education Case Supervisor",
+       "category":0
+    },
+    {
+       "title":"Zoning Deputy Director",
+       "category":5
+    },
+    {
+       "title":"HIGH PRESSURE PLANT TENDER",
+       "category":3
+    },
+    {
+       "title":"LINUX SYSTEMS ADMINISTRATOR",
+       "category":3
+    },
+    {
+       "title":"Driver Services Agent",
+       "category":5
+    },
+    {
+       "title":"BEHAVIORAL SPECIALIST",
+       "category":3
+    },
+    {
+       "title":"Facilities Central Supervisor",
+       "category":5
+    },
+    {
+       "title":"Application Support Analyst",
+       "category":2
+    },
+    {
+       "title":"BUDGET MANAGER FOR PROGRAM OPERATIONS",
+       "category":3
+    },
+    {
+       "title":"Director, Open Door Program, Division of New Construction Finance",
+       "category":0
+    },
+    {
+       "title":"AUTO MECHANIC (DIESEL)",
+       "category":3
+    },
+    {
+       "title":"311 Escalation Line Team Leader",
+       "category":4
+    },
+    {
+       "title":"Child Welfare Trainer",
+       "category":2
+    },
+    {
+       "title":"EXECUTIVE DIRECTOR, CONSTRUCTION INDUSTRY PARTNERSHIP",
+       "category":3
+    },
+    {
+       "title":"Human Capital Associate",
+       "category":2
+    },
+    {
+       "title":"Civil Engineer III",
+       "category":4
+    },
+    {
+       "title":"Analyst  Criminal Justice",
+       "category":5
+    },
+    {
+       "title":"Juvenile Justice Trainer",
+       "category":5
+    },
+    {
+       "title":"Deputy Engineer-in-Charge, Southeast Queens",
+       "category":4
+    },
+    {
+       "title":"Bluebelt Program Administrative Supervisor",
+       "category":2
+    },
+    {
+       "title":"Investigative Auditor",
+       "category":5
+    },
+    {
+       "title":"Superintendent of Water and Sewer Systems",
+       "category":4
+    },
+    {
+       "title":"Public Health Assistant, Bureau of School Health",
+       "category":0
+    },
+    {
+       "title":"Health Benefits Coordinator",
+       "category":2
+    },
+    {
+       "title":"FDNY Supervisor of Telephone Adjudications",
+       "category":0
+    },
+    {
+       "title":"Senior Court Representative, Litigation Division (2 positions)",
+       "category":0
+    },
+    {
+       "title":"EVP for Real Estate",
+       "category":4
+    },
+    {
+       "title":"Senior Financial Reporting Investment Analyst",
+       "category":2
+    },
+    {
+       "title":"Associate Cloud Reliability Engineer",
+       "category":4
+    },
+    {
+       "title":"Senior Correctional Institution Administrator, PREA",
+       "category":0
+    },
+    {
+       "title":"AGENCY ATTORNEY INTERN",
+       "category":3
+    },
+    {
+       "title":"Public Health Nurse (School Health)",
+       "category":0
+    },
+    {
+       "title":"RFP COORDINATOR",
+       "category":3
+    },
+    {
+       "title":"Constituent Services Liaison",
+       "category":5
+    },
+    {
+       "title":"Placement Specialist",
+       "category":5
+    },
+    {
+       "title":"DEPUTY PORTFOLIO MANAGER",
+       "category":3
+    },
+    {
+       "title":"WORKFORCE QUALITY ASSURANCE MANAGER",
+       "category":3
+    },
+    {
+       "title":"Agency Attorney I - Early Intervention Unit",
+       "category":0
+    },
+    {
+       "title":"ADMINISTRATIVE ASSISTANT, LABOR SERVICES",
+       "category":3
+    },
+    {
+       "title":"STAFF ANALYST II",
+       "category":3
+    },
+    {
+       "title":"Civil/Structural Inspector",
+       "category":1
+    },
+    {
+       "title":"Senior Network Design Engineer",
+       "category":2
+    },
+    {
+       "title":"Assistant Commissioner of Neighborhood Development Stabilization",
+       "category":4
+    },
+    {
+       "title":"Analyst  SANITATION",
+       "category":5
+    },
+    {
+       "title":"Assistant Construction Inspector",
+       "category":5
+    },
+    {
+       "title":"ADMINISTRATIVE PROCUREMENT ANALYST",
+       "category":3
+    },
+    {
+       "title":"Leave & Workers' Compensation Coordinator",
+       "category":4
+    },
+    {
+       "title":"METAL WORK MECHANIC",
+       "category":3
+    },
+    {
+       "title":"Associate Project Manager III",
+       "category":2
+    },
+    {
+       "title":"Supervisor of Traffic Device Maintainers",
+       "category":4
+    },
+    {
+       "title":"Supervising Budget Analyst Early Care &Education",
+       "category":0
+    },
+    {
+       "title":"Environmental Health & Safety Officer",
+       "category":4
+    },
+    {
+       "title":"Executive Director of Crossover Youth Practice",
+       "category":0
+    },
+    {
+       "title":"Labor Economist",
+       "category":5
+    },
+    {
+       "title":"Agency Attorney, Level III",
+       "category":4
+    },
+    {
+       "title":"Caretaker X",
+       "category":5
+    },
+    {
+       "title":"Senior Estimator (General Construction)",
+       "category":4
+    },
+    {
+       "title":"2020-WT-005-Process and Research Development",
+       "category":2
+    },
+    {
+       "title":"OPERATION ASSISTANT",
+       "category":3
+    },
+    {
+       "title":"Agency Attorney 1",
+       "category":4
+    },
+    {
+       "title":"Traffic Control Inspector",
+       "category":5
+    },
+    {
+       "title":"Senior Urban Designer",
+       "category":5
+    },
+    {
+       "title":"Deputy Chief of Facilities - Services",
+       "category":4
+    },
+    {
+       "title":"Quality Assurance / Technical Litigation Support Analyst",
+       "category":4
+    },
+    {
+       "title":"BUDGET SUPPORT ASSISTANT",
+       "category":3
+    },
+    {
+       "title":"ADMINISTRATIVE MANAGEMENT AUDITOR",
+       "category":3
+    },
+    {
+       "title":"Analyst  Housing",
+       "category":5
+    },
+    {
+       "title":"Crime Strategy Analyst",
+       "category":2
+    },
+    {
+       "title":"Accountant - Contract Payment",
+       "category":4
+    },
+    {
+       "title":"Case Manager",
+       "category":5
+    },
+    {
+       "title":"TECH SUPPORT/SCHEDULER",
+       "category":1
+    },
+    {
+       "title":"Architect L2",
+       "category":5
+    },
+    {
+       "title":"FIA Worker-Facing Information Technology Project Specialist",
+       "category":2
+    },
+    {
+       "title":"Deputy Director of Continued Occupancy",
+       "category":4
+    },
+    {
+       "title":"Quality Assurance Specialist L1",
+       "category":4
+    },
+    {
+       "title":"Assistant Commissioner of Compliance and Legal Oversight",
+       "category":4
+    },
+    {
+       "title":"Design Reviewer (Electrical)",
+       "category":4
+    },
+    {
+       "title":"Analyst  Correction",
+       "category":5
+    },
+    {
+       "title":"Investigator Trainee",
+       "category":5
+    },
+    {
+       "title":"Agency Attorney 03",
+       "category":4
+    },
+    {
+       "title":"Clerical Associate (Part-Time)",
+       "category":4
+    },
+    {
+       "title":"Analyst  ECONOMIC DEVELOPMENT",
+       "category":3
+    },
+    {
+       "title":"Associate Program Manager",
+       "category":2
+    },
+    {
+       "title":"Neighborhood Preparedness Training Coordinator",
+       "category":2
+    },
+    {
+       "title":"Housing Manager",
+       "category":5
+    },
+    {
+       "title":"Chief of Staff for Deputy Commissioner",
+       "category":4
+    },
+    {
+       "title":"ASSISTANT ELECTRICAL ENGINEER",
+       "category":3
+    },
+    {
+       "title":"Associate General Counsel / Law Department / General Litigation",
+       "category":0
+    },
+    {
+       "title":"Help Desk Technician",
+       "category":2
+    },
+    {
+       "title":"Business and Data Analyst Manager",
+       "category":2
+    },
+    {
+       "title":"Supervising Housing Inspector for the Division of Code Enforcement",
+       "category":0
+    },
+    {
+       "title":"Senior Application Developer",
+       "category":5
+    },
+    {
+       "title":"Agency Security Director",
+       "category":5
+    },
+    {
+       "title":"Deputy Chief of Quality Assurance",
+       "category":4
+    },
+    {
+       "title":"Junior Environmental Planner",
+       "category":2
+    },
+    {
+       "title":"SENIOR PREVAILING WAGE INVESTIGATOR",
+       "category":3
+    },
+    {
+       "title":"Project Manager, Administration",
+       "category":4
+    },
+    {
+       "title":"Agency Attorney",
+       "category":5
+    },
+    {
+       "title":"Senior SQL /Oracle Database Administrator",
+       "category":2
+    },
+    {
+       "title":"Engineering",
+       "category":1
+    },
+    {
+       "title":"EH&S Program Manager",
+       "category":2
+    },
+    {
+       "title":"Platform Engineer",
+       "category":5
+    },
+    {
+       "title":"PEOPLESOFT DEVELOPER",
+       "category":1
+    },
+    {
+       "title":"PSYCHOLOGIST",
+       "category":1
+    },
+    {
+       "title":"Senior Strategic Planning Analyst",
+       "category":2
+    },
+    {
+       "title":"Associate Commissioner",
+       "category":5
+    },
+    {
+       "title":"Base-Business Licensing Specialist",
+       "category":5
+    },
+    {
+       "title":"Physician Support Assistant, Bureau of School Health",
+       "category":0
+    },
+    {
+       "title":"Emergency Planning Coordinator, Environmental Health Administration",
+       "category":0
+    },
+    {
+       "title":"Auto Mechanic",
+       "category":5
+    },
+    {
+       "title":"Accountable Project Manager,  Stormwater MS4 Evaluation and Alternatives",
+       "category":0
+    },
+    {
+       "title":"Clerical Associate Part Time",
+       "category":4
+    },
+    {
+       "title":"ASSISTANT URBAN DESIGNER",
+       "category":3
+    },
+    {
+       "title":"Fire Protection Engineer",
+       "category":5
+    },
+    {
+       "title":"Personnel Associate",
+       "category":5
+    },
+    {
+       "title":"High Pressure Plant Tender",
+       "category":4
+    },
+    {
+       "title":"Program Associate, ACE Program",
+       "category":2
+    },
+    {
+       "title":"Assistant Commissioner, Internal Communications",
+       "category":4
+    },
+    {
+       "title":"DISASTER RECOVERY ANALYST.",
+       "category":3
+    },
+    {
+       "title":"Desktop Support Engineer",
+       "category":2
+    },
+    {
+       "title":"Communications Specialist",
+       "category":5
+    },
+    {
+       "title":"Retrofit Accelerator Outreach and Marketing Coordinator",
+       "category":0
+    },
+    {
+       "title":"Health Benefits Program Coordinator",
+       "category":2
+    },
+    {
+       "title":"Office Manager (Brooklyn)",
+       "category":4
+    },
+    {
+       "title":"CASE MANAGEMENT NURSE",
+       "category":3
+    },
+    {
+       "title":"Assistant Records Officer",
+       "category":5
+    },
+    {
+       "title":"Watershed Maintainer - 2 positions",
+       "category":4
+    },
+    {
+       "title":"Graphic Designer",
+       "category":5
+    },
+    {
+       "title":"Appeals Assistant District Attorney",
+       "category":4
+    },
+    {
+       "title":"Vice-President for Support Services",
+       "category":4
+    },
+    {
+       "title":"Hardware Engineer (MAINFRAME)",
+       "category":4
+    },
+    {
+       "title":"Code and Zoning Specialist",
+       "category":2
+    },
+    {
+       "title":"Assistant Commissioner, Tax Policy",
+       "category":4
+    },
+    {
+       "title":"Service Desk Manager",
+       "category":2
+    },
+    {
+       "title":"Project Manager, Strategic Planning",
+       "category":2
+    },
+    {
+       "title":"Central Office Supervising Nurse, Bureau of School Health/SH Nursing Services & Prof Dev",
+       "category":0
+    },
+    {
+       "title":"Account Manager",
+       "category":5
+    },
+    {
+       "title":"Strategic Initiative Specialist",
+       "category":2
+    },
+    {
+       "title":"Structural Engineering Intern (Retaining Walls and other Structural Assets)",
+       "category":0
+    },
+    {
+       "title":"Environmental Planner",
+       "category":2
+    },
+    {
+       "title":"Payroll Analyst",
+       "category":5
+    },
+    {
+       "title":"2020-LRD-001 Labor Relations Intern",
+       "category":2
+    },
+    {
+       "title":"Law Student",
+       "category":5
+    },
+    {
+       "title":"FIA AUDIT COORDINATOR",
+       "category":3
+    },
+    {
+       "title":"Electrical Engineer 3",
+       "category":4
+    },
+    {
+       "title":"Associate Director / Deputy Director  Expense & Capital Budget",
+       "category":0
+    },
+    {
+       "title":"Deputy Director of Engineering Services",
+       "category":4
+    },
+    {
+       "title":"NYC Census 2020 Cultural Liaison",
+       "category":0
+    },
+    {
+       "title":"Driver Assistance Center Intake Specialist",
+       "category":2
+    },
+    {
+       "title":"Computer Aide Level 2",
+       "category":4
+    },
+    {
+       "title":"Information Security Engineer",
+       "category":5
+    },
+    {
+       "title":"Team Leader",
+       "category":5
+    },
+    {
+       "title":"Application Support Technician",
+       "category":2
+    },
+    {
+       "title":"Certified IT Administrator (LAN/WAN) Level II",
+       "category":4
+    },
+    {
+       "title":"AOT Supervisor, Mental Health",
+       "category":0
+    },
+    {
+       "title":"Deputy Director of Support and Special Services, M-II",
+       "category":0
+    },
+    {
+       "title":"Plumber",
+       "category":1
+    },
+    {
+       "title":"Quality Improvement Specialist",
+       "category":2
+    },
+    {
+       "title":"Assistant Inspector General",
+       "category":5
+    },
+    {
+       "title":"ANALYST  PARKS",
+       "category":3
+    },
+    {
+       "title":"Trees & Sidewalks Program Coordinator",
+       "category":2
+    },
+    {
+       "title":"Chief, Personnel Unit",
+       "category":4
+    },
+    {
+       "title":"Senior Policy Advisor, Energy Finance and Affordability",
+       "category":0
+    },
+    {
+       "title":"Human Resources Administrative Assistant",
+       "category":4
+    },
+    {
+       "title":"Grants Coordinator",
+       "category":5
+    },
+    {
+       "title":"Director, CCEWIN Operations",
+       "category":5
+    },
+    {
+       "title":"Asthma Program Social Worker, Bureau of School Health/SH Medical",
+       "category":0
+    },
+    {
+       "title":"Chief of Staff",
+       "category":5
+    },
+    {
+       "title":"Mediation Coordinator",
+       "category":5
+    },
+    {
+       "title":"Engineering Auditor",
+       "category":5
+    },
+    {
+       "title":"Designated Felony Assistant Corporation Counsel",
+       "category":4
+    },
+    {
+       "title":"CONTRACT MANAGER, PROGRAM FINANCE & OPERATIONS",
+       "category":3
+    },
+    {
+       "title":"City Planner",
+       "category":2
+    },
+    {
+       "title":"Desktop Support Technician",
+       "category":2
+    },
+    {
+       "title":"Associate Project Manager I",
+       "category":4
+    },
+    {
+       "title":"Junior Business Analyst",
+       "category":2
+    },
+    {
+       "title":"Senior Landscape Program Manager",
+       "category":2
+    },
+    {
+       "title":"Management Auditor, Level II",
+       "category":4
+    },
+    {
+       "title":"Programmer, Bureau of Environmental Disease and Injury Prevention",
+       "category":0
+    },
+    {
+       "title":"PREA Project Director",
+       "category":2
+    },
+    {
+       "title":"Director of DCAS Trades Shop",
+       "category":4
+    },
+    {
+       "title":"Assistant District Attorney",
+       "category":5
+    },
+    {
+       "title":"COLLEGE AIDE - CLERICAL",
+       "category":3
+    },
+    {
+       "title":"Technical Assistant",
+       "category":5
+    },
+    {
+       "title":"Deputy Administrator for Washington Square Park",
+       "category":0
+    },
+    {
+       "title":"Technical Policy Researcher",
+       "category":2
+    },
+    {
+       "title":"ASSISTANT ELECTRICAL INSPECTOR",
+       "category":3
+    },
+    {
+       "title":"Assistant Electrical Engineer",
+       "category":5
+    },
+    {
+       "title":"Medical Examiner Assistant",
+       "category":5
+    },
+    {
+       "title":"Social Worker, Bureau of Sexually Transmitted Infections",
+       "category":0
+    },
+    {
+       "title":"Senior Forester for Tree Procurement",
+       "category":4
+    },
+    {
+       "title":"Office Assistant (Part-Time)",
+       "category":4
+    },
+    {
+       "title":"Administrative Assistant to the Deputy Commissioner for Uniformed Services Bureau",
+       "category":0
+    },
+    {
+       "title":"PARALEGAL AIDE - LEVEL 2",
+       "category":3
+    },
+    {
+       "title":"FMS ARCHITECT/DEVELOPER",
+       "category":1
+    },
+    {
+       "title":"CATCH School Nurse, Bureau of School Health",
+       "category":0
+    },
+    {
+       "title":"Seasonal City Park Worker",
+       "category":0
+    },
+    {
+       "title":"Staten Island Construction & Performance Monitor",
+       "category":0
+    },
+    {
+       "title":"Conference Facilitator",
+       "category":5
+    },
+    {
+       "title":"Dockbuilder",
+       "category":1
+    },
+    {
+       "title":"Senior Developer, MO for Economic Opportunity",
+       "category":0
+    },
+    {
+       "title":"WEB / Application Supervisor",
+       "category":2
+    },
+    {
+       "title":"Bike Share Program Planner",
+       "category":2
+    },
+    {
+       "title":"Taxpayer Case Advocate",
+       "category":2
+    },
+    {
+       "title":"OFFICE ENGINEER",
+       "category":3
+    },
+    {
+       "title":"Deputy Director of Professional Development Program",
+       "category":4
+    },
+    {
+       "title":"Analysis and Reporting Administrator",
+       "category":4
+    },
+    {
+       "title":"2020-BWS-011-WTO Engineering & Contract Services Intern",
+       "category":2
+    },
+    {
+       "title":"Stock Worker",
+       "category":5
+    },
+    {
+       "title":"ADMINISTRATIVE HOUSING SUPERINTENDENT",
+       "category":3
+    },
+    {
+       "title":"ASBESTOS HAZARD INVESTIGATOR",
+       "category":3
+    },
+    {
+       "title":"Agency Attorney Level III",
+       "category":4
+    },
+    {
+       "title":"Technical Response Technician",
+       "category":5
+    },
+    {
+       "title":"2020-BWS-004-Kingston Field Intern",
+       "category":2
+    },
+    {
+       "title":"Network Specialist",
+       "category":5
+    },
+    {
+       "title":"BTS Senior Application Database Administrator",
+       "category":4
+    },
+    {
+       "title":"Deputy Chief, Industrial Pollution Prevention Unit",
+       "category":0
+    },
+    {
+       "title":"Associate Laboratory Microbiologist I",
+       "category":4
+    },
+    {
+       "title":"Queens Business Center Manager",
+       "category":2
+    },
+    {
+       "title":"Communications Director",
+       "category":5
+    },
+    {
+       "title":"TIMEKEEPER",
+       "category":1
+    },
+    {
+       "title":"MANAGEMENT AUDITOR",
+       "category":3
+    },
+    {
+       "title":"Assistant District Manager",
+       "category":5
+    },
+    {
+       "title":"M/WBE Outreach and Compliance",
+       "category":2
+    },
+    {
+       "title":"2020-BEDC-005 WWCP Project Intern",
+       "category":2
+    },
+    {
+       "title":"Secretary to Division Chief",
+       "category":4
+    },
+    {
+       "title":"Junior Public Health Nurse - Bureau of School Health/SH Nursing Services & Prof Dev",
+       "category":0
+    },
+    {
+       "title":"Records Associate",
+       "category":5
+    },
+    {
+       "title":"Civilianization Manager",
+       "category":1
+    },
+    {
+       "title":"Database Administrator",
+       "category":5
+    },
+    {
+       "title":"Deputy Director of Initial Subsidies",
+       "category":4
+    },
+    {
+       "title":"Information Storage Engineer",
+       "category":5
+    },
+    {
+       "title":"CITY RESEARCH SCIENTIST II",
+       "category":3
+    },
+    {
+       "title":"Senior Compliance Advisor",
+       "category":5
+    },
+    {
+       "title":"Supervisor of Construction Services, New Construction Programs",
+       "category":4
+    },
+    {
+       "title":"ASSISTANT COMMISSIONER FOR FACILITIES PLANNING AND ENGINEERING",
+       "category":3
+    },
+    {
+       "title":"Engineer In Charge, Linear Capital Program Management",
+       "category":0
+    },
+    {
+       "title":"Project Manager (Modeling)",
+       "category":4
+    },
+    {
+       "title":"Director - Technical Services",
+       "category":4
+    },
+    {
+       "title":"E-Discovery Specialist",
+       "category":5
+    },
+    {
+       "title":"Cyber Budget/Procurement Liaison",
+       "category":5
+    },
+    {
+       "title":"Stationary Engineer, Bureau of Operations",
+       "category":4
+    },
+    {
+       "title":"Claims Analyst",
+       "category":5
+    },
+    {
+       "title":"Project Manager  Value Engineer",
+       "category":2
+    },
+    {
+       "title":"Staff Development Coordinator",
+       "category":2
+    },
+    {
+       "title":"Associate Water Use inspector",
+       "category":4
+    },
+    {
+       "title":"PARALEGAL - EARLY INTERVENTION UNIT",
+       "category":3
+    },
+    {
+       "title":"Deputy Chief of Forestry & Horticulture",
+       "category":0
+    },
+    {
+       "title":"OUTREACH AND RETENTION SPECIALIST",
+       "category":3
+    },
+    {
+       "title":"Elevator Oversight Team Specialist",
+       "category":2
+    },
+    {
+       "title":"Post Hearings Clerk",
+       "category":5
+    },
+    {
+       "title":"Deputy Chief of Payments and Procurement",
+       "category":4
+    },
+    {
+       "title":"NYC Census 2020 Campaign Manager",
+       "category":0
+    },
+    {
+       "title":"Associate Email Security Engineer",
+       "category":2
+    },
+    {
+       "title":"Website Publisher",
+       "category":5
+    },
+    {
+       "title":"Senior Compliance Investigator",
+       "category":5
+    },
+    {
+       "title":"Chief Data Science Officer",
+       "category":4
+    },
+    {
+       "title":"Associate Borough Planner",
+       "category":2
+    },
+    {
+       "title":"Relationship Manager",
+       "category":5
+    },
+    {
+       "title":"Director of Security",
+       "category":5
+    },
+    {
+       "title":"Revenue Support Specialist",
+       "category":2
+    },
+    {
+       "title":"Learning & Training Development Specialist",
+       "category":2
+    },
+    {
+       "title":"Public Health Assistant, Bureau of Sexually Transmitted Infections",
+       "category":0
+    },
+    {
+       "title":"Assistant Mechanical Engineer (Construction Classification)",
+       "category":4
+    },
+    {
+       "title":"QUALITY CONTROL CASE REVIEW SUPERVISOR",
+       "category":3
+    },
+    {
+       "title":"COMPUTER SPECIALIST (OPERATIONS)",
+       "category":3
+    },
+    {
+       "title":"Program & Policy Specialist for Racial and Restorative Justice",
+       "category":0
+    },
+    {
+       "title":"Payroll Clerk",
+       "category":5
+    },
+    {
+       "title":"Clerical Support",
+       "category":5
+    },
+    {
+       "title":"PEP Sergeant",
+       "category":5
+    },
+    {
+       "title":"Division Chief Asset and Construction Management",
+       "category":4
+    },
+    {
+       "title":"Chief of Review and Permitting",
+       "category":4
+    },
+    {
+       "title":"PRINCIPAL ADMINISTRATIVE ASSOCIATE",
+       "category":3
+    },
+    {
+       "title":"Union Services Associate",
+       "category":2
+    },
+    {
+       "title":"Investigator Level 1",
+       "category":4
+    },
+    {
+       "title":"SharePoint Developer",
+       "category":5
+    },
+    {
+       "title":"AOTPS Budget Manager",
+       "category":5
+    },
+    {
+       "title":"Check Replacement Analyst",
+       "category":2
+    },
+    {
+       "title":"FIRES IT Supervisor",
+       "category":5
+    },
+    {
+       "title":"Cornerstone Program Director",
+       "category":2
+    },
+    {
+       "title":"Supervisor II (SW)",
+       "category":4
+    },
+    {
+       "title":"Deputy Chief of Facilities, Supplies & Technical Support",
+       "category":4
+    },
+    {
+       "title":"Community Engagement Specialist",
+       "category":2
+    },
+    {
+       "title":"Brooklyn Forestry Coordinator",
+       "category":2
+    },
+    {
+       "title":"Facility Manager",
+       "category":5
+    },
+    {
+       "title":"Staff Analyst Level 2",
+       "category":4
+    },
+    {
+       "title":"Applications Supervisor",
+       "category":5
+    },
+    {
+       "title":"Assisstant Supt",
+       "category":5
+    },
+    {
+       "title":"Administrative Manager (Non-Mgrl)",
+       "category":4
+    },
+    {
+       "title":"Stock Worker Level II",
+       "category":4
+    },
+    {
+       "title":"RESIDENT BUILDING SUPERINTENDENT",
+       "category":3
+    },
+    {
+       "title":"Union Deduction Analyst",
+       "category":2
+    },
+    {
+       "title":"Supervisor of Stock Worker",
+       "category":4
+    },
+    {
+       "title":"Plant Chief",
+       "category":5
+    },
+    {
+       "title":"2020-BLA-002 Graduate Legal Intern",
+       "category":2
+    },
+    {
+       "title":"Testifier / Searcher",
+       "category":5
+    },
+    {
+       "title":"Geotab Fleet Liaison",
+       "category":2
+    },
+    {
+       "title":"Equipment Training Coordinator",
+       "category":2
+    },
+    {
+       "title":"Deputy Chief of Information Technology",
+       "category":4
+    },
+    {
+       "title":"Information Technology Manager",
+       "category":2
+    },
+    {
+       "title":"Maintenance Worker",
+       "category":5
+    },
+    {
+       "title":"Staff Analyst, Level II",
+       "category":4
+    },
+    {
+       "title":"Director of Legislative Affairs",
+       "category":4
+    },
+    {
+       "title":"Accounting Analyst",
+       "category":5
+    },
+    {
+       "title":"Management Auditor, Level I",
+       "category":4
+    }
+ ]

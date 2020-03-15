@@ -46,8 +46,8 @@ const pointLight2 = new PointLight({
 const lightingEffect = new LightingEffect({ambientLight, pointLight1, pointLight2})
  
 const initialViewState = {
-//	latitude: 50.6352755,
-//	longitude: 4.8634802,
+//	latitude: 50.6352755,	// Europe
+//	longitude: 4.8634802,	// Europe
 
 	latitude: 41,
 	longitude: -74,
@@ -276,8 +276,7 @@ class App extends React.Component {
 
 		const intro = <div 
 			className={`pageloader ${!loaded ? 'is-active' : null}`}
-			style={{backgroundColor: '#9ed0e2' }}
-			// style={{backgroundColor: '#333' }} // Darkmode
+			style={{backgroundColor: '#9ed0e2' }} // style={{backgroundColor: '#333' }} // Darkmode
 		><span className="title" style={{ color:'#1e5163' }}>Finding the best jobs for you...</span></div>
 
 		const onboarding_tooltip = <div 

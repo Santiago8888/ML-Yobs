@@ -65,8 +65,10 @@ const location_settings = address => ({
 const get_location_url = address => `https://us1.locationiq.com/v1/search.php?key=${location_token}&q=${address}&format=json`
 const get_coordinates = async yob => {
     const location_url = get_location_url(yob)
-    const { data = [{}] } = await axios.get(location_url)
-    return [Number(data[0].lon), Number(data[0].lat)]
+    try{
+        const { data = [{}] } = await axios.get(location_url)
+        return [Number(data[0].lon), Number(data[0].lat)]    
+    } catch(e){ return [0, 0]}
 }
 
 
@@ -96,11 +98,10 @@ get_all_titles().then(x => [...new Set(x)].map(t => print(`"${t}",`)))
 */
 
 
-const classify_title = title => categories[String(titles.find(({title: t}) => t === title).category)]
+const classify_title = title => categories[String((titles.find(({title: t}) => t === title) || 'Administrative Assistant').category)]
 
-const do_get_coordinates = false
-const new_yob = async yob => ({
-    title: yob[12],
+const new_yob = async (yob, do_get_coordinates=false) => ({
+    title: capitalize(yob[12]),
     salary: `$${add_comma_separator(yob[16])} - $${add_comma_separator(yob[17])}`,
     address: yob[19],
     company: `${capitalize(yob[9])} (${capitalize(yob[20])})`,
@@ -130,9 +131,9 @@ new_yob(yob).then(print)
 
 // Document Saver
 const collection = 'Yobs'
-const client = Stitch.initializeDefaultAppClient('yobs-wqucd')
+const init_client = () => Stitch.initializeDefaultAppClient('yobs-wqucd')
 
-const get_db = async () => {
+const get_db = async client => {
     await client.auth.loginWithCredential(new AnonymousCredential())
     return client.getServiceClient(RemoteMongoClient.factory, 'mongodb-atlas').db(collection)
 }
@@ -140,7 +141,8 @@ const get_db = async () => {
 const post_one = (new_doc, db) => db.collection(collection).insertOne(new_doc).catch(print)
 
 const save_first_yob = async() => {
-    const db = await get_db()
+    const client = init_client() 
+    const db = await get_db(client)
     const yob = await new_yob(data[0])
     post_one(yob , db)
     client.close()
@@ -148,10 +150,16 @@ const save_first_yob = async() => {
 
 
 const save_yobs = async yobs => {
-    const db = await get_db()
-    yobs.map((y, i) => setTimeout(async () => post_one(await new_yob(y), db), 1000*i))
+    const client = init_client() 
+    const db = await get_db(client)
+    yobs.map((y, i) => setTimeout(async () => post_one(await new_yob(y, true), db), 1000*i))
     setTimeout(() => client.close(), 1000*(yobs.length + 1))
 }
 
 
-// save_yobs(data.slice(11, 12))
+// Save all yobs Helper
+const get_yobs_with_unique_locations = () => Promise.all(data.map(async yob => await new_yob(yob, false)))
+    .then(x => x.reduce((d, i, idx, l) => d[0].find(j => i.address === j.address) ? d : [[...d[0], i], [...d[1], idx]], [[],[]])[1])
+
+
+get_yobs_with_unique_locations().then(x => save_yobs(x.reduce((d, i) => [...d, data[i]], [])))

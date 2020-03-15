@@ -142,9 +142,6 @@ class App extends React.Component {
 		amplitude.getInstance().logEvent('New Visit')
 
 		const yobs = await get_yobs()
-		console.log(yobs)
-		console.log(yobs.find(({ title }) => title === 'Java Developer'))
-		console.log(yobs.findIndex(({ title }) => title === 'Java Developer'))
 		const yob = yobs[19]
 		this.setState({ data: yobs })
 		this.setState({fake_tooltip: `${yob.title}<br/> ${yob.city}<br/> ${yob.salary !== 'N/A' ? yob.salary : ''}` }) 

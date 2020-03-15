@@ -49,11 +49,15 @@ const initialViewState = {
 //	latitude: 50.6352755,	// Europe
 //	longitude: 4.8634802,	// Europe
 
-	latitude: 41,
-	longitude: -74,
-	zoom: 8,
-	pitch: 40.5,
-	bearing: 27.396674584323023
+//	latitude: 40.66, 		// NYC Hand Picked
+//	longitude: -73.975,		// NYC Hand Picked
+
+	latitude: 40.69279,
+	longitude: -73.9878993247973,
+
+	zoom: 11.5,
+	pitch: 55.5,
+	bearing: 35.396674584323023
 }
 
 const TOOLTIP_STYLE = {
@@ -138,9 +142,12 @@ class App extends React.Component {
 		amplitude.getInstance().logEvent('New Visit')
 
 		const yobs = await get_yobs()
-		const yob = yobs[0]
-		this.setState({fake_tooltip: `${yob.title}\n ${yob.city}\n ${yob.salary !== 'N/A' ? yob.salary : ''}` }) 
+		console.log(yobs)
+		console.log(yobs.find(({ title }) => title === 'Java Developer'))
+		console.log(yobs.findIndex(({ title }) => title === 'Java Developer'))
+		const yob = yobs[19]
 		this.setState({ data: yobs })
+		this.setState({fake_tooltip: `${yob.title}<br/> ${yob.city}<br/> ${yob.salary !== 'N/A' ? yob.salary : ''}` }) 
 		document.getElementById('deckgl-wrapper').addEventListener('contextmenu', evt => evt.preventDefault())
 	}
 
@@ -170,10 +177,10 @@ class App extends React.Component {
 				id: 'column-layer',
 				data,
 				diskResolution: 12,
-				radius: 6225,
+				radius: 250,
 				extruded: true,
 				pickable: true,
-				elevationScale: 500,
+				elevationScale: 10,
 				getPosition: d => d.centroid,
 				getFillColor: d => colorRange[d.category],
 				getLineColor: [0, 0, 0],
@@ -231,7 +238,7 @@ class App extends React.Component {
 					?	
 						<div style={{margin:16}} align="center">
 							{ 
-								object.link.includes('http') 
+								object.link.substring(0,4) === 'http' 
 								?
 									<a 
 										style={{
@@ -257,7 +264,7 @@ class App extends React.Component {
 										)}
 									> Go to Job Post </a>
 
-								:	<p><strong>Apply:</strong> {object.link}</p>
+								:	null
 							}
 						</div>
 					:	null
@@ -277,7 +284,7 @@ class App extends React.Component {
 		const intro = <div 
 			className={`pageloader ${!loaded ? 'is-active' : null}`}
 			style={{backgroundColor: '#9ed0e2' }} // style={{backgroundColor: '#333' }} // Darkmode
-		><span className="title" style={{ color:'#1e5163' }}>Finding the best jobs for you...</span></div>
+		><span className="title" style={{ color:'#1e5163' }}>Finding the best jobs in New York...</span></div>
 
 		const onboarding_tooltip = <div 
 			className="deck-tooltip" 
@@ -294,7 +301,11 @@ class App extends React.Component {
 				top: '50%', 
 				left: '50%'
 			}}
-			>{ fake_tooltip }</div>
+			>{ 
+				fake_tooltip 
+				? 	fake_tooltip.split('<br/>').map((i, idx) => <Fragment key={idx}> {i} <br/></Fragment>) 
+				: 	null
+			}</div>
 
 		const main = <DeckGL
 			onContextMenu={event => event.preventDefault()}
@@ -304,7 +315,6 @@ class App extends React.Component {
 			controller={true}
 			layers={layers}
 			effects={[lightingEffect]}
-
 		>
 			{ InfoWindow }
 			<StaticMap 

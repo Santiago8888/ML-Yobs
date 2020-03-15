@@ -6,9 +6,9 @@
     4. Parse Description. (Done)
     5. Handle Coordinates. (Done)
     6. Handle Category. (Done)
-    7. Save First Documents (10)
-    8. Test Locally. ()
-    9. Save Next Batch ().
+    7. Save First Documents (Done)
+    8. Test Locally. (In Progress)
+    9. Save Next Batch. ()
     10. Update App. ()
     11. Deploy. ()
     12. Save Remaning. ()

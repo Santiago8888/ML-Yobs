@@ -46,11 +46,14 @@ const pointLight2 = new PointLight({
 const lightingEffect = new LightingEffect({ambientLight, pointLight1, pointLight2})
  
 const initialViewState = {
-	latitude: 50.6352755,
-	longitude: 4.8634802,
+//	latitude: 50.6352755,
+//	longitude: 4.8634802,
+
+	latitude: 41,
+	longitude: -74,
 	zoom: 8,
 	pitch: 40.5,
-	bearing: -27.396674584323023
+	bearing: 27.396674584323023
 }
 
 const TOOLTIP_STYLE = {
@@ -69,6 +72,15 @@ const MAP_STYLES = [
 	'outdoors-v11',
 	'satellite-v9'
 ]
+
+const TITLE_STYLE = {
+	fontSize: '1.25em',
+	marginBlockStart: '1em',
+	marginBlockEnd: '1em',
+	marginInline: 0,
+	fontWeight: 'bold',
+	paddingRight: 0
+}
 
 const INFOWINDOW_STYLE = {
 	position: 'absolute',
@@ -179,6 +191,7 @@ class App extends React.Component {
 						<img
 							style={{height: 20, float: 'right', margin:4}} 
 							src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRDuVVa-KzkV-_b1M-AIuaxidRmbyRmz_I0SxhbvJ-974Vd_yZG" 
+							alt="close"
 						/>
 					:	null
 			}
@@ -188,23 +201,23 @@ class App extends React.Component {
 			</h2>
 
 			<p style={{marginTop: '1.25rem'}}>
-				<img src="location.png" style={{height:24, display: Object.keys(object).length ? 'initial' : 'none'}}/>
+				<img src="location.png" style={{height:24, display: Object.keys(object).length ? 'initial' : 'none'}} alt="location"/>
 				<i style={{padding:6}}>{ object.address }</i>
 			</p>
 
 			<p style={{marginTop: '1.25rem'}}>
-				<a 
-					href={`"${object.website}"`}
-					style={{
-						fontSize: '1.25em',
-						marginBlockStart: '1em',
-						marginBlockEnd: '1em',
-						marginInline: 0,
-						fontWeight: 'bold',
-						paddingRight: 5,
-						display: Object.keys(object).length ? 'initial' : 'none'
-					}}
-				>{ object.company },</a> 
+				{ 
+					object.website && object.website.includes('http')
+					?	
+						<a 
+							href={`"${object.website}"`} 
+							style={ {...TITLE_STYLE, display: Object.keys(object).length ? 'initial' : 'none'}} 
+						>{ object.company }{ object.pitch && object.pitch.length ? ',' : '' } </a> 
+					:	
+						<span style={{...TITLE_STYLE, display: Object.keys(object).length ? 'initial' : 'none'}}> 
+							{ object.company } { object.pitch && object.pitch.length ? ',' : '' } 
+						</span>
+				}
 				{object.pitch}
 			</p>
 
@@ -217,29 +230,35 @@ class App extends React.Component {
 				cta
 					?	
 						<div style={{margin:16}} align="center">
-							<a 
-								style={{
-									margin: 16,
-									color: '#052fBA',
-									textTransform: 'uppercase',
-									background: '#ffffff',
-									padding: 12,
-									border: '4px solid #052fBA',
-									borderRadius: '6px',
-									display: 'inline-block',
-									transition: 'all 0.3s ease 0s',
-								}} 
+							{ 
+								object.link.includes('http') 
+								?
+									<a 
+										style={{
+											margin: 16,
+											color: '#052fBA',
+											textTransform: 'uppercase',
+											background: '#ffffff',
+											padding: 12,
+											border: '4px solid #052fBA',
+											borderRadius: '6px',
+											display: 'inline-block',
+											transition: 'all 0.3s ease 0s',
+										}}
 
-								onClick={() => this.setState(
-									{name: 'CTA', cta: true},
-									() => setTimeout(() => this.setState(
-										{name: null}, 
-										()=> { 
-											window.open(object.link)
-											amplitude.getInstance().logEvent('Visit Job', object)
-										}), 350)
-								)}
-							> Go to Job Post </a>
+										onClick={() => this.setState(
+											{name: 'CTA', cta: true},
+											() => setTimeout(() => this.setState(
+												{name: null}, 
+												()=> { 
+													window.open(object.link)
+													amplitude.getInstance().logEvent('Visit Job', object)
+												}), 350)
+										)}
+									> Go to Job Post </a>
+
+								:	<p><strong>Apply:</strong> {object.link}</p>
+							}
 						</div>
 					:	null
 			}

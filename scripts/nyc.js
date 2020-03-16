@@ -162,4 +162,4 @@ const get_yobs_with_unique_locations = () => Promise.all(data.map(async yob => a
     .then(x => x.reduce((d, i, idx, l) => d[0].find(j => i.address === j.address) ? d : [[...d[0], i], [...d[1], idx]], [[],[]])[1])
 
 
-get_yobs_with_unique_locations().then(x => save_yobs(x.reduce((d, i) => [...d, data[i]], [])))
+// get_yobs_with_unique_locations().then(x => save_yobs(x.reduce((d, i) => [...d, data[i]], [])))

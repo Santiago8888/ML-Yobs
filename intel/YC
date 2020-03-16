@@ -1,0 +1,184 @@
+COMPANY
+Company name:
+Yobs ML
+Company url, if any:
+http://yobs.ml/
+If you have a demo, what's the url? Demo can be anything that shows us how the product works. Usually that's a video or screen recording.
+(Please don't password protect it; just use an obscure url.)
+
+http://yobs.ml
+Describe what your company does in 50 characters or less.
+A job recommendation engine
+What is your company going to make? Please describe your product and what it does or will do.
+Yobs ML makes personalized recommendations to Software Engineers. We will ponder factors non-traditional factors such as company outlook, market trends and culture fit. On other more common indicators as the technology stack, company location/size, salary or industry we adopt an implicit behavior-driven approach instead of an explicit-static one (setting user preferences). 
+
+We will leverage novel communication strategies, charts, images, and personalized text instead of the structured text cards that most job boards offer. We will deliver a custom experience for each platform: Desktop, Mobile, Email & Social, as people behave increasingly different in each one of them.
+Where do you live now, and where would the company be based after YC?
+(List as City A, Country A / City B, Country B.)
+
+Guadalajara, México / San Carlos, USA 
+
+CONTACT
+Email address of the founder who is filling out this application:
+santiago.marti67@gmail.com
+Phone number(s):
++52-443-389-5285 
+Edit Your Profile Profile Complete
+
+FOUNDERS
+Please provide the email addresses of the other cofounders in the startup. No need to add yours again. Founders must have at least 10% equity in the company. We will send an email to each founder to fill out additional information about themselves.
+Email Address of Cofounder
+Add Cofounder
+Please enter the url of a 1 minute unlisted (not private) YouTube or Youku video introducing the founder(s). This video is an important part of the application. (Follow the Video Guidelines.)
+https://youtu.be/aiCYia0maRE
+How many founders are on the team?
+(Fill out this number of founder profiles)
+
+
+
+CATEGORY
+Which category best applies to your company?
+
+
+PROGRESS
+How far along are you?
+The web prototype is ready, is good, is tested and is approved by users.
+The mobile experience is designed and has some elements already developed but there is a lot missing. For the other platforms (Slack, Facebook Messenger, Email) little development has been made, it was mainly to understand the limits of each platform.
+
+The Natural Process Language technology that will power the product was also prototyped and is surprisingly good with out of the box Deep Learning libraries, the same applies to web scrapping. As for the recommendation engine, I'm still in the research phase, particularly I'm undecided whether to go with Neural Nets or not.
+
+I had put some thought on the business model but at the moment I see no interesting path to generating short term revenue, I'm looking to building network effects and no-return type of data that I know I can achieve with help from you and other early investors. From Adora's lecture, I understand that it is difficult but possible in a Marketing type product.
+How long have each of you been working on this? How much of that has been full-time? Please explain.
+I worked for a week in the prototype during February, which included a good amount of my time dedicated to validating the product with potential customers (success), I also made some research on the competition and other business like inquires.
+
+The second week I did some research and prototyping on the NLP technology, this was the main driver for me to this project, in the first place, as I had been watching lectures on it (cs224n - Stanford) and wanted to build something with it. During this week my focus diverted as I was pulled to the last interviews (and early negotiations) with a Fintech company in Luxembourg.    
+
+In the next two weeks, I mainly dedicated to bureaucratic procedures for the work permit application, researching Luxembourg and technology behind the company  (Quantum Ledger and other interesting stuff) and practicing my french. During this time I spent very little working on the project. However, I did invest some time in me, I noticed that after the first week some fears aroused in me:
+
+1)  How can I replicate and build on the success achieved?
+2)  Are you invested in building a product that might not bring revenue anytime soon?
+
+I got some swagger after wrapping up my application to the working in Luxembourg. I decided to invest two more days improving the prototype to resemble my vision. And after that, focus instead on consulting gigs that will build the technology behind the product but bring revenue.
+
+Before this project, I was immersed in an IoT startup. To be honest, in these weeks I also spent some time resting, getting healthy and managing my relationships. I feel recovered now.
+Are people using your product?
+
+How many active users or customers do you have? If you have some particularly valuable customers, who are they? If you're building hardware, how many units have you shipped?
+It's still too early, I have no recurring customers (there is nothing in the product to retain them yem), it has surprised me though that despite no promotion for almost a month people are still coming by.
+Do you have revenue?
+
+Anything else you would like us to know regarding your revenue or growth rate?
+During the validation stage, I reached 100 unique visitors. At some point, I had issues scaling up the distribution channels (I was using social media). I also had some issues with interacting with developers, I have not found yet my "early adopters" characteristics.
+
+On a positive note, this was an encouraging user review:
+"I think it's pretty cool... I like that the height of the markers is proportional to the salary. That's a good message for the hiring companies: if you want to stand out, pay more..." 
+If you've applied previously with the same idea, how much progress have you made since the last time you applied? Anything change?
+N/A
+If you have already participated or committed to participate in an incubator, "accelerator" or "pre-accelerator" program, please tell us about it.
+N/A
+
+IDEA
+Why did you pick this idea to work on? Do you have domain expertise in this area? How do you know people need what you're making?
+I got recruited by a fintech startup. Before the interviews, I assessed the opportunity as less than 5%, I got selected and in the middle of governmental approval to work in Luxembourg. These factors contributed to being one in a million chance:
+1- The first message was in French (I used to spoke french).
+2- They wanted the interviews to be in French, they agreed not to.
+3- The stack was 80% the same as my previous project, I'm also an economist ideally suited for the industry.
+4- Luxembourg is a country with less than 1 million people, they have exceptions in law specifically for SE (software engineers), this is good because I do not have a diploma.
+5- Other trivial, personal serendipities during the process.  
+
+As I dug into this, I thought, this is not random there might be an actual market opportunity here. As a Software Engineer, I was already disappointed with traditional job boards: Linkedin, StackOverFlow, Angel.co: 80% of the offers come for TN1 visa application, which I'm not eligible for.   
+What's new about what you're making? What substitutes do people resort to because it doesn't exist yet (or they don't know about it)?
+The foundation is the technology, a lot has been said about how investing is finding the right momentum. I believe NLP/DL is at that point when it has become, in fact, is a technology, a.k.a. ready for practical use with little research/investment. I believe big companies will have a hard time adjusting to the pace of research and they have so many users to serve, that it would be impossible to redo their products, that is the competitive edge we as newcomers have. Other technological strengths are the application of the geographical search interface & recommendation engine to a massive & growing industry.   
+
+As for substitutes, based on my network and online research. A good portion of engineers settle, i.e. they fall in comfort. Once they found their niche technology in a nice company with a generous salary they either fall back to family, entrepreneurship or hobbies. Few have the drive to continue pursuing their professional growth and as they age the outlook is not always neat (also empirical evidence).    
+Who are your competitors, and who might become competitors? Who do you fear most?
+Traditional job boards are one of them (Linkedin, etc.), an example of a startup that I believe has found a great niche but lacks a good product is Monday.vc
+
+There are other players that are worth nothing as they have a technological advantage and could leverage it to build a product faster. This includes companies working in Data Privacy, NLP & fintech (salaries is a major income revenue for many people). 
+
+I would like to say I fear Linkedin the most. They have the power to replicate and improve the recommendation engine, they also have a track record of good engineering (Kafka) and well managed (Jeff W.). They also enjoy a close monopoly in the industry and I see little incentives for them to share any market.
+
+Speed, aggressiveness & founding a niche (SE) is my best bet against them. In an ideal scenario, I would not directly compete with their social features nor with low paying jobs promotion. Once We gain some momentum I would rather focus on maximizing the value of the generated data.  
+What do you understand about your business that other companies in it just don't get?
+That a person's happiness & success is deeply dependant on the jobs they choose. This is not only important in terms of salary, geography or industry but also specific to the company and roles. We like to pretend that every Full Stack role paying X is the same but 10 years in the future it was not if you adequately choose the technology and company you worked with.  
+
+Companies have the luxury to think in the short term, people not. They only get one life, SASS start-ups tend to think that enterprises are more loyal, but that cannot be further from the truth. On the other side, people trust Netflix to choose the right movie for them but they seriously think that they can process all data available for making informed decisions regarding their career.
+
+Lastly, on an economy that is shifting towards distributed, short term, technology-agnostic projects it is increasingly important to allocate personal habits into driving their own career.
+How do or will you make money? How much could you make?
+(We realize you can't know precisely, but give your best estimate.)
+
+In the short term, it is very easy. Get enough subscriptions (our email service will be the core revenue maker), and get advertisement fees from companies (tailored ads) & premium subscriptions (get early access to job offers). Companies (especially startups) will get the added benefit that their job offering will only be shared through a small pool of qualified players, (this will decrease recruiting costs).  
+
+Having the data (job postings + engineering profiles) would open a myriad of opportunities. I'm considering a priori:
+A) HR processes: employee satisfaction, hiring funnels & performance reviews.
+B) Continous education based on shared income agreements (after all we would get a premier on market trends) and effectively control a good part of the recruitment process, individuals would be compelled to form long term relationships with us. 
+C) Hedge funds: I'm increasingly amazed by how much you can learn from a company based exclusively on their job offerings, on a macroeconomic level having access to the data is a game-changer. I'm sure there will be ethical and legal issues to get here but the incentives seem too strong to not consider it.
+D) Public Policy: Government is still a major player, tech has not been able to permeate yet, but we would only need to find the right kind of entrepreneurial leaders that are willing to listen to informed advice and geet our feet in a multi-trillion industry.
+
+As for the revenue, if successful Yobs ML has the potential to be easily a billion-dollar company that is good enough for me. 
+How will you get users? If your idea is the type that faces a chicken-and-egg problem in the sense that it won't be attractive to users till it has a lot of users (e.g. a marketplace, a dating site, an ad network), how will you overcome that?
+Contrary to popular belief, ideally, the first subscriptions would come through paid advertising. The job postings will mainly come from web scrapping. Most companies do want their jobs to be found, and they all follow a relatively similar language. I am using an open-source distributed search engine, the only "manual" part is to get a list of companies/ startups.
+
+Why paid-advertising? I rather focus on building the technology, there is no need for many subscriptions but rather give them a superb service through good recommendations and factual progress on their career. Paying $20 for a user that could earn $20K more seems a no brainer to me. I want my first customers to be smart and driven. I'm not expecting them to use our service as an emotionally driven decision but rather as a rational one, carefully weighing the pros of maximizing their lifelong earning potential.  
+
+EQUITY
+Have you incorporated, or formed any legal entity (like an LLC) yet?
+
+Have you taken any investment yet?
+
+If you have not formed the company yet, describe the planned equity ownership breakdown among the founders, employees and any other proposed stockholders. If there are multiple founders, be sure to give the proposed equity ownership of each founder.
+(This question is as much for you as us.)
+
+20% for the options pool. Being a startup that is based on recruiting we need to lead by example recognizing the value that each great hire brings.  
+
+15% for the COO. I'm going to use the pronoun she, as I recognize the importance to have at least one woman among the cofounders. Ideally, she would a very dynamic person focused on bringing revenue, creating partnerships, growing the business & running day to day operations.
+
+25% for the CTO. He/she would be a deeply technical, knowledgeable person. He would have great technological instincts and a solid professional track-record (a Ph.D. is not enough). I'm looking for DL/NLP expertise and a setback personality. I'm not interested in his/her ability to lead, as I would still be very interested in keeping a close relationship with the software team.  
+
+40% to me (CEO), I would like to own two tasks: 1) guaranteeing our users advance on their careers. 2) Providing vision for the company.
+
+I'm counting on you and SV, to find the right persons for the roles of cofounders. I'm differentiating the stock between both, as I want the COO to have incentives to grow us big and because I acknowledge that deep, well-targeted technical knowledge is one of scarcest resources in this world. Having said that, this is an area you know better and I will let myself be guided in this regard.
+Please provide any other relevant information about the structure or formation of the company.
+I would like the company to be built around values like: 
+Trust, happiness, innovation, resourcefulness & sustainability. 
+
+I also have learned that patience brings me the best results. 
+
+LEGAL
+Are any of the founders covered by noncompetes or intellectual property agreements that overlap with your project? If so, please explain.
+I've signed a couple of NDA in the past, I've read them carefully and there is very little in them to hold some legal ground. Having said, I do anticipate at some point, if successful enough, the need for legal help. Personally I would be glad to share a small portion of the success as I admire and I'm grateful for the people I've worked in the past.  
+Who writes code, or does other technical work on your product? Was any of it done by a non-founder? Please explain.
+The MVP was made entirely by me. I used a couple of open-source libraries, mainly from Uber & Facebook and it was coded from scratch. The repo is currently open-source. 
+Is there anything else we should know about your company?
+(Pending lawsuits, cofounders who have left, etc.)
+
+It might be good to specify that I currently have an offer to join a FinTech in Luxembourg, I have accepted it and is dependant on the work permit being approved. Without additional complexities from the current pandemic, I expect to have a resolution of the application in about two months. They are good people and I do not expect having issues to join YC if accepted.   
+
+OTHERS
+If you had any other ideas you considered applying with, please list them. One may be something we've been waiting for. Often when we fund people it's to do something they list here and not in the main application.
+Alturism: "We deliver social inclusive experiences for people in search of meaning". The idea to mix tourism with altruism came after a very powerful experience in Puerto Vallarta.
+
+A lot of ideas come to me related to NLP/DL: 
+- Text classification as a service (similar to what Clarifai does with vision), there are some competitors but none that I could found that offers off-the-shelf unsupervised learning. 
+- A nice UI for labeling/classifying/debugging NLP data. Doing this on IPython notebooks really sucks.
+- Transfer entrepreneurship. NLP is dependant on the language used. Spanish is the third most spoken language in the world and products like Grammarly could be built around it.
+- Industry-specific bots: I'm looking at community management, customer service, law, and even sales. They would act as a kind of centaurs, meaning provide help to the people that are doing the job right now, automatizing their tasks and providing useful data for them.
+
+Other niche companies could be built around the geographical interface, mainly in Analytics, possibly CRM. For the very ambitious search engines could be challenged providing information-rich engines (text has very low entropy), this can be done with a fusion between 2D surfaces (maps) and PCA applied to text (Google has not update its main UI in 20+ years). 
+
+Other ideas are bringing 3D front-end products mainstream, a marketplace for B2B & text-generated movies a good starting market for this is videoconferences. 
+
+I wrote a blog post about some of them: https://medium.com/@santiagomartnez_69416/five-industries-that-can-be-disrupted-ffa3892c20c3 
+Please tell us something surprising or amusing that one of you has discovered.
+(The answer need not be related to your project.)
+
+The best predictor for start-ups jobs is directly proportional to how recently have they being founded. Obvious, but very insightful in the tight relationship between the job opportunities and momentum of a company.
+
+CURIOUS
+What convinced you to apply to Y Combinator? Did someone encourage you to apply?
+No, I have been following you guys for years. I decided to apply this time as I feel that I'm in the right place on a personal, familiar, financial, and technical level. 
+
+I also have good faith in the product, I believe is good and has some potential, I also feel compelled enough to the company's mission: "find jobs to people that make them happy". 
+How did you hear about Y Combinator?
+I would guess from the Stanford lectures by Sam Altman.

@@ -1,0 +1,76 @@
+[
+    {
+        "node":{
+            "__typename":"StartupSearchResult",
+            "id":"7498072",
+            "highlightedJobListings":[{
+                "__typename":"JobListingSearchResult",
+                "id":"738007",
+                "autoPosted":false,
+                "description":"Job Description:\n\nDevelop high-quality PHP/Python applications (web \u0026 mobile) using Magento solutions in order to support business for our Enterprise and SMB Clients.\nCreate, and modify websites CSS, jQuery, using Magento\nReview internal custom code that integrates Magento with third party systems like ERP, Shipping, Inventory",
+                "jobType":"full-time",
+                "liveStartAt":1582560371,
+                "locationNames":["California"],
+                "primaryRoleTitle":"Software Engineer",
+                "remote":true,
+                "slug":"mangento-certified-developer",
+                "title":"Mangento Certified Developer","compensation":"$20k – $100k",
+                "estimatedSalary":null,
+                "equity":null,
+                "usesEstimatedSalary":false
+            }],
+            "currentUserHasStarred":false,
+            "name":"originalcashforcars",
+            "slug":"originalcashforcars",
+            "logoUrl":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/7498072-8ab8ab3efb96a5387288706ff73b2b1c-medium_jpg.jpg?buster=1581947892",
+            "highConcept":"",
+            "companySize":"SIZE_11_50",
+            "locationTaggings":[{"id":"1624","displayName":"California","__typename":"NewTag"}],
+            "badges":[{
+                "id":"GROWING_FAST-7498072",
+                "name":"GROWING_FAST_BADGE",
+                "label":"Growing fast",
+                "tooltip":"Showed strong hiring growth in the past month",
+                "avatarUrl":null,
+                "__typename":"Badge"
+            }],
+            "applicantsInPastWeek":31,
+            "jobListingsCount":5
+        },
+        "__typename":"StartupSearchResultEdge"
+    },
+    {
+        "node":{
+            "__typename":"StartupSearchResult",
+            "id":"55770",
+            "highlightedJobListings":[{
+                "__typename":"JobListingSearchResult",
+                "id":"51675",
+                "autoPosted":false,
+                "description":"Are you interested in an amazing opportunity that also makes a difference?  We help 100,000+ teachers and students learn more every school day.\n\nTo do this, we have a node stack (React, GraphQL, Apollo Client, Typescript, webpack, mongoDB, Kubernetes).\n \nIf you are great with Javascript, that's all we require.\n\nWe want you to be opinionated, factual, but willing to compromise. You should be comfortable both giving and receiving feedback from peers. We want to make each other better.\n\nYou will play a key role in carving out a future for our web application and for the future of education.\n\nWith your input, help and expertise we will build an application that will ultimately collect more classroom data on student learning than any in human history.  We want to use that data to help teachers, schools, parents, students and entire communities have unprecedented academic growth.\n\n# Bonus Points If\n* You've used React and Typescript\n* GraphQL makes you smile\n* You have implemented E2E tests on a continuous integration server\n* You have implemented real-time reactivity in a project using WebSockets\n* You like board games",
+                "jobType":"full-time",
+                "liveStartAt":1580410246,
+                "locationNames":["Remote"],
+                "primaryRoleTitle":"Software Engineer",
+                "remote":true,"slug":"full-stack-software-engineer",
+                "title":"Full Stack Software Engineer",
+                "compensation":"$80k – $140k • 0.1% – 1.0%",
+                "estimatedSalary":null,
+                "equity":"0.1% – 1.0%",
+                "usesEstimatedSalary":false
+            }],
+            "currentUserHasStarred":false,
+            "name":"Formative",
+            "slug":"formative",
+            "logoUrl":"https://d1qb2nb5cznatu.cloudfront.net/startups/i/55770-f8af3e1f32df70ced36601ea6330b99b-medium_jpg.jpg?buster=1422920436",
+            "highConcept":"Real-Time Formative Assessment Platform",
+            "companySize":"SIZE_11_50",
+            "locationTaggings":[{
+                "id":"1679",
+                "displayName":"San Diego",
+                "__typename":"NewTag"
+            }]
+        }
+    }
+]
+            

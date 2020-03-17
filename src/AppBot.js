@@ -1,17 +1,33 @@
-import { RemoteMongoClient, Stitch, AnonymousCredential } from 'mongodb-stitch-browser-sdk'
+import { 
+    RemoteMongoClient, 
+    Stitch, 
+    AnonymousCredential 
+} from 'mongodb-stitch-browser-sdk'
 
-import {AmbientLight, PointLight, LightingEffect} from '@deck.gl/core'
 import { ColumnLayer } from '@deck.gl/layers'
 
-import { StaticMap } from 'react-map-gl'
+import DeckGL, {FlyToInterpolator} from 'deck.gl'
 import React, { Fragment } from 'react'
-import DeckGL from '@deck.gl/react'
+import ReactMapGL from 'react-map-gl'
 
 import amplitude from 'amplitude-js'
 
 import 'bulma-pageloader/dist/css/bulma-pageloader.min.css'
 import 'bulma/css/bulma.css'
 import './App.css'
+
+import {
+    lightingEffect,
+    initialViewState,
+    TOOLTIP_STYLE,
+    MAP_STYLES,
+    INFOWINDOW_STYLE,
+    colorRange,
+    question_style,
+    primary_button_style,
+    secondary_button_style,
+    onboarding_tootlip_style
+} from './styles/bot_styles'
 
 
 const MAPBOX_ACCESS_TOKEN = 'pk.eyJ1IjoiZHpldGEiLCJhIjoiY2s2cWFvbjBzMDIzZzNsbnhxdHI5eXIweCJ9.wQflyJNS9Klwff3dxtHJzg'
@@ -21,85 +37,9 @@ const AMPLITUDE_KEY = window.location.hostname !== 'localhost' ? AMPLITUDE_PROD 
 
 const collection = 'Yobs'
 const client = Stitch.initializeDefaultAppClient('yobs-wqucd')
+
 const db = client.getServiceClient(RemoteMongoClient.factory, 'mongodb-atlas').db(collection)
-
 const get_yobs = () => db.collection(collection).find({}, { limit: 100}).asArray().catch(console.log)
-
-const ambientLight = new AmbientLight({
-	color: [255, 255, 255],
-	intensity: 1.0
-})
-
-const pointLight1 = new PointLight({
-	color: [255, 255, 255],
-	intensity: 0.8,
-	position: [-0.144528, 49.739968, 80000]
-})
-
-const pointLight2 = new PointLight({
-	color: [255, 255, 255],
-	intensity: 0.8,
-	position: [-3.807751, 54.104682, 8000]
-})
-
-
-const lightingEffect = new LightingEffect({ambientLight, pointLight1, pointLight2})
- 
-const initialViewState = {
-
-	latitude: 40.69279,
-	longitude: -73.9878993247973,
-
-	zoom: 11.5,
-	pitch: 55.5,
-	bearing: 35.396674584323023
-}
-
-const TOOLTIP_STYLE = {
-	padding: '20px',
-	background: 'rgba(255, 255, 255, 0.95)',
-	color: '#000',
-	maxWidth: '300',
-	fontSize: '20x',
-	fontWeight: '600',
-	zIndex: 9
-}
-
-const MAP_STYLES = [
-	'light-v10',
-	'dark-v10',
-	'outdoors-v11',
-	'satellite-v9'
-]
-
-const INFOWINDOW_STYLE = {
-	position: 'absolute',
-    right: 0,
-    top: 0,
-    width: 344,
-    background: '#fff',
-    boxShadow: '0 0 3px rgba(0, 0, 0, 0.15)',
-    margin: 24,
-    padding: '6px 9px',
-    height: '90%',
-    overflowX: 'hidden',
-    overflowY: 'overlay',
-	outline: 'none',
-	paddingRight: 20,
-	paddingLeft: 10,
-	paddingTop: 10
-}
-
-
-const colorRange = {
-	FrontEnd: [88,81,145], 
-	FullStack: [255,126,107], 
-	BackEnd: [112,196,70], 
-	DevOps: [166,0,103], 
-	Data: [247,178,183], 
-	Other: [209, 55, 78]
-}
-
 
 
 class App extends React.Component {
@@ -113,8 +53,12 @@ class App extends React.Component {
 			tooltip_id: null,
 			loaded: false,
 			tooltipped: false,
-			fake_tooltip: null
-		}
+            fake_tooltip: null,
+
+            viewport: initialViewState,
+            stage: 'first',
+        }
+        
 	}
 
 	async componentDidMount(){
@@ -124,12 +68,12 @@ class App extends React.Component {
         
         this.setState({ data: [] })
 
-//		const yobs = await get_yobs()
-//		const yob = yobs[19]
-//		this.setState({ data: yobs })
-//		this.setState({fake_tooltip: `${yob.title}<br/> ${yob.city}<br/> ${yob.salary !== 'N/A' ? yob.salary : ''}` }) 
-//		document.getElementById('deckgl-wrapper').addEventListener('contextmenu', evt => evt.preventDefault())
-	}
+        const yobs = await get_yobs()
+        const yob = yobs[42]
+		this.setState({ data: yobs })
+		document.getElementById('deckgl-wrapper').addEventListener('contextmenu', evt => evt.preventDefault())
+        this.setState({fake_tooltip: `${yob.title}<br/> ${yob.city}<br/> ${yob.salary !== 'N/A' ? yob.salary : ''}` })
+    }
 
 	_getTooltip = ({ object }) => {
 		object && this.state.tooltip_id !== object.title 
@@ -139,7 +83,16 @@ class App extends React.Component {
 		return object
 		? 	{ text:`${object.title}\n ${object.city}\n ${object.salary !== 'N/A' ? object.salary : ''}`, style: TOOLTIP_STYLE }
 		:	null
-	}
+    }
+
+    _onViewportChange = viewport => this.setState({ viewport: {...this.state.viewport, ...viewport} })    
+    _goToViewport = props => {
+        this._onViewportChange({
+            ...props,
+            transitionDuration: 1000,
+            transitionInterpolator: new FlyToInterpolator()            
+        })
+    }
 	
 	_getInfoWindow = ({ object }) => !this.state.name
 		? 
@@ -150,7 +103,7 @@ class App extends React.Component {
 		: null
 
 	render() {
-		const { data, loaded, tooltipped, fake_tooltip } = this.state
+		const { data, loaded, fake_tooltip, stage, viewport } = this.state
 
 		const layers = [
 			new ColumnLayer({
@@ -166,72 +119,120 @@ class App extends React.Component {
 				getLineColor: [0, 0, 0],
 				getElevation: d => d.value/500,
 			})
-		]
+        ]
 
-		const InfoWindow = <div align='center' style={ INFOWINDOW_STYLE } tabIndex='0'>
-            <div className='container'>
-                <button className='pulse-button'></button>
-            </div>
-            <p
-                style={{
-                    fontSize: '1.25em',
-                    marginBlockStart: '1em',
-                    marginBlockEnd: '1em',
-                    marginInline: 0,
-                    fontWeight: 'bold',
-                    paddingRight: 0
-                }}
-            > Hello Santiago, <br/> How are you today? </p>
+
+        const bot_question = stage => ({
+            first: <span> Hi Santiago! <br/> I found this job for you. <br/> What do you think? </span>,
+            second: <span> Got it! How about this? </span>,
+            third: <span> Do you want me to apply for you? </span>,
+            fourth: null,
+            end: <span> Done, <br/> Good Luck! </span>
+        })[stage]
+
+        const primary_button = stage => ({
+            first: `I like it.`,
+            second: `Perfect!`,
+            third: `Yes!`,
+            fourth: null,
+            end: `Find me another Job please.`
+        })[stage]
+
+        const secondary_button = stage => ({
+            first: `Is there Anything that pays more?`,
+            second: `Is better, are there any more choices?`,
+            third: `Wait, show me the cover letter you'll send.`,
+            fourth: null,
+            end: `Explore the Map instead.`
+        })[stage]
+
+        const tertiary_button = stage => ({
+            first: 'I prefer a Position in ...',
+            second: `No thanks, today I will search by myself.`,
+            third: `Not yet, save it for later.`,
+            fourth: null,
+            end: null
+        })[stage]
+
+        const fourth_button = stage => ({
+            first: 'Something closer to home, please.',
+            second: null,
+            third: 'Show me the requirements please.',
+            fourth: null,
+            end: null
+        })[stage]
+
+        const select_stage = () => ({
+            first: { stage: 'second' },
+            second: { stage: 'third' },
+            third: { stage: 'fourth' },
+            fourth: { stage: 'end' },
+            end: { stage: 'first' }
+        })[stage]
+
+
+        const InfoWindow = <div 
+            align='center' 
+            style={ INFOWINDOW_STYLE } 
+            tabIndex='0'
+            onClick={()=> this.setState({...select_stage()})}
+        >
+            {
+                stage !== 'end'
+                ?   
+                    <div className='container' style={{ display: stage === 'fourth' ? 'none' : 'auto' }}>
+                        <button className='pulse-button'></button>
+                    </div>
+                :   
+                    <img 
+                        alt='success'
+                        style={{height:150, margin:25 }} 
+                        src="https://media1.tenor.com/images/22919ad969d4fcf8280c47f4c4d6a643/tenor.gif?itemid=15903843"
+                    />
+            }
+            <p style={question_style}> { bot_question(stage) }  </p>
 
             <div style={{margin:16}} align="center">
-                <a 
-                    style={{
-                        margin: 16,
-                        color: '#052fBA',
-                        textTransform: 'uppercase',
-                        background: '#ffffff',
-                        padding: 12,
-                        border: '4px solid #052fBA',
-                        borderRadius: '6px',
-                        display: 'inline-block',
-                        transition: 'all 0.3s ease 0s',
-                    }}
+                {
+                    primary_button(stage) 
+                    ?   
+                        <a 
+                            style={primary_button_style} 
+                            onClick={()=> this.setState({...select_stage()})}
+                        > { primary_button(stage) } </a>
+                    :   null
+                } {
 
-                    onClick={() => this.setState(
-                        {name: 'CTA', cta: true},
-                        () => setTimeout(() => this.setState(
-                            {name: null}, 
-                            ()=> { 
-//                                window.open(object.link)
-//                                amplitude.getInstance().logEvent('Visit Job', object)
-                            }), 350)
-                    )}
-                > I'm doing good thanks! </a>
-
-<a 
-                    style={{
-                        margin: 16,
-                        color: '#052fBA',
-                        textTransform: 'uppercase',
-                        background: '#ffffff',
-                        padding: 12,
-                        border: '4px solid #052fBA',
-                        borderRadius: '6px',
-                        display: 'inline-block',
-                        transition: 'all 0.3s ease 0s',
-                    }}
-
-                    onClick={() => this.setState(
-                        {name: 'CTA', cta: true},
-                        () => setTimeout(() => this.setState(
-                            {name: null}, 
-                            ()=> { 
-//                                window.open(object.link)
-//                                amplitude.getInstance().logEvent('Visit Job', object)
-                            }), 350)
-                    )}
-                > I've been better... </a>
-
+                    secondary_button(stage) 
+                    ?   
+                        <a 
+                            style={secondary_button_style} 
+                            onClick={()=> {
+                                this._goToViewport({latitude: 40.69279, longitude: -73.9878993247973, bearing: 25})
+                                const yob = data[19]
+                                this.setState({...select_stage(), fake_tooltip: null})
+                                setTimeout(() => 
+                            		this.setState({
+                                        fake_tooltip: `${yob.title}<br/> ${yob.city}<br/> ${yob.salary !== 'N/A' ? yob.salary : ''}` })
+                                ,1000)
+                            }}
+                        > { secondary_button(stage) } </a>
+                    :   null
+                } {
+                    tertiary_button(stage) 
+                    ?
+                        <a 
+                            style={{...secondary_button_style, color: 'darkgreen', border: '4px solid darkgreen'}}
+                        > { tertiary_button(stage) } </a>
+                    :   null
+                } {
+                    fourth_button(stage) 
+                    ?
+                        <a 
+                            style={{...secondary_button_style, color: 'darkorange', border: '4px solid darkorange'}}
+                        > { fourth_button(stage) } </a>
+                    :   null
+                }
             </div>
         </div>
       
@@ -242,47 +243,39 @@ class App extends React.Component {
 
 		const onboarding_tooltip = <div 
 			className='deck-tooltip' 
-			style={{
-				zIndex: 9, 
-				position: 'absolute', 
-				pointerEvents: 'none', 
-				color: 'rgb(0, 0, 0)', 
-				background: 'rgba(255, 255, 255, 0.95)', 
-				padding: 20, 
-				display: 'block', 
-				fontWeight: 600, 
-				transform: 'translate(-1px, -1px)', 
-				top: '50%', 
-				left: '50%'
-			}}
-			>{ 
+			style={onboarding_tootlip_style}
+        >{ 
 				fake_tooltip 
 				? 	fake_tooltip.split('<br/>').map((i, idx) => <Fragment key={idx}> {i} <br/></Fragment>) 
 				: 	null
-			}</div>
+        }</div>
 
 		const main = <DeckGL
 			onContextMenu={event => event.preventDefault()}
-			initialViewState={initialViewState}
+			initialViewState={viewport}
 			getTooltip={this._getTooltip}
 			onClick={this._getInfoWindow}
 			controller={true}
 			layers={layers}
-			effects={[lightingEffect]}
-		>
+            effects={[lightingEffect]}
+            viewState={ viewport }
+            onViewStateChange={({ viewState }) => this._onViewportChange(viewState)}
+        >
 			{ InfoWindow }
-			<StaticMap 
+            <ReactMapGL 
 				onContextMenu={event => event.preventDefault()}
 				mapboxApiAccessToken={MAPBOX_ACCESS_TOKEN} 
 				mapStyle={`mapbox://styles/mapbox/${MAP_STYLES[2]}`}
 				attributionControl={false}
-				onLoad={()=> setTimeout(() => this.setState({loaded: true}), 1000)}
-			/>
+                onLoad={()=> setTimeout(() => this.setState({loaded: true}), 1000)}
+                transitionDuration={1000}
+                transitionInterpolator={new FlyToInterpolator()}
+            />
 		</DeckGL>
 
 		return <Fragment>
 			{ intro }
-			{ !tooltipped ? onboarding_tooltip : null }
+			{ fake_tooltip ? onboarding_tooltip : null }
 			{ main }
 		</Fragment>
 	}

@@ -1,0 +1,82 @@
+1. Wireframe Dashboard Components.
+	1. NavBar.
+	2. Header.
+	3. Menú.
+	4. Total Jobs.
+	5. Liked/Rejected.
+	6. Prefered Stack.
+	7. Salary Preference.
+	8. Industry Preference.
+
+2. Main Jobs Component
+	1. Jobs Feed.
+	2. Map View.
+	3. Kanban.
+
+3. WorkFlow
+	1. Send Update to Canada.
+	2. Build Sketeleton.
+		- Top Two.
+		- Two Left.
+		- Bottom.
+		- Three Right.
+		- Center with Tabs.
+		- Design Bottom Left.
+
+4. Data
+	1. Design Collections.
+		1. Users.
+		2. Jobs.
+		3. Likes. (InfluxDB?)
+	2. Queries.
+		1. Jobs Aggregation.
+		2. Liked/ Rejection Count.
+		3. Technologies.
+		4. Geography.
+		5. Industries.
+		6. Salaries.
+		7. Personalized Ranking.
+		8. Countries/ Cities Aggregation.
+		9. Location Aggregation.
+		10. Kanban Query.
+
+
+5. Stages
+	1. Personal MVP.
+		1.Save 100 Good Jobs.
+		2. Components
+			1. NavBar
+			2. Job Counters.
+			3. Progress Bars.
+			4. Share Buttons.
+			5. Spider Chart.
+			6. Gaussian Chart.
+			7. HeatMap.
+			8. Plain Map.
+			9. Job Card.
+			10. Kanban List
+		3. Features.
+			1. OnBoarding Questionaire.
+			2. Design Onboarding Tour.
+			3. Onboarding Questionaire.
+			4. Like/Reject Recommendation Card.
+			5. Map Aggregates.
+			6. Retrieve City Locations.
+			7. Like/Reject Location Job.
+			8. List Jobs by Kanban Stage.
+			9. Update Kanban Stage.
+			10. Subscribe to Email.
+			11. Update Metrics on Real Time.
+	2. Prepare for Release.
+		1. Expand to 1000 Jobs.
+		2. Define Usability Tests.
+		3. Define Amplitude Events.
+		4. Design Introductory Email Template.
+		5. Find 100 Prospects.
+		6. Run Incognito Tests.
+		7. Get 10 Distribution Channels.
+		8. Document required NLP Infrastructure.
+		9. Medium Blog Post.
+		10. Preview 500 Startups Application.
+		11. PreMortem
+		12. Release.

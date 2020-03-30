@@ -131,6 +131,78 @@ const YobCard = ({ company, job }) => <div class="card">
 </div>
 
 
+const Main = ({ children }) => <div class="container">
+    { children }
+</div>
+
+
+const KanbanCard = ({ job }) => <div class="box">
+    <article class="media">
+        <div class="media-left">
+            <figure class="image is-64x64">
+                <img src={job.logo} alt="Image" />
+            </figure>
+            { job.company }
+        </div>
+    <div class="media-content">
+        <div class="content">
+            <nav class="level is-mobile">
+                <div class="level-left">
+                    <h2 className="title is-4">  { job.title } </h2>
+                </div>
+                <div class="level-right">
+                    <div class="dropdown is-hoverable">
+                        <div class="dropdown-trigger">
+                            <p> { job.stage } </p>
+                            <span class="icon is-small">
+                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                            <div class="dropdown-content">
+                                <a href="#" class="dropdown-item"> Interested </a>
+                                <a href="#" class="dropdown-item"> Applied </a>
+                                <a href="#" class="dropdown-item"> First Interview </a>
+                                <a href="#" class="dropdown-item"> Technical Stage </a>
+                                <a href="#" class="dropdown-item"> Culture Assesment </a>
+                                <a href="#" class="dropdown-item"> Presented Offer </a>
+                                <a href="#" class="dropdown-item"> Negotiation </a>
+                                <hr class="dropdown-divider" />
+                                <a href="#" class="dropdown-item"> Accepted Offer </a>
+                                <a href="#" class="dropdown-item"> No Longer Interested </a>
+                                <a href="#" class="dropdown-item"> Rejected </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <nav class="level is-mobile">
+            <div class="level-left">
+                <a class="level-item" aria-label="Applauses">
+                    <span class="icon is-small"><i class="fas fa-reply" aria-hidden="true"></i></span>
+                </a>
+                <a class="level-item" aria-label="Comments">
+                    <span class="icon is-small"><i class="fas fa-retweet" aria-hidden="true"></i></span>
+                </a>
+                <a class="level-item" aria-label="Plus">
+                    <span class="icon is-small"><i class="fas fa-heart" aria-hidden="true"></i></span>
+                </a>
+                <a class="level-item" aria-label="Minus">
+                    <span class="icon is-small"><i class="fas fa-heart" aria-hidden="true"></i></span>
+                </a>
+                <a class="level-item" aria-label="Notes">
+                    <span class="icon is-small"><i class="fas fa-heart" aria-hidden="true"></i></span>
+                </a>
+                <a class="level-item" aria-label="To Do">
+                    <span class="icon is-small"><i class="fas fa-heart" aria-hidden="true"></i></span>
+                </a>
+            </div>
+        </nav>
+    </div>
+    </article>
+</div>
 
 
 const App = () => ({})

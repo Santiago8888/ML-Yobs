@@ -54,13 +54,25 @@ export const kanban_jobs = [
     kanban_job,
     {
         company: 'Koru',
+        description: 'Koru is seeking an exceptional, strategic, and visionary Venture CTO to lead the technical strategy and product build on new ventures.',
+        pitch: 'Koru is a venture foundry aiming to build a portfolio of new startups that drive breakout growth.',
         logo: 'https://cdn.filestackcontent.com/gVzUZ4syTAGwc0dTBiMu',
         title: 'Venture CTO',
         salary: undefined,
         location: 'Toronto',
         stage: 'Interested'    
+    }, {
+        company: 'Skymatics',
+        description: 'Provide sound technical expertise and leadership.',
+        pitch: 'Providing Clients With Complete And Collaborative Solutions',
+        logo: 'https://cdn.filestackcontent.com/2vYR2QNZRWesgEvg1p6P',
+        title: 'Chief Technology Officer (CTO)',
+        salary: undefined,
+        location: 'Calgary',
+        stage: 'Suggested'
     }
 ]
+
 
 export const prefered_industries = [
     { industry: 'Productivity', value: 4},

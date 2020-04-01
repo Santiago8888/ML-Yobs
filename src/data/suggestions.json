@@ -1,0 +1,66 @@
+[
+    {
+        "_id":{"$oid":"5e84a5841ff06d249d62f1ca"},
+        "UserID":"1",
+        "User_MLocation":{"type":"Point", "coordinates":[{"$numberDouble":"51.0534234"},{"$numberDouble":"-14.0625892"}]},
+        "JobId":"5e84a04f1ff06d249d62f1c5",
+        "MLocation":{"type":"Point", "coordinates":[{"$numberDouble":"49.2608724"},{"$numberDouble":"-23.1139529"}]},
+        "Coords":{"type":"Point", "coordinates":[{"$numberDouble":"49.2608724"},{"$numberDouble":"-23.1139529"}]},
+        "TechStack":["Python"],
+        "Stage":"Applied",
+        "Liked":true,
+        "Salary":{"$numberInt":"50000"},
+        "Industry":"Productivity",
+        "Open": true
+    }, {
+        "_id":{"$oid":"5e84a5841ff06d249d62f1cb"},
+        "UserID":"1",
+        "User_MLocation":{"type":"Point", "coordinates":[{"$numberDouble":"51.0534234"},{"$numberDouble":"-14.0625892"}]},
+        "JobId":"5e84a04f1ff06d249d62f1c6",
+        "MLocation":{"type":"Point", "coordinates":[{"$numberDouble":"43.6534817"},{"$numberDouble":"-79.3839347"}]},
+        "Coords":{"type":"Point", "coordinates":[{"$numberDouble":"43.6534817"},{"$numberDouble":"-79.3839347"}]},
+        "TechStack":["Python","React"],
+        "Stage":"Interested",
+        "Liked":true,
+        "Salary":null,
+        "Industry":"HR",
+        "Open": true
+    },  {
+        "_id":{"$oid":"5e84a5841ff06d249d62f1cc"},"UserID":"1",
+        "User_MLocation":{"type":"Point", "coordinates":[{"$numberDouble":"51.0534234"},{"$numberDouble":"-14.0625892"}]},
+        "JobId":"5e84a04f1ff06d249d62f1c7",
+        "Salary":null,
+        "Coords":{"type":"Point", "coordinates":[{"$numberDouble":"51.0534234"},{"$numberDouble":"-14.0625892"}]},
+        "MLocation":{"type":"Point", "coordinates":[{"$numberDouble":"51.0534234"},{"$numberDouble":"-14.0625892"}]},
+        "Stage":"Suggested",
+        "Liked":null,
+        "TechStack":["AWS"],
+        "Industry":"Software",
+        "Open": null
+    }, {
+        "_id":{"$oid":"5e84a5841ff06d249d62f1cd"},
+        "UserID":"2",
+        "User_MLocation":{"type":"Point", "coordinates":[{"$numberDouble":"43.6534817"},{"$numberDouble":"-79.3839347"}]},
+        "JobId":"5e84a04f1ff06d249d62f1c5",
+        "Salary":null,
+        "Coords":{"type":"Point", "coordinates":[{"$numberDouble":"49.2608724"},{"$numberDouble":"-23.1139529"}]},
+        "MLocation":{"type":"Point", "coordinates":[{"$numberDouble":"49.2608724"},{"$numberDouble":"-23.1139529"}]},
+        "Stage":"Rejected",
+        "Liked":false,
+        "TechStack":["Python"],
+        "Industry":"Productivity",
+        "Open": false
+    }, {
+        "_id":{"$oid":"5e84a5841ff06d249d62f1ce"},
+        "UserID":"2",
+        "User_MLocation":{"type":"Point", "coordinates":[{"$numberDouble":"43.6534817"},{"$numberDouble":"-79.3839347"}]},
+        "JobId":"5e84a04f1ff06d249d62f1c6",
+        "Salary":null,
+        "Coords":{"type":"Point", "coordinates":[{"$numberDouble":"43.6534817"},{"$numberDouble":"-79.3839347"}]},
+        "MLocation":{"type":"Point", "coordinates":[{"$numberDouble":"43.6534817"},{"$numberDouble":"-79.3839347"}]},
+        "Stage":"Suggested",
+        "Liked":null,
+        "TechStack":["Python","React"],
+        "Industry":"HR",
+        "Open": null
+}]

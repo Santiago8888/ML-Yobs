@@ -1,0 +1,42 @@
+[
+    {
+        "_id":{"$oid":"5e84a04f1ff06d249d62f1c5"},
+        "Company":"CTO.ai",
+        "Description":"As a Senior Software Engineer, you will work with a highly-motivated team on a variety of quickly changing new products.",
+        "Pitch":"We are positioning ourselves as the leaders in the DevOps community, by enabling development teams to easily adopt automation.",
+        "Logo":"https://workablehr.s3.amazonaws.com/uploads/account/logo/313547/logo",
+        "Title":"Senior Software Engineer",
+        "Salary":null,
+        "City":"Vancouver",
+        "Coords":[{"$numberDouble":"49.2608724"},{"$numberDouble":"-123.1139529"}],
+        "MLocation":{"type":"Point", "coordinates":[{"$numberDouble":"49.2608724"},{"$numberDouble":"-123.1139529"}]},
+        "Industry":"Productivity",
+        "TechStack":["Python"]
+    }, {
+        "_id":{"$oid":"5e84a04f1ff06d249d62f1c6"},
+        "Company":"Koru",
+        "Description":"Koru is seeking an exceptional, strategic, and visionary Venture CTO to lead the technical strategy and product build on new ventures.",
+        "Pitch":"Koru is a venture foundry aiming to build a portfolio of new startups that drive breakout growth.",
+        "Logo":"https://cdn.filestackcontent.com/gVzUZ4syTAGwc0dTBiMu",
+        "Title":"Venture CTO",
+        "Salary":null,
+        "City":"Toronto",
+        "Coords":[{"$numberDouble":"43.6534817"},{"$numberDouble":"-79.3839347"}],
+        "MLocation":{"type":"Point", "coordinates":[{"$numberDouble":"43.6534817"},{"$numberDouble":"-79.3839347"}]},
+        "Industry":"HR",
+        "TechStack":["Python","React"]
+    }, {
+        "_id":{"$oid":"5e84a04f1ff06d249d62f1c7"},
+        "Company":"Skymatics",
+        "Description":"Provide sound technical expertise and leadership.",
+        "Pitch":"Providing Clients With Complete And Collaborative Solutions",
+        "Logo":"https://cdn.filestackcontent.com/2vYR2QNZRWesgEvg1p6P",
+        "Title":"Chief Technology Officer (CTO)",
+        "Salary":null,
+        "City":"Calgary",
+        "Coords":[{"$numberDouble":"51.0534234"},{"$numberDouble":"-114.0625892"}],
+        "MLocation":{"type":"Point", "coordinates":[{"$numberDouble":"51.0534234"},{"$numberDouble":"-114.0625892"}]},
+        "Industry":"Software",
+        "TechStack":["AWS"]
+    }
+]

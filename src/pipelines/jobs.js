@@ -2,7 +2,7 @@ export const cities_aggregate = [{ $group: { _id: '$City', count: { $sum: 1 } } 
 export const yobs_counter = [{ $group: { _id: 'Total Yobs', count: { $sum: 1 } } }]
 export const city_yobs = city => [{ $match: {City: city} }]
 
-export const get_suggestions = user_ml_location => [{
+export const suggest = user_ml_location => [{
     $geoNear: {
         near: { type: 'Point', coordinates: user_ml_location }, 
         distanceField: 'MLocation', 

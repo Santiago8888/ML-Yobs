@@ -2,6 +2,17 @@ export const get_cached_suggestions = user_id => [
     { $match: { UserID: user_id, Liked: null } }
 ] 
 
+
+export const get_ranked_cached_suggestions = ({ UserID, MLocation}) => [{
+    $geoNear: {
+        near: { type: 'Point', coordinates: MLocation }, 
+        query: { UserID: UserID, Liked: null }, 
+        distanceField: 'MLocation', 
+        spherical: true
+    }
+}]
+
+
 export const likes_counter = user_id => [
     { $match: { UserID: user_id }}, 
     { $group: { _id: '$Liked', count: { $sum: 1 } } }
@@ -35,3 +46,9 @@ export const salary_array = user_id => [
 
 
 export const kanban_array = user_id => [{ $match: { UserID: user_id,  Open: true } }]
+
+
+export const map_yobIds = user_id => [
+    { $match: { UserID: user_id } }, 
+    { $group: { _id: Suggestions, yobIds: { $push: '$JobId' } } }
+]

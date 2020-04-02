@@ -13,7 +13,7 @@ Quickly Scan through the company, tech stack & job description and take a decisi
 Jobs presented are ranked based on previous iteractions using Deep Learning.
 
 
-### Store your likes and apply in Bulk.
+### Store your Likes.
 
 Minimize time devoted to apply and increase your chances by using our Kanban Job Board. 
 
@@ -54,4 +54,5 @@ Santiago M.
 
 *santiago.marti67@gmail.com*
 
-“According to research by social psychologist Dr. David McClelland of Harvard, [the people you habitually associate with] determine as much as 95 percent of your success or failure in life.”
+“Give me six hours to chop down a tree and I will spend the first four sharpening the ax.”
+**Abraham Lincoln**

@@ -52,3 +52,8 @@ export const map_yobIds = user_id => [
     { $match: { UserID: user_id } }, 
     { $group: { _id: Suggestions, yobIds: { $push: '$JobId' } } }
 ]
+
+
+export const suggestions_history = user_id => [{ 
+    $match: { UserID: user_id, Liked: { $ne: null } } 
+}]

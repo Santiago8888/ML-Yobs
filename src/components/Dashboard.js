@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const MetricsCard = () => <div className="card">
+export const MetricsCard = ({ total, liked, rejected }) => <div className="card">
     <header className="card-header">
         <p className={`card-header-title has-text-${align} is-uppercase`} style={{display:'block'}}> 
             Total Jobs 
@@ -8,15 +8,15 @@ export const MetricsCard = () => <div className="card">
     </header>
     <div className="card-content">
         <div className="content"> 
-            <p className={`title is-2 has-text-centered`}> { content } </p> 
+            <p className={`title is-2 has-text-centered`}> { total } </p> 
         </div>
     </div>
     <footer className="card-footer">
         <a href="#" className="card-footer-item">
-            0 <br/> Liked
+            { liked } <br/> Liked
         </a>
         <a href="#" className="card-footer-item">
-            0 <br/> Rejected
+            { rejected } <br/> Rejected
         </a>
     </footer>
 </div>

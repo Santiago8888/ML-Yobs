@@ -97,12 +97,38 @@ const get_user = async () => {
 
 const get_suggestions = async user => {
     const suggestions = await suggestionsDB.aggregate(get_ranked_cached_suggestions(user)).toArray()
-
-    if(suggestions.length < 10){
+    if(!suggestions.length){
         const { yobIds } = (await suggestionsDB.aggregate(map_yobIds(user.UserID)).toArray())[0]
         const new_suggestions = await yobsDB.aggregate(suggest(user.MLocation)).toArray()
         return [...suggestions, ...new_suggestions.filter(({ JobId }) => !yobIds.includes(JobId))]        
     } else { return suggestions }
+}
+
+
+const get_counters = async user_id => {
+    const total_yobs = await yobsDB.aggregate(yobs_counter).toArray()
+    const like_metrics = await suggestionsDB.aggregate(likes_counter(user_id)).toArray()
+
+    return {
+        total: total_yobs[0].count,
+        liked: (like_metrics.find(({_id}) => _id === true) || {count: 0}).count,
+        rejected: (like_metrics.find(({_id}) => _id === false) || {count: 0}).count
+    }
+}
+
+
+const get_dashboard_metrics = async user_id => {
+    const tech_stack = await suggestionsDB.aggregate(tech_counter(user_id)).toArray()
+    const industries = await suggestionsDB.aggregate(industry_counter(user_id)).toArray()
+    const location_likes = await suggestionsDB.aggregate(heat_map_aggregate(user_id)).toArray()
+    const salary_distribution = await suggestionsDB.aggregate(salary_array(user_id)).toArray()
+
+    return {
+        tech: tech_stack,
+        industries: industries,
+        locations: location_likes,
+        salaries: salary_distribution
+    }
 }
 
 
@@ -111,7 +137,7 @@ const edit_user = ({_id, ...doc}) => usersDB.updateOne({ _id: new BSON.ObjectID(
 
 
 const Main = ({ yob, like_yob }) => <div className="container">
-    { yob ? <Suggestion yob={yob} like_yob={like_yob}/> : null }
+    <Suggestion yob={yob} like_yob={like_yob}/>
     <div class="tabs">
         <ul>
             <li class="is-active"><a>Suggestions</a></li>
@@ -123,31 +149,34 @@ const Main = ({ yob, like_yob }) => <div className="container">
 </div>
 
 
-const Layout = ({ yob, like_yob }) => <div className="columns">
+const Layout = ({ yob, like_yob, counters, metrics }) => <div className="columns">
     <div className="column is-2">
-        <MetricsCard/>
-        <TechStack/>
+        { counters ? <MetricsCard counters={counters}/> : null }
+        { metrics.tech && counters.liked > 1 ? <TechStack/> : null }
     </div>
     <div className="column is-7">
-        <Main yob={yob} like_yob={like_yob}/>
+        { yob ? <Main yob={yob} like_yob={like_yob}/> : null }
         <Contact/>
     </div>
     <div className="column is-3">
-        <ChartCard title={'By Industry'} chart={<div/>}/>
-        <ChartCard title={'By Location'} chart={<div/>}/>
-        <ChartCard title={'By Salary'} chart={<div/>}/>        
+        { metrics.industries && counters.liked > 4 ? <ChartCard title={'By Industry'} chart={<div/>}/> : null }
+        { metrics.locations && counters.liked > 3 ? <ChartCard title={'By Location'} chart={<div/>}/> : null }
+        { metrics.salary && counters.liked > 2 ?  <ChartCard title={'By Salary'} chart={<div/>}/> : null }
     </div>
 </div>
 
 
 
 const App = () => {
-    const [yob, setYob] = useState({})
+    const [yob, setYob] = useState(null)
     const [user, setUser] = useState(null)
     const [suggestions, setSuggestions] = useState([])
 
     const [liked, setLiked] = useState([])
     const [rejected, setRejected] = useState([])
+    
+    const [counters, setCounters] = useState({})
+    const [metrics, setMetrics] = useState({})
 
     useEffect(() => {
         async function fetchData(){ 
@@ -158,6 +187,12 @@ const App = () => {
             setSuggestions(suggestions)
 
             get_next_suggestion()
+
+            const counters = await get_counters()
+            setCounters(counters)
+
+            const metrics = await get_dashboard_metrics()
+            setMetrics(metrics)
         } fetchData()
     }, [])
 
@@ -179,11 +214,15 @@ const App = () => {
         setYob(null)
     }
 
-
     return <section class="section">
         <NavBar/>
         <NotificationBar/>
-        <Layout yob={yob} like_yob={like_yob}/>
+        <Layout 
+            yob={yob} 
+            like_yob={like_yob}
+            counters={counters}
+            metrics={metrics}
+        />
     </section>
 }
 

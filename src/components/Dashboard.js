@@ -22,11 +22,17 @@ export const MetricsCard = ({ total, liked, rejected }) => <div className="card"
 </div>
 
 
-export const TechStack = () => <aside className="menu">
+export const TechStack = ({ tech }) => <aside className="menu">
     <p className="menu-label"> Tech Stack </p>
     <ul className="menu-list">
-        <li><a> Python </a><progress className="progress is-primary" value="15" max="100">15%</progress></li>
-        <li><a> ReactJS </a><progress className="progress is-primary" value="15" max="100">10%</progress></li>
+        { tech.map(({ _id, count })=> <li>
+            <a> {_id} </a>
+            <progress 
+                className="progress is-info" 
+                value={count} 
+                max={Math.min(tech[0].count*2, tech[0].count + 10)}
+            >{count}</progress>
+        </li> )}
     </ul>
 </aside>
 

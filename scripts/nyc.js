@@ -19,9 +19,9 @@ import { Stitch, RemoteMongoClient, AnonymousCredential } from 'mongodb-stitch-s
 import axios from 'axios'
 
 
-import categories from '../data/categories'
-import titles from '../data/titles.json'
-import { data } from '../data/nyc.json'
+import categories from './data/categories'
+import titles from './data/titles.json'
+import { data } from './data/nyc.json'
 
 
 

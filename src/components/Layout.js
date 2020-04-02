@@ -19,7 +19,7 @@ const Main = ({ yob, like_yob }) => <div className="container">
 export const Layout = ({ yob, like_yob, counters, metrics }) => <div className="columns">
     <div className="column is-2">
         { counters ? <MetricsCard counters={counters}/> : null }
-        { metrics.tech && counters.liked > 1 ? <TechStack/> : null }
+        { metrics.tech && counters.liked > 1 ? <TechStack tech={metrics.tech}/> : null }
     </div>
     <div className="column is-7">
         { yob ? <Main yob={yob} like_yob={like_yob}/> : null }

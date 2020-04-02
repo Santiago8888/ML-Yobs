@@ -1,3 +1,7 @@
+export const get_cached_suggestions = user_id => [
+    { $match: { UserID: user_id, Liked: null } }
+] 
+
 export const likes_counter = user_id => [
     { $match: { UserID: user_id }}, 
     { $group: { _id: '$Liked', count: { $sum: 1 } } }
@@ -30,4 +34,4 @@ export const salary_array = user_id => [
 ]
 
 
-export const kanban_arrays = user_id => [{ $match: { UserID: user_id,  Open: true } }]
+export const kanban_array = user_id => [{ $match: { UserID: user_id,  Open: true } }]

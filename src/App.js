@@ -76,6 +76,30 @@ const App = () => {
     const handle_like = () => {
         setLiked([...liked, yob])
         setKanbanYobs([yob, ...kanban_yobs])
+        setCounters({...counters, liked: counters.liked + 1})
+
+        const { tech, industries, locations, salaries } = metrics
+        const updated_tech = yob.TechStack.reduce((d, i) => [
+            ...d.filter(({_id})=> _id !== i),
+            { _id: i, count: (tech.find(({_id})=> _id === i) || {count : 0}).count + 1}
+        ], tech)
+
+        const updated_industries = [
+            ...industries.filter(({_id})=> _id !== yob.Industry),
+            { _id: yob.Industry, count: (tech.find(({_id})=> _id === yob.Industry) || {count : 0}).count + 1}
+        ]
+
+        setMetrics({
+            tech: updated_tech,
+            industries: updated_industries,
+            salaries: [...salaries, Yob.Salary],
+            locations: [...locations, Yob.Coords,coordinates]
+        })
+    }
+
+    const handle_reject = () => {
+        setRejected([...rejected, yob])
+        setCounters({...counters, rejected: rejected.liked + 1})
     }
 
     const apply = yob => {
@@ -91,7 +115,7 @@ const App = () => {
     }
 
     const like_yob = liked => {
-        liked ? handle_like() : setRejected([...rejected, yob])
+        liked ? handle_like() : handle_reject()
         get_next_suggestion()
         setYob(null)
         edit_suggestion({...yob, Liked: liked})

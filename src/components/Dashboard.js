@@ -45,10 +45,14 @@ export const ChartCard = ({ title, chart }) => <article className="message">
 
 export const Contact = ({ subscribe }) => {
     const [email, setEmail] = useState('')
+    const [disabled, setDisabled] = useState(true)
+
+
     return <div className="container has-text-centered">
         <h2 className="subtitle is-5">Subscribe to our NewsLetter</h2> 
         <p>Get Personalized Job Recommendations to your inbox</p> 
         <input 
+            disabled={disabled}
             className="input" 
             type="text" 
             placeholder="We won't share your email :)" 
@@ -58,7 +62,11 @@ export const Contact = ({ subscribe }) => {
         <button
             style={{maxWidth:100}} 
             className="button is-black" 
-            onClick={()=> subscribe(email)}
+            onClick={()=> {
+                setDisabled(true)
+                setUserName('Thank you!')
+                subscribe(email)
+            }}
         >Submit</button>
     </div>
 }

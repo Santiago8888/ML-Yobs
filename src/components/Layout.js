@@ -25,7 +25,7 @@ const Main = ({ yob, like_yob, kanban_yobs, apply, close }) => {
 }
 
 
-export const Layout = ({ yob, like_yob, counters, metrics, kanban_yobs, apply, close }) => <div className="columns">
+export const Layout = ({ yob, like_yob, counters, metrics, kanban_yobs, apply, close, subscribe }) => <div className="columns">
     <div className="column is-2">
         { counters ? <MetricsCard counters={counters}/> : null }
         { metrics.tech && counters.liked > 1 ? <TechStack tech={metrics.tech}/> : null }
@@ -43,7 +43,7 @@ export const Layout = ({ yob, like_yob, counters, metrics, kanban_yobs, apply, c
                     /> 
                 :   null 
         }
-        <Contact/>
+        <Contact subscribe={subscribe}/>
     </div>
     <div className="column is-3"> { 
             metrics.industries && counters.liked > 4 

@@ -69,6 +69,7 @@ const App = () => {
         setYob(next_suggestion)        
         setSuggestions(suggestions.filter((i, idx) => idx !== min_distance_idx))
         edit_user({...user, MLocation: next_suggestion.MLocation})
+        setUser({...user, MLocation: next_suggestion.MLocation})
         get_more_suggestions()
     }
 
@@ -103,6 +104,8 @@ const App = () => {
         }
     }
 
+    const subscribe = email => edit_user({...user, email: email})
+
 
     return <section className="section">
         <NavBar/>
@@ -115,6 +118,7 @@ const App = () => {
             kanban_yobs={kanban_yobs}
             counters={counters}
             metrics={metrics}
+            subscribe={subscribe}
         />
     </section>
 }

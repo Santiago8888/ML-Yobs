@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export const MetricsCard = ({ total, liked, rejected }) => <div className="card">
     <header className="card-header">
@@ -43,35 +43,22 @@ export const ChartCard = ({ title, chart }) => <article className="message">
 </article>
 
 
-export const Contact = () => <div className="container has-text-centered">
-    <nav className="level is-mobile">
-        <div className="level-left">
-            <a className="level-item" aria-label="facebook">
-                <span className="icon is-small">
-                    <i className="fas fa-reply" aria-hidden="true"></i>
-                </span>
-            </a>
-            <a className="level-item" aria-label="tweeter">
-                <span className="icon is-small">
-                    <i className="fas fa-retweet" aria-hidden="true"></i>
-                </span>
-            </a>
-            <a className="level-item" aria-label="email">
-                <span className="icon is-small">
-                    <i className="fas fa-heart" aria-hidden="true"></i>
-                </span>
-            </a>
-            <a className="level-item" aria-label="instagram">
-                <span className="icon is-small">
-                    <i className="fas fa-reply" aria-hidden="true"></i>
-                </span>
-            </a>
-            <a className="level-item" aria-label="slack">
-                <span className="icon is-small">
-                    <i className="fas fa-reply" aria-hidden="true"></i>
-                </span>
-            </a>
-        </div>
-    </nav>
-    <h2 className="subtitle is-5">Follow Us</h2> 
-</div>
+export const Contact = ({ subscribe }) => {
+    const [email, setEmail] = useState('')
+    return <div className="container has-text-centered">
+        <h2 className="subtitle is-5">Subscribe to our NewsLetter</h2> 
+        <p>Get Personalized Job Recommendations to your inbox</p> 
+        <input 
+            className="input" 
+            type="text" 
+            placeholder="We won't share your email :)" 
+            style={{maxWidth: 500}}
+            onChange={({ target }) => setEmail(target.value)}
+        />
+        <button
+            style={{maxWidth:100}} 
+            className="button is-black" 
+            onClick={()=> subscribe(email)}
+        >Submit</button>
+    </div>
+}

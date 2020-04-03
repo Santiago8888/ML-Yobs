@@ -1,5 +1,7 @@
 import { MetricsCard, TechStack, ChartCard, Contact } from './Dashboard'
+import { IndustriesChart, SalaryChart } from './Chart'
 import { Suggestion } from './Yobs/Suggestion'
+import { HeatMap } from './Maps'
 import React from 'react'
 
 
@@ -25,9 +27,17 @@ export const Layout = ({ yob, like_yob, counters, metrics }) => <div className="
         { yob ? <Main yob={yob} like_yob={like_yob}/> : null }
         <Contact/>
     </div>
-    <div className="column is-3">
-        { metrics.industries && counters.liked > 4 ? <ChartCard title={'By Industry'} chart={<div/>}/> : null }
-        { metrics.locations && counters.liked > 3 ? <ChartCard title={'By Location'} chart={<div/>}/> : null }
-        { metrics.salary && counters.liked > 2 ?  <ChartCard title={'By Salary'} chart={<div/>}/> : null }
-    </div>
+    <div className="column is-3"> { 
+            metrics.industries && counters.liked > 4 
+                ?   <ChartCard title={'By Industry'} chart={<IndustriesChart industries={metrics.industries}/>}/> 
+                :   null 
+        } { 
+            metrics.locations && counters.liked > 3 
+                ?   <ChartCard title={'By Location'} chart={<HeatMap locations={metrics.locations}/>}/> 
+                :   null 
+        } { 
+            metrics.salary && counters.liked > 2 
+                ?   <ChartCard title={'By Salary'} chart={<SalaryChart salaries={metrics.salary}/>}/> 
+                :   null 
+    } </div>
 </div>

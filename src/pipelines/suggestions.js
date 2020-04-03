@@ -28,7 +28,7 @@ export const tech_counter = user_id => [
 
 export const heat_map_aggregate = user_id => [
     { $match: { UserID: user_id } }, 
-    { $group: { _id: $Coords, count: { $sum: 1 } } }
+    { $group: { _id: 'Heat Map', locations: { $push: '$Coords.coordinates' } } }
 ]
 
 

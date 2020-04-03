@@ -94,8 +94,8 @@ export const get_dashboard_metrics = async user_id => {
     return {
         tech: tech_stack,
         industries: industries,
-        locations: location_likes,
-        salaries: salary_distribution
+        locations: location_likes[0].locations,
+        salaries: salary_distribution[0].count
     }
 }
 

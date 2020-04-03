@@ -1,80 +1,69 @@
-import React from 'react'
+import React, { Fragment, useState } from 'react'
 
-const KanbanCard = ({ job }) => <div className="box">
+
+const KanbanCard = ({ yob, apply, close }) => <a className="panel-block is-active">
     <article className="media">
         <div className="media-left">
             <figure className="image is-64x64">
-                <img src={job.logo} alt="Image" />
+                <img src={yob.logo} alt="Image" />
             </figure>
-            { job.company }
+            { yob.company }
         </div>
         <div className="media-content">
             <div className="content">
                 <nav className="level is-mobile">
                     <div className="level-left">
-                        <h2 className="title is-4">  { job.title } </h2>
+                        <h2 className="title is-4">  { yob.title } </h2>
                     </div>
                     <div className="level-right">
-                        <div className="dropdown is-hoverable">
-                            <div className="dropdown-trigger">
-                                <p> { job.stage } </p>
-                                <span className="icon is-small">
-                                    <i className="fas fa-angle-down" aria-hidden="true"></i>
-                                </span>
-                            </div>
-                            <div className="dropdown-menu" id="dropdown-menu4" role="menu">
-                                <div className="dropdown-content">
-                                    <a href="#" className="dropdown-item"> Interested </a>
-                                    <a href="#" className="dropdown-item"> Applied </a>
-                                    <a href="#" className="dropdown-item"> First Interview </a>
-                                    <a href="#" className="dropdown-item"> Technical Stage </a>
-                                    <a href="#" className="dropdown-item"> Culture Assesment </a>
-                                    <a href="#" className="dropdown-item"> Presented Offer </a>
-                                    <a href="#" className="dropdown-item"> Negotiation </a>
-                                    <hr className="dropdown-divider" />
-                                    <a href="#" className="dropdown-item"> Accepted Offer </a>
-                                    <a href="#" className="dropdown-item"> No Longer Interested </a>
-                                    <a href="#" className="dropdown-item"> Rejected </a>
-                                </div>
-                            </div>
-                        </div>
+                        { 
+                            yob.Applied 
+                            ? 
+                                <Fragment>
+                                    <button 
+                                        className="button is-primary is-ligh"
+                                        onClick={()=> {
+                                            apply(yob)
+                                            window.open(yob.link)
+                                        }}
+                                    >Apply</button>
+                                    <a className="delete" onClick={()=> close(yob)}/>
+                                </Fragment>
+                            : <button className="button is-danger is-light" onClick={()=> close(yob)}>Close</button>
+                        }
                     </div>
                 </nav>
             </div>
-			<h2 className="subtitle is-5" style={{marginBottom:0, color: '#822'}}> 
-				{ job.salary ? job.salary : null } 
-			</h2>
-			<p style={{marginTop: '1.25rem'}}>
-				<img src="location.png" style={{height:24}} alt="location-icon"/>
-				<i style={{padding:6}}>{ job.location }</i>
-			</p>
-            <div class="field">
-                <div class="control">
-                    <input class="input is-info" type="text" placeholder="Info input"/>
-                </div>
-            </div>
+
             <nav className="level is-mobile">
                 <div className="level-left">
-                    <a className="level-item" aria-label="Applauses">
-                        <span className="icon is-small"><i className="fas fa-reply" aria-hidden="true"></i></span>
-                    </a>
-                    <a className="level-item" aria-label="Comments">
-                        <span className="icon is-small"><i className="fas fa-retweet" aria-hidden="true"></i></span>
-                    </a>
-                    <a className="level-item" aria-label="Plus">
-                        <span className="icon is-small"><i className="fas fa-heart" aria-hidden="true"></i></span>
-                    </a>
-                    <a className="level-item" aria-label="Minus">
-                        <span className="icon is-small"><i className="fas fa-heart" aria-hidden="true"></i></span>
-                    </a>
-                    <a className="level-item" aria-label="Notes">
-                        <span className="icon is-small"><i className="fas fa-heart" aria-hidden="true"></i></span>
-                    </a>
-                    <a className="level-item" aria-label="To Do">
-                        <span className="icon is-small"><i className="fas fa-heart" aria-hidden="true"></i></span>
-                    </a>
+                    <h2 className="subtitle is-5" style={{marginBottom:0, color: '#822'}}> 
+                        { yob.salary ? yob.salary : null } 
+                    </h2>
+                </div>
+                <div className="level-right">
+                    <p style={{marginTop: '1.25rem'}}>
+                        <img src="location.png" style={{height:24}} alt="location-icon"/>
+                        <i style={{padding:6}}>{ yob.location }</i>
+                    </p>
                 </div>
             </nav>
         </div>
     </article>
-</div>
+</a>
+
+
+
+export const KanBan = ({ yobs, apply, close }) => {
+    const [isApplied, setIsApplied] = useState(false)
+    return <nav className="panel">
+        <p className="panel-heading"> Active Oportunities </p>
+        <p className="panel-tabs">
+            <a className = {isApplied ? "is-active" : ''} onClick={()=> setIsApplied(false)}>Interested In</a>
+            <a className = {isApplied ? "is-active" : ''} onClick={()=> setIsApplied(true)}>Applied</a>
+        </p>
+        { yobs.reverse().filter(({ Applied }) => Applied === isApplied).map(y => 
+            <KanbanCard yob={y} apply={apply} close={close}/>
+        )}
+    </nav>
+}

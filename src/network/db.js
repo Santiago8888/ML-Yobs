@@ -1,3 +1,5 @@
+import { RemoteMongoClient, Stitch, AnonymousCredential } from 'mongodb-stitch-browser-sdk'
+
 import { 
     get_ranked_cached_suggestions,
     suggestions_history,
@@ -6,6 +8,7 @@ import {
     likes_counter,
     tech_counter,
     salary_array,
+    kanban_array,
     map_yobIds
 } from './pipelines/suggestions'
 
@@ -13,11 +16,6 @@ import {
     yobs_counter,
     suggest
 } from './pipelines/jobs'
-
-
-
-import { RemoteMongoClient, Stitch, AnonymousCredential } from 'mongodb-stitch-browser-sdk'
-
 
 const client = Stitch.initializeDefaultAppClient('yobs-wqucd')
 const db = client.getServiceClient(RemoteMongoClient.factory, 'mongodb-atlas')
@@ -27,6 +25,7 @@ const yobsDB = db.collection('devYobs')
 const suggestionsDB = db.collection('devSuggestions')
 
 
+//User Requests
 export const get_user = async () => {
     const { id: user_id } = await client.auth.loginWithCredential(new AnonymousCredential())
     const user = await usersDB.findOne({ UserID: user_id }).asArray().catch(console.log)
@@ -40,6 +39,7 @@ export const get_user = async () => {
 }
 
 
+// Suggestion Requests
 export const get_suggestions = async user => {
     const suggestions = await suggestionsDB.aggregate(get_ranked_cached_suggestions(user)).toArray()
     if(!suggestions.length){
@@ -55,15 +55,29 @@ export const save_suggestions = async user => {
     const suggestions = await yobsDB.aggregate(suggest(user.MLocation)).toArray()
     const filtered_suggestions = suggestions.filter(({ JobId }) => !yobIds.includes(JobId)).filter((_, idx) => idx < 20)
 
-    const extended_yob_props = { UserID: user.UserID, User_MLocation: user.MLocation, Liked: null, Staged: 'Suggested', Open: null }
-    const suggestion_documents = filtered_suggestions.map(s => ({...s, ...extended_yob_props}))
+    const user_props = { UserID: user.UserID, User_MLocation: user.MLocation }
+    const suggestion_props = { Liked: null, Staged: 'Suggested', Open: null, Applied: false }
+    const suggestion_documents = filtered_suggestions.map(s => ({...s, ...user_props, ...suggestion_props}))
     const saved_suggestions = await suggestionsDB.insertMany(suggestion_documents).toArray().catch(console.log)
 
     return saved_suggestions
 }
 
 
+export const get_suggestion_history = async user_id => {
+    const suggestions = await suggestionsDB.aggregate(suggestions_history(user_id)).toArray().catch(console.log)
+    return {
+        liked: suggestions.filter(({ Liked }) => Liked),
+        rejected: suggestions.filter(({ Liked }) => !Liked)
+    }
+}
 
+
+// Kanban Requests
+export const get_kanban_yobs = async user_id => await suggestionsDB.aggregate(kanban_array(user_id)).toArray().catch(console.log)
+
+
+// Dashboard Requets
 export const get_counters = async user_id => {
     const total_yobs = await yobsDB.aggregate(yobs_counter).toArray()
     const like_metrics = await suggestionsDB.aggregate(likes_counter(user_id)).toArray()
@@ -72,15 +86,6 @@ export const get_counters = async user_id => {
         total: total_yobs[0].count,
         liked: (like_metrics.find(({_id}) => _id === true) || {count: 0}).count,
         rejected: (like_metrics.find(({_id}) => _id === false) || {count: 0}).count
-    }
-}
-
-
-export const get_suggestion_history = async user_id => {
-    const suggestions = await suggestionsDB.aggregate(suggestions_history(user_id)).toArray()
-    return {
-        liked: suggestions.filter(({ Liked }) => Liked),
-        rejected: suggestions.filter(({ Liked }) => !Liked)
     }
 }
 
@@ -100,6 +105,10 @@ export const get_dashboard_metrics = async user_id => {
 }
 
 
+// Mutations
 const edit_body = ({_id, ...doc}) => ({ _id: new BSON.ObjectID(_id)}, {$set: doc}, {upsert: true})
 export const edit_user = doc => usersDB.updateOne(edit_body(doc)).catch(console.log)
 export const edit_suggestion = doc => suggestionsDB.updateOne(edit_body(doc)).catch(console.log)
+
+export const apply_to_suggestion = doc => suggestionsDB.updateOne(edit_body({...doc, Applied: true})).catch(console.log)
+export const close_suggestion = doc => suggestionsDB.updateOne(edit_body({...doc, Open: false})).catch(console.log)

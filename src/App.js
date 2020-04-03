@@ -2,9 +2,12 @@ import {
     get_user,
     edit_user,
     get_counters,
+    get_kanban_yobs,
     get_suggestions,
     edit_suggestion,
     save_suggestions,
+    close_suggestion,
+    apply_to_suggestion,
     get_dashboard_metrics,
     get_suggestion_history
 } from './network/db'
@@ -24,6 +27,7 @@ const App = () => {
 
     const [liked, setLiked] = useState([])
     const [rejected, setRejected] = useState([])
+    const [kanban_yobs, setKanbanYobs] = useState([])
 
     const [counters, setCounters] = useState({})
     const [metrics, setMetrics] = useState({})
@@ -41,6 +45,9 @@ const App = () => {
             const user_id = user.UserID
             const counters = await get_counters(user_id)
             setCounters(counters)
+
+            const kanban_yobs = get_kanban_yobs(user_id)
+            setKanbanYobs(kanban_yobs)
 
             const { liked, rejected } = await get_suggestion_history(user_id)
             setLiked(liked)
@@ -65,8 +72,25 @@ const App = () => {
         get_more_suggestions()
     }
 
+    const handle_like = () => {
+        setLiked([...liked, yob])
+        setKanbanYobs([yob, ...kanban_yobs])
+    }
+
+    const apply = yob => {
+        apply_to_suggestion(yob)
+        const move_yob = kanban_yobs.map(y => y._id === yob._id ? {...y, Liked: true}: y)
+        setKanbanYobs(move_yob)
+    } 
+
+    const close = yob => {
+        close_suggestion(yob)
+        const dismiss_yob = kanban_yobs.filter(({ _id }) => _id !== yob._id)
+        setKanbanYobs(dismiss_yob)
+    }
+
     const like_yob = liked => {
-        liked ? setLiked([...liked, yob]) : setRejected([...rejected, yob])
+        liked ? handle_like() : setRejected([...rejected, yob])
         get_next_suggestion()
         setYob(null)
         edit_suggestion({...yob, Liked: liked})
@@ -80,12 +104,15 @@ const App = () => {
     }
 
 
-    return <section class="section">
+    return <section className="section">
         <NavBar/>
         <NotificationBar/>
         <Layout 
             yob={yob} 
+            apply={apply}
+            close={close}
             like_yob={like_yob}
+            kanban_yobs={kanban_yobs}
             counters={counters}
             metrics={metrics}
         />

@@ -42,9 +42,6 @@ export const ChartCard = ({ title, chart }) => <article className="message">
     <div className="message-body"> { chart } </div>
 </article>
 
-// Salary Chart: https://uber.github.io/react-vis/documentation/series-reference/line-series
-// Industry Chart: https://uber.github.io/react-vis/examples/showcases/radar-charts
-
 
 export const Contact = () => <div className="container has-text-centered">
     <nav className="level is-mobile">

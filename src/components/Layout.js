@@ -1,30 +1,48 @@
 import { MetricsCard, TechStack, ChartCard, Contact } from './Dashboard'
 import { IndustriesChart, SalaryChart } from './Chart'
 import { Suggestion } from './Yobs/Suggestion'
+import { KanBan } from './Yobs/Kanban'
 import { HeatMap } from './Maps'
-import React from 'react'
+import React, { useState } from 'react'
 
 
-const Main = ({ yob, like_yob }) => <div className="container">
-    <Suggestion yob={yob} like_yob={like_yob}/>
-    <div class="tabs">
-        <ul>
-            <li class="is-active"><a>Suggestions</a></li>
-            <li><a>Kanban</a></li>
-            <li hidden><a>Map</a></li>
-            <li hidden><a>Graph</a></li>
-        </ul>
+const Main = ({ yob, like_yob, kanban_yobs, apply, close }) => {
+    const [activeTab, setActiveTab] = useState(0)
+    return <div className="container">
+        {   !activeTab
+                ?   <Suggestion yob={yob} like_yob={like_yob}/>
+                :   <KanBan yobs={kanban_yobs} apply={apply} close={close}/>
+        }
+        <div className="tabs">
+            <ul>
+                <li className={!activeTab ? "is-active" : ''} onClick={setActiveTab(0)}><a>Suggestions</a></li>
+                <li className={activeTab ? "is-active" : ''} onClick={setActiveTab(1)}><a>Kanban</a></li>
+                <li hidden><a>Map</a></li>
+                <li hidden><a>Graph</a></li>
+            </ul>
+        </div>
     </div>
-</div>
+}
 
 
-export const Layout = ({ yob, like_yob, counters, metrics }) => <div className="columns">
+export const Layout = ({ yob, like_yob, counters, metrics, kanban_yobs, apply, close }) => <div className="columns">
     <div className="column is-2">
         { counters ? <MetricsCard counters={counters}/> : null }
         { metrics.tech && counters.liked > 1 ? <TechStack tech={metrics.tech}/> : null }
     </div>
     <div className="column is-7">
-        { yob ? <Main yob={yob} like_yob={like_yob}/> : null }
+        { 
+            yob 
+                ?   
+                    <Main 
+                        yob={yob} 
+                        like_yob={like_yob} 
+                        kanban_yobs={kanban_yobs}
+                        apply={apply}
+                        close={close}
+                    /> 
+                :   null 
+        }
         <Contact/>
     </div>
     <div className="column is-3"> { 

@@ -5,7 +5,7 @@ const KanbanCard = ({ yob, apply, close }) => <a className="panel-block is-activ
     <article className="media">
         <div className="media-left">
             <figure className="image is-64x64">
-                <img src={yob.logo} alt="Image" />
+                <img src={yob.logo} alt="logo" />
             </figure>
             { yob.company }
         </div>
@@ -59,8 +59,8 @@ export const KanBan = ({ yobs, apply, close }) => {
     return <nav className="panel">
         <p className="panel-heading"> Active Oportunities </p>
         <p className="panel-tabs">
-            <a className = {isApplied ? "is-active" : ''} onClick={()=> setIsApplied(false)}>Interested In</a>
-            <a className = {isApplied ? "is-active" : ''} onClick={()=> setIsApplied(true)}>Applied</a>
+            <a className={isApplied ? "is-active" : ''} onClick={()=> setIsApplied(false)}>Interested In</a>
+            <a className={isApplied ? "is-active" : ''} onClick={()=> setIsApplied(true)}>Applied</a>
         </p>
         { yobs.reverse().filter(({ Applied }) => Applied === isApplied).map(y => 
             <KanbanCard yob={y} apply={apply} close={close}/>

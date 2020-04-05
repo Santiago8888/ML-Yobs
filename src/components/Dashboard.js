@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 export const MetricsCard = ({ total, liked, rejected }) => <div className="card">
     <header className="card-header">
-        <p className={`card-header-title has-text-${align} is-uppercase`} style={{display:'block'}}> 
+        <p className={`card-header-title has-text-centered is-uppercase`} style={{display:'block'}}> 
             Total Jobs 
         </p>
     </header>
@@ -64,7 +64,7 @@ export const Contact = ({ subscribe }) => {
             className="button is-black" 
             onClick={()=> {
                 setDisabled(true)
-                setUserName('Thank you!')
+                setEmail('Thank you!')
                 subscribe(email)
             }}
         >Submit</button>

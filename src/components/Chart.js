@@ -11,7 +11,7 @@
 */
 
 
-import { XAxis, YAxis, XYPlot, VerticalBarSeries, RadarChart } from 'react-vis'
+import { XAxis, YAxis, XYPlot, VerticalBarSeries, RadarChart, ChartLabel } from 'react-vis'
 import React from 'react'
 
 
@@ -45,7 +45,7 @@ export const SalaryChart = ({ salaries }) =>  <XYPlot
         style={{ ...axis_style, transform: 'rotate(-90)', textAnchor: 'end' }}
     />
         <VerticalBarSeries data={
-            salary_brackets.map(b => ({id:i, x:b, y:salaries.filter(s => b < s && s < b + BRACKET_SIZE ).length }))
+            salary_brackets.map((b, i) => ({id:i, x:b, y:salaries.filter(s => b < s && s < b + BRACKET_SIZE ).length }))
         } />
 </XYPlot>
 

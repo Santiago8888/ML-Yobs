@@ -33,6 +33,30 @@ const App = () => {
     const [metrics, setMetrics] = useState({})
 
 
+    const get_more_suggestions = async(suggestions) => {
+        if(suggestions.length < 10) {
+            const new_suggestions = await save_suggestions(user)
+            setSuggestions([...suggestions, ...new_suggestions])
+        }
+    }
+
+
+    const get_next_suggestion = (user, suggestions) => {
+        const min_distance_idx = suggestions.map(({ MLocation:{ coordinates:s }}) => 
+            liked.reduce((d, { MLocation: l }) => (d + s[0] - l[0])**2 +  (s[1] - l[1])**2, 0)
+            - rejected.reduce((d, { MLocation: r }) => (d + s[0] - r[0])**2 +  (s[1] - r[1])**2, 0)
+        ).reduce((d, i, idx, l) => d[1] || i < d[1] ? [idx, i] : d, [0, null])[0]
+
+        const next_suggestion = suggestions[min_distance_idx]
+        setYob(next_suggestion)        
+        setSuggestions(suggestions.filter((i, idx) => idx !== min_distance_idx))
+
+        edit_user({...user, MLocation: next_suggestion.MLocation.coordinates})
+        setUser({...user, MLocation: next_suggestion.MLocation})
+        get_more_suggestions(suggestions)
+    }
+
+
     useEffect(() => {
         async function fetchData(){ 
             const user = await get_user()
@@ -40,7 +64,7 @@ const App = () => {
 
             const suggestions = await get_suggestions(user)
             setSuggestions(suggestions)
-            get_next_suggestion()
+            get_next_suggestion(user, suggestions)
 
             const user_id = user.UserID
             const counters = await get_counters(user_id)
@@ -59,19 +83,6 @@ const App = () => {
     }, [])
 
 
-    const get_next_suggestion = () => {
-        const min_distance_idx = suggestions.map(({ MLocation: s }) => 
-            liked.reduce((d, ({ MLocation: l }) => (d + s[0] - l[0])**2 +  s[1] - l[1])**2, 0)
-            - rejected.reduce((d, ({ MLocation: r }) => (d + s[0] - r[0])**2 +  s[1] - r[1])**2, 0)
-        ).reduce((d, i, idx, l) => d[1] || i < d[1] ? [idx, i] : d, [null, null])[0]
-
-        const next_suggestion = yobs[min_distance_idx]
-        setYob(next_suggestion)        
-        setSuggestions(suggestions.filter((i, idx) => idx !== min_distance_idx))
-        edit_user({...user, MLocation: next_suggestion.MLocation})
-        setUser({...user, MLocation: next_suggestion.MLocation})
-        get_more_suggestions()
-    }
 
     const handle_like = () => {
         setLiked([...liked, yob])
@@ -92,8 +103,8 @@ const App = () => {
         setMetrics({
             tech: updated_tech,
             industries: updated_industries,
-            salaries: [...salaries, Yob.Salary],
-            locations: [...locations, Yob.Coords,coordinates]
+            salaries: [...salaries, yob.Salary],
+            locations: [...locations, yob.Coords.coordinates]
         })
     }
 
@@ -116,16 +127,9 @@ const App = () => {
 
     const like_yob = liked => {
         liked ? handle_like() : handle_reject()
-        get_next_suggestion()
+        get_next_suggestion(suggestions)
         setYob(null)
         edit_suggestion({...yob, Liked: liked})
-    }
-
-    const get_more_suggestions = async() => {
-        if(suggestions.length < 10) {
-            const new_suggestions = await save_suggestions(user)
-            setSuggestions([...suggestions, ...new_suggestions])
-        }
     }
 
     const subscribe = email => edit_user({...user, email: email})
@@ -135,7 +139,7 @@ const App = () => {
         <NavBar/>
         <NotificationBar/>
         <Layout 
-            yob={yob} 
+            yob={null} 
             apply={apply}
             close={close}
             like_yob={like_yob}

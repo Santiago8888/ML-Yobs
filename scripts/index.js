@@ -1,6 +1,9 @@
+import mongoDF from './data/mongoDF.json'
 import yobs from './output/angel.json'
 import data from './data/angel.json'
 import fs from 'fs'
+
+import { Stitch, RemoteMongoClient, AnonymousCredential } from 'mongodb-stitch-server-sdk'
 
 
 const print = x => console.log(x)
@@ -170,3 +173,30 @@ const write_for_pandas = () => {
     console.log(yobs_array.length)
     fs.writeFileSync('./scripts/output/angel_V1.json', JSON.stringify(yobs_array))
 }
+
+
+
+
+const client = Stitch.initializeDefaultAppClient('yobs-wqucd')
+client.auth.loginWithCredential(new AnonymousCredential())
+const db = client.getServiceClient(RemoteMongoClient.factory, 'mongodb-atlas').db('Yobs')
+
+const docs = () => [...Array(83)].map((_, idx) => setTimeout(()=> db.collection('devYobs').insertOne({ 
+    City: mongoDF.location[idx],
+    Title: mongoDF.title[idx],
+    Link: mongoDF.link[idx],
+    Salary: mongoDF.compensation[idx],
+    Company: mongoDF.name[idx],
+    Pitch: mongoDF.pitch[idx],
+    Logo: mongoDF.logo[idx],
+    NumericSalary: mongoDF.salary[idx],
+    Coords: mongoDF.coords[idx],
+    Industry: mongoDF.cluster[idx],
+    MLocation: {type:'Point', coordinates:[mongoDF.mlLon[idx], mongoDF.mlLat[idx]]},
+    TechStack: mongoDF.tech[idx],
+    Description: mongoDF.full_description[idx].join('\n')
+}).catch(console.log), 100*idx))
+
+docs()
+client.close()
+

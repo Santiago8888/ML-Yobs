@@ -12,16 +12,39 @@ import {
     get_suggestion_history
 } from './network/db'
 
-import { NavBar, NotificationBar } from './components/Header'
+import { NavBar } from './components/Header'
 import React, { useEffect, useState } from 'react'
 import { Layout } from './components/Layout'
 import 'bulma/css/bulma.css'
+import './App.css'
 
+const f_yob = {
+    _id: "{id: DataView(12)}",
+    City: "Waterloo",
+    Title: "Software Engineer",
+    Link: "https://angel.co/company/hive/jobs",
+    Salary: "$65k – $85k • 0.5% – 1.0%",
+    Company: "Hive.co",
+    Pitch: "Helping ecommerce brands send better email (YC S14)",
+    Logo: "https://photos.angel.co/startups/i/460670-a3dc504ff514762461aefc35cbd1015a-medium_jpg.jpg?buster=1548716034",
+    NumericSalary: 0.1525423729,
+    Coords: "[42.4979693, -92.3329637]",
+    Industry: 4,
+    MLocation: "{coordinates: Array(2), type: \"Point\"}",
+    TechStack: ["React", "Django", "Kubernetes", "Docker", "Java"],
+    Description: "Hive is an email marketing CRM used by brands to personalize and automate their campaigns. We pride ourselves on helping brands understand their email marketing, all while selling more and keeping their customers engaged.\r\n\r\nWe integrate with tech partners like Shopify and Eventbrite to let brands act on all their data, so they can easily segment their list in thousands of ways, and send more customized, timely email campaigns that land in inboxes.\r\n\r\nWe started our company inside a University o...",
+    distance: 0
+}
 
+const f_counters = {
+    total: 83,
+    liked: 0,
+    rejected: 0
+}
 
 const App = () => {
 
-    const [yob, setYob] = useState(null)
+    const [yob, setYob] = useState(f_yob)
     const [user, setUser] = useState(null)
     const [suggestions, setSuggestions] = useState([])
 
@@ -29,7 +52,7 @@ const App = () => {
     const [rejected, setRejected] = useState([])
     const [kanban_yobs, setKanbanYobs] = useState([])
 
-    const [counters, setCounters] = useState({})
+    const [counters, setCounters] = useState(f_counters)
     const [metrics, setMetrics] = useState({})
 
 
@@ -79,7 +102,7 @@ const App = () => {
 
             const metrics = await get_dashboard_metrics(user_id)
             setMetrics(metrics)
-        } fetchData()
+        }// fetchData()
     }, [])
 
 
@@ -135,11 +158,10 @@ const App = () => {
     const subscribe = email => edit_user({...user, email: email})
 
 
-    return <section className="section">
+    return <section className="section" style={{minHeight:'100vh', padding:0, backgroundColor:'aliceblue'}}>
         <NavBar/>
-        <NotificationBar/>
         <Layout 
-            yob={null} 
+            yob={yob} 
             apply={apply}
             close={close}
             like_yob={like_yob}

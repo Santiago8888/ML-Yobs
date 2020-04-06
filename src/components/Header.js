@@ -1,49 +1,21 @@
 import React from 'react'
 
-export const NavBar = () => <nav className="navbar" role="navigation" aria-label="main navigation">
-    <div className="navbar-brand">
-        <a className="navbar-item">
-            <img src="banner.png" width="112" height="28" alt="banner"/>
-        </a>
-
-        <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-        </a>
+export const NavBar = () => <nav 
+    className="navbar is-light" 
+    role="navigation" 
+    aria-label="main navigation"
+    style={{height:100, paddingRight:30, paddingLeft:30, background:'linear-gradient(white 50%, transparent)'}}
+>
+    <div className="navbar-brand" style={{margin:'auto'}}>
+        <img src="logo.png" style={{height:128, marginTop:-14}} alt="banner"/>
     </div>
 
-    <div id="navbarBasicExample" className="navbar-menu">
-        <div className="navbar-start">
-            <a className="navbar-item"> Home </a>
-            <a className="navbar-item"> Documentation </a>
-
-            <div className="navbar-item has-dropdown is-hoverable">
-                <a className="navbar-link"> More </a>
-                <div className="navbar-dropdown">
-                    <a className="navbar-item"> About </a>
-                    <a className="navbar-item"> Jobs </a>
-                    <a className="navbar-item"> Contact </a>
-                    <hr className="navbar-divider" />
-                    <a className="navbar-item"> Report an issue </a>
-                </div>
-            </div>
-        </div>
-
-        <div className="navbar-end">
-            <div className="navbar-item">
-                <div className="buttons">
-                    <a className="button is-primary">
-                        <strong>Sign up</strong>
-                    </a>
-                    <a className="button is-light"> Log in </a>
-                </div>
-            </div>
-        </div>
-    </div>
 </nav>
 
 
-export const NotificationBar = () => <div className="notification is-primary">
-    Software Engineer Jobs RECOMMENDATION ENGINE.
+export const NotificationBar = () => <div className="notification is-primary" style={{padding:0}}>
+    <p>
+        <img src="logo.png" width="112" height="28" alt="banner"/>
+        The Jobs Recommendation Engine for Software Engineers
+    </p>
 </div>

@@ -8,16 +8,16 @@ import React, { useState } from 'react'
 
 const Main = ({ yob, like_yob, kanban_yobs, apply, close }) => {
     const [activeTab, setActiveTab] = useState(0)
-    return <div className="container">
+    return <div className="container" style={{minHeight:'calc(100% - 100px)'}}>
         {   !activeTab
                 ?   <Suggestion yob={yob} like_yob={like_yob}/>
                 :   <KanBan yobs={kanban_yobs} apply={apply} close={close}/>
         }
-        <div className="tabs">
+        <div className="tabs is-centered" style={{marginTop:35}}>
             <ul>
-                <li className={!activeTab ? "is-active" : ''} onClick={setActiveTab(0)}><a>Suggestions</a></li>
-                <li className={activeTab ? "is-active" : ''} onClick={setActiveTab(1)}><a>Kanban</a></li>
-                <li hidden><a>Map</a></li>
+                <li className={!activeTab ? "is-active" : ''} onClick={()=>setActiveTab(0)}><a>Suggestions</a></li>
+                <li className={activeTab ? "is-active" : ''} onClick={()=>setActiveTab(1)}><a>Kanban</a></li>
+                <li><a>Map</a></li>
                 <li hidden><a>Graph</a></li>
             </ul>
         </div>
@@ -25,24 +25,16 @@ const Main = ({ yob, like_yob, kanban_yobs, apply, close }) => {
 }
 
 
-export const Layout = ({ yob, like_yob, counters, metrics, kanban_yobs, apply, close, subscribe }) => <div className="columns">
-    <div className="column is-2">
-        { counters ? <MetricsCard counters={counters}/> : null }
+export const Layout = ({ yob, like_yob, counters, metrics, kanban_yobs, apply, close, subscribe }) => <div 
+    className="columns"
+    style={{padding:'1.5rem', maxWidth:1200, margin:'auto'}}
+>
+    <div className="column is-3">
+        { counters.total ? <MetricsCard counters={counters}/> : null }
         { metrics.tech && counters.liked > 1 ? <TechStack tech={metrics.tech}/> : null }
     </div>
-    <div className="column is-7">
-        { 
-            yob 
-                ?   
-                    <Main 
-                        yob={yob} 
-                        like_yob={like_yob} 
-                        kanban_yobs={kanban_yobs}
-                        apply={apply}
-                        close={close}
-                    /> 
-                :   null 
-        }
+    <div className="column is-6" style={{minHeight:'calc(100vh - 6rem - 120px)'}}>
+        <Main yob={yob} like_yob={like_yob} kanban_yobs={kanban_yobs} apply={apply} close={close}/> 
         <Contact subscribe={subscribe}/>
     </div>
     <div className="column is-3"> { 

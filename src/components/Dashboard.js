@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export const MetricsCard = ({ total, liked, rejected }) => <div className="card">
+export const MetricsCard = ({ counters: { total, liked, rejected }}) => <div className="card">
     <header className="card-header">
         <p className={`card-header-title has-text-centered is-uppercase`} style={{display:'block'}}> 
             Total Jobs 
@@ -48,15 +48,15 @@ export const Contact = ({ subscribe }) => {
     const [disabled, setDisabled] = useState(true)
 
 
-    return <div className="container has-text-centered">
-        <h2 className="subtitle is-5">Subscribe to our NewsLetter</h2> 
-        <p>Get Personalized Job Recommendations to your inbox</p> 
+    return <div className="container has-text-centered" style={{height:100, marginTop:20}}>
+        <h2 className="subtitle is-4" style={{marginBottom:0}}>Subscribe To Our Newsletter</h2> 
+        <p style={{marginBottom:'.5rem'}}>Get Personalized Job Recommendations directly to your inbox</p> 
         <input 
-            disabled={disabled}
+            disabled={!disabled}
             className="input" 
             type="text" 
             placeholder="We won't share your email :)" 
-            style={{maxWidth: 500}}
+            style={{maxWidth: 450}}
             onChange={({ target }) => setEmail(target.value)}
         />
         <button
